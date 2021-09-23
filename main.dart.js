@@ -426,7 +426,7 @@ s.WB(a)
 return s},
 aE1:function(a,b,c,d,e){var s=J.l(e),r=d===C.pJ?s.aeP(e,0,0,{width:s.DE(e),height:s.C3(e),alphaType:a,colorSpace:b,colorType:c}):s.ab0(e)
 return r==null?null:H.kr(r.buffer,0,r.length)},
-aH:function(){if(self.window.flutterWebRenderer!=null){var s=self.window.flutterWebRenderer
+aI:function(){if(self.window.flutterWebRenderer!=null){var s=self.window.flutterWebRenderer
 s.toString
 return J.f(s,"canvaskit")}s=H.eY()
 return J.fG(C.lO.a,s)},
@@ -507,7 +507,7 @@ m=new P.B(k.a-1+(o-r-q)*c,k.b-1+(n-r-q)*c,k.c+1+(o+r+q)*c,k.d+1+(n+r+q)*c)
 if(s){l=new H.bD(new Float32Array(16))
 if(l.j_(d)!==0)return H.Dn(l,m)
 else return m}else return m},
-ax2:function(a,b,c,d,e,f){var s,r,q,p=e?5:4,o=P.aI(C.d.aZ((c.gi(c)>>>24&255)*0.039),c.gi(c)>>>16&255,c.gi(c)>>>8&255,c.gi(c)&255),n=P.aI(C.d.aZ((c.gi(c)>>>24&255)*0.25),c.gi(c)>>>16&255,c.gi(c)>>>8&255,c.gi(c)&255),m={ambient:H.uZ(o),spot:H.uZ(n)},l=$.cd,k=J.aAZ(l==null?H.d(H.p("canvasKit")):l,m)
+ax2:function(a,b,c,d,e,f){var s,r,q,p=e?5:4,o=P.aJ(C.d.aZ((c.gi(c)>>>24&255)*0.039),c.gi(c)>>>16&255,c.gi(c)>>>8&255,c.gi(c)&255),n=P.aJ(C.d.aZ((c.gi(c)>>>24&255)*0.25),c.gi(c)>>>16&255,c.gi(c)>>>8&255,c.gi(c)&255),m={ambient:H.uZ(o),spot:H.uZ(n)},l=$.cd,k=J.aAZ(l==null?H.d(H.p("canvasKit")):l,m)
 l=b.gZ()
 s=new Float32Array(3)
 s[2]=f*d
@@ -7371,16 +7371,16 @@ QG:function QG(){},
 Ri:function Ri(){},
 Rj:function Rj(){},
 FQ:function FQ(){},
-atO:function(){var s=H.aH()
+atO:function(){var s=H.aI()
 if(s)return new H.EQ()
 else return new H.FS()},
-ase:function(a,b){var s='"recorder" must not already be associated with another Canvas.',r=H.aH()
+ase:function(a,b){var s='"recorder" must not already be associated with another Canvas.',r=H.aI()
 if(r){if(a.gP_())H.d(P.dA(s))
 if(b==null)b=C.jb
 return new H.UJ(t.wW.a(a).ld(0,b))}else{t.X8.a(a)
 if(a.c)H.d(P.dA(s))
 return new H.acO(a.ld(0,b==null?C.jb:b))}},
-aGY:function(){var s,r,q=H.aH()
+aGY:function(){var s,r,q=H.aI()
 if(q){q=new H.Jg(H.a([],t.k5),C.ag)
 s=new H.a3U(q)
 s.b=q
@@ -7462,14 +7462,14 @@ return s},
 uS:function(a){var s=0,r=P.ai(t.H),q
 var $async$uS=P.ac(function(b,c){if(b===1)return P.af(c,r)
 while(true)switch(s){case 0:H.aLI()
-q=H.aH()
+q=H.aI()
 s=q?2:3
 break
 case 2:s=4
 return P.ao(H.aLH(),$async$uS)
 case 4:case 3:s=5
 return P.ao(P.SQ(C.v5),$async$uS)
-case 5:q=H.aH()
+case 5:q=H.aI()
 s=q?6:8
 break
 case 6:s=9
@@ -7484,13 +7484,13 @@ SQ:function(a){var s=0,r=P.ai(t.H),q,p,o
 var $async$SQ=P.ac(function(b,c){if(b===1)return P.af(c,r)
 while(true)switch(s){case 0:if(a===$.Sr){s=1
 break}$.Sr=a
-p=H.aH()
+p=H.aI()
 if(p){if($.pv==null)$.pv=new H.JU(H.a([],t.L5),H.a([],t.nG),P.x(t.N,t.OI))}else{p=$.al8
 if(p==null)p=$.al8=new H.a05()
 p.b=p.a=null
 if($.aAy())document.fonts.clear()}s=$.Sr!=null?3:4
 break
-case 3:p=H.aH()
+case 3:p=H.aI()
 o=$.Sr
 s=p?5:7
 break
@@ -7521,33 +7521,33 @@ if(b==null)b=0
 return a*(1-c)+b*c},
 lg:function(a,b,c){return a*(1-c)+b*c},
 alp:function(a,b,c){return a*(1-c)+b*c},
-awH:function(a,b){return P.aI(H.uV(C.d.aZ((a.gi(a)>>>24&255)*b),0,255),a.gi(a)>>>16&255,a.gi(a)>>>8&255,a.gi(a)&255)},
-aI:function(a,b,c,d){return new P.D(((a&255)<<24|(b&255)<<16|(c&255)<<8|d&255)>>>0)},
+awH:function(a,b){return P.aJ(H.uV(C.d.aZ((a.gi(a)>>>24&255)*b),0,255),a.gi(a)>>>16&255,a.gi(a)>>>8&255,a.gi(a)&255)},
+aJ:function(a,b,c,d){return new P.D(((a&255)<<24|(b&255)<<16|(c&255)<<8|d&255)>>>0)},
 anA:function(a){if(a<=0.03928)return a/12.92
 return Math.pow((a+0.055)/1.055,2.4)},
 N:function(a,b,c){if(b==null)if(a==null)return null
 else return P.awH(a,1-c)
 else if(a==null)return P.awH(b,c)
-else return P.aI(H.uV(C.d.dP(P.alp(a.gi(a)>>>24&255,b.gi(b)>>>24&255,c)),0,255),H.uV(C.d.dP(P.alp(a.gi(a)>>>16&255,b.gi(b)>>>16&255,c)),0,255),H.uV(C.d.dP(P.alp(a.gi(a)>>>8&255,b.gi(b)>>>8&255,c)),0,255),H.uV(C.d.dP(P.alp(a.gi(a)&255,b.gi(b)&255,c)),0,255))},
+else return P.aJ(H.uV(C.d.dP(P.alp(a.gi(a)>>>24&255,b.gi(b)>>>24&255,c)),0,255),H.uV(C.d.dP(P.alp(a.gi(a)>>>16&255,b.gi(b)>>>16&255,c)),0,255),H.uV(C.d.dP(P.alp(a.gi(a)>>>8&255,b.gi(b)>>>8&255,c)),0,255),H.uV(C.d.dP(P.alp(a.gi(a)&255,b.gi(b)&255,c)),0,255))},
 asn:function(a,b){var s,r,q,p=a.gi(a)>>>24&255
 if(p===0)return b
 s=255-p
 r=b.gi(b)>>>24&255
-if(r===255)return P.aI(255,C.h.cP(p*(a.gi(a)>>>16&255)+s*(b.gi(b)>>>16&255),255),C.h.cP(p*(a.gi(a)>>>8&255)+s*(b.gi(b)>>>8&255),255),C.h.cP(p*(a.gi(a)&255)+s*(b.gi(b)&255),255))
+if(r===255)return P.aJ(255,C.h.cP(p*(a.gi(a)>>>16&255)+s*(b.gi(b)>>>16&255),255),C.h.cP(p*(a.gi(a)>>>8&255)+s*(b.gi(b)>>>8&255),255),C.h.cP(p*(a.gi(a)&255)+s*(b.gi(b)&255),255))
 else{r=C.h.cP(r*s,255)
 q=p+r
-return P.aI(q,C.h.i6((a.gi(a)>>>16&255)*p+(b.gi(b)>>>16&255)*r,q),C.h.i6((a.gi(a)>>>8&255)*p+(b.gi(b)>>>8&255)*r,q),C.h.i6((a.gi(a)&255)*p+(b.gi(b)&255)*r,q))}},
-asZ:function(a,b,c,d,e){var s=H.aH()
+return P.aJ(q,C.h.i6((a.gi(a)>>>16&255)*p+(b.gi(b)>>>16&255)*r,q),C.h.i6((a.gi(a)>>>8&255)*p+(b.gi(b)>>>8&255)*r,q),C.h.i6((a.gi(a)&255)*p+(b.gi(b)&255)*r,q))}},
+asZ:function(a,b,c,d,e){var s=H.aI()
 if(s){s=new H.EM(a,b,c,d,e)
 s.i7(null,t.wX)}else s=new H.Gv(a,b,c,d,e,null)
 return s},
-aFb:function(a,b){var s=H.aH()
+aFb:function(a,b){var s=H.aI()
 if(s){s=new H.Ah(a,b,C.ea)
 s.i7(null,t.y6)
 return s}return new H.w9(a,b)},
 aq8:function(a,b,c,d){var s=0,r=P.ai(t.hP),q,p
 var $async$aq8=P.ac(function(e,f){if(e===1)return P.af(f,r)
-while(true)switch(s){case 0:p=H.aH()
+while(true)switch(s){case 0:p=H.aI()
 if(p){p=new H.Ex("encoded image bytes",a)
 p.i7(null,t.c6)
 q=p
@@ -7556,7 +7556,7 @@ break}else{q=new H.GD((self.URL||self.webkitURL).createObjectURL(W.as1([a.buffer
 s=1
 break}case 1:return P.ag(q,r)}})
 return P.ah($async$aq8,r)},
-e8:function(){var s=H.aH()
+e8:function(){var s=H.aI()
 if(s){s=new H.q4(C.cg)
 s.i7(null,t.Cj)
 return s}else return H.aoW()},
@@ -7571,10 +7571,10 @@ s=b==null?null:b.a
 r=P.ad(r,s==null?3:s,c)
 r.toString
 return C.yV[H.uV(C.d.aZ(r),0,8)]},
-ap_:function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,a0,a1){var s=H.aH()
+ap_:function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,a0,a1){var s=H.aI()
 if(s){s=t.eQ
 return H.anz(s.a(a),b,c,d,e,f,g,h,i,j,k,l,s.a(m),n,p,q,r,a0,a1)}else return H.anK(a,b,c,d,e,f,g,h,i,j,k,l,m,n,p,q,r,a0,a1)},
-a5I:function(a,b,c,d,e,f,g,h,i,j,k,l){var s,r,q,p,o=null,n=H.aH()
+a5I:function(a,b,c,d,e,f,g,h,i,j,k,l){var s,r,q,p,o=null,n=H.aI()
 if(n){s=H.aH9(o)
 if(j!=null)s.textAlign=$.aAi()[j.a]
 n=k==null
@@ -7601,7 +7601,7 @@ s.textStyle=p
 q=$.cd
 q=J.aAP(q==null?H.d(H.p("canvasKit")):q,s)
 return new H.EP(q,n?C.z:k,b,c,e,d)}else return new H.wa(j,k,e,d,h,b,c,f,l,i,a,g)},
-a5H:function(a){var s,r,q,p,o,n=H.aH()
+a5H:function(a){var s,r,q,p,o,n=H.aI()
 if(n)return H.ask(a)
 else{n=t.IH
 s=t.up
@@ -10450,23 +10450,23 @@ b=a7.cx
 d=P.ad(c,b==null?d:b,a8)
 c=m?a6.cy:a7.cy
 b=m?a6.db:a7.db
-if(!r||a7.dx!=null)if(m){if(r){s=H.aH()
+if(!r||a7.dx!=null)if(m){if(r){s=H.aI()
 s=s?H.be():new H.b2(new H.b4())
 r=a6.b
 r.toString
 s.sar(0,r)}}else{s=a7.dx
-if(s==null){s=H.aH()
+if(s==null){s=H.aI()
 s=s?H.be():new H.b2(new H.b4())
 r=a7.b
 r.toString
 s.sar(0,r)}}else s=a4
-if(!o||a7.dy!=null)if(m)if(o){r=H.aH()
+if(!o||a7.dy!=null)if(m)if(o){r=H.aI()
 r=r?H.be():new H.b2(new H.b4())
 p=a6.c
 p.toString
 r.sar(0,p)}else r=p
 else{r=a7.dy
-if(r==null){r=H.aH()
+if(r==null){r=H.aI()
 r=r?H.be():new H.b2(new H.b4())
 p=a7.c
 p.toString
@@ -10938,7 +10938,7 @@ Q6:function Q6(){},
 e:function(a,b,c,d,e,f){return new A.br(a,e,b,c,new S.dq(d,f))},
 eu:function(a,b,c){var s=$.a8().h(0,a)
 s.c=b
-if(c!=null)s.f.bb(c)
+if(c!=null)s.f.b9(c)
 return s},
 arQ:function(a){$.a8().a0(0,new A.TK(a))},
 arR:function(a){$.a8().a0(0,new A.TL(a))},
@@ -11125,12 +11125,12 @@ q.toString
 return new Y.cQ(q,s,r)}switch(r){case C.aa:p=a.a
 break
 case C.az:r=a.a
-p=P.aI(0,r.gi(r)>>>16&255,r.gi(r)>>>8&255,r.gi(r)&255)
+p=P.aJ(0,r.gi(r)>>>16&255,r.gi(r)>>>8&255,r.gi(r)&255)
 break
 default:p=null}switch(q){case C.aa:o=b.a
 break
 case C.az:r=b.a
-o=P.aI(0,r.gi(r)>>>16&255,r.gi(r)>>>8&255,r.gi(r)&255)
+o=P.aJ(0,r.gi(r)>>>16&255,r.gi(r)>>>8&255,r.gi(r)&255)
 break
 default:o=null}r=P.N(p,o,c)
 r.toString
@@ -11149,7 +11149,7 @@ if(n==null)n=p.e1(q,c)
 if(n!=null){k.push(n)
 continue}}if(p!=null)k.push(p.bN(0,c))
 if(o)k.push(q.bN(0,s))}return new Y.hJ(k)},
-axn:function(a,b,c,d,e,f){var s,r,q,p,o=H.aH(),n=o?H.be():new H.b2(new H.b4())
+axn:function(a,b,c,d,e,f){var s,r,q,p,o=H.aI(),n=o?H.be():new H.b2(new H.b4())
 n.si2(0)
 s=P.e8()
 switch(f.c){case C.aa:n.sar(0,f.a)
@@ -13184,16 +13184,16 @@ a9r:function a9r(){},
 a9s:function a9s(a){this.a=a},
 TZ:function TZ(){},
 U0:function U0(){},
-asf:function(){var s,r,q,p,o,n,m,l,k,j,i,h,g=null,f=R.aJ(new B.xn("","",""),t.Jm),e=R.aJ(new Z.xP("",-1,"","","","","",""),t.u8),d=R.aJ(R.asg(),t.Qr),c=t.lY,b=R.aJ(C.b3,c)
-c=R.aJ(C.b3,c)
-s=R.aJ(X.at1(),t.WW)
+asf:function(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=null,e=R.aH(new B.xn("","",""),t.Jm),d=R.aH(new Z.xP("",-1,"","","","","",""),t.u8),c=R.aH(R.asg(),t.Qr),b=t.lY,a=R.aH(C.b3,b)
+b=R.aH(C.b3,b)
+s=R.aH(X.at1(),t.WW)
 r=t.SM
 q=J.e2(0,r)
 r=R.eo(q,r)
 q=t.V9
 p=J.e2(0,q)
 q=R.eo(p,q)
-p=R.aJ(new B.wC(g),t.PI)
+p=R.aH(new B.wC(f),t.PI)
 o=t.e
 n=J.e2(0,o)
 o=R.eo(n,o)
@@ -13210,9 +13210,10 @@ j=R.eo(j,m)
 i=J.e2(0,m)
 i=R.eo(i,m)
 h=J.e2(0,m)
-return new B.UX(f,e,d,b,c,s,r,q,p,o,n,l,k,j,i,R.eo(h,m),R.aJ(C.h_,t.OU),R.aoP(g),R.auq(g),R.aJ(g,t.j8))},
+g=t.j8
+return new B.UX(e,d,c,a,b,s,r,q,p,o,n,l,k,j,i,R.eo(h,m),R.aH(C.h_,t.OU),R.aoP(f),R.auq(f),R.aH(f,g),R.aH(f,g),R.aH(f,g))},
 aHV:function(a){return P.at(["player",a.a,"hero",a.b,"alias",a.c],t.N,t.z)},
-UX:function UX(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0){var _=this
+UX:function UX(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0,a1,a2){var _=this
 _.a=a
 _.b=b
 _.c=c
@@ -13233,7 +13234,9 @@ _.dy=p
 _.fr=q
 _.fx=r
 _.fy=s
-_.go=a0},
+_.go=a0
+_.id=a1
+_.k1=a2},
 a9t:function a9t(){},
 a9u:function a9u(){},
 a9v:function a9v(){},
@@ -13646,7 +13649,7 @@ return s},
 aoP:function(a){var s=new R.Jp($,!0,new N.ds(H.a([],t.lx),t.zK),P.x(t.HE,t.d_))
 s.r$=a
 return s},
-aJ:function(a,b){var s=new R.aF($,!0,new N.ds(H.a([],b.j("t<fO<0>>")),b.j("ds<0>")),P.x(t.HE,t.d_),b.j("aF<0>"))
+aH:function(a,b){var s=new R.aF($,!0,new N.ds(H.a([],b.j("t<fO<0>>")),b.j("ds<0>")),P.x(t.HE,t.d_),b.j("aF<0>"))
 s.r$=a
 return s},
 kI:function(a){var s=new R.Jn($,!0,new N.ds(H.a([],t.F_),t.ap),P.x(t.HE,t.d_))
@@ -13711,7 +13714,7 @@ C0:function C0(){},
 C1:function C1(){},
 D_:function D_(){},
 asg:function(){var s=t.K2
-return new R.Et(R.aJ(C.hm,t.XN),R.aJ(C.cC,t.Pq),R.aJ(C.b9,s),R.aJ(C.b9,s),R.aJ(C.eV,t.gJ))},
+return new R.Et(R.aH(C.hm,t.XN),R.aH(C.cC,t.Pq),R.aH(C.b9,s),R.aH(C.b9,s),R.aH(C.eV,t.gJ))},
 aHS:function(a){var s,r,q,p,o=a.a
 o=S.pU(o.gi(o))
 s=a.b
@@ -13932,13 +13935,13 @@ CS:function CS(){},
 asj:function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q){return new K.Ew(a,d,e,m,l,o,n,c,g,i,q,p,h,k,b,f,j)},
 aDX:function(a,b,c){var s,r,q,p,o,n,m=null,l=a===C.ad?C.B:C.w,k=l.a,j=k>>>16&255,i=k>>>8&255
 k&=255
-s=P.aI(31,j,i,k)
-r=P.aI(222,j,i,k)
-q=P.aI(12,j,i,k)
-p=P.aI(61,j,i,k)
-o=P.aI(61,c.gi(c)>>>16&255,c.gi(c)>>>8&255,c.gi(c)&255)
-n=b.er(P.aI(222,c.gi(c)>>>16&255,c.gi(c)>>>8&255,c.gi(c)&255))
-return K.asj(s,a,m,r,q,m,m,b.er(P.aI(222,j,i,k)),C.xX,m,n,o,p,m,m,m,m)},
+s=P.aJ(31,j,i,k)
+r=P.aJ(222,j,i,k)
+q=P.aJ(12,j,i,k)
+p=P.aJ(61,j,i,k)
+o=P.aJ(61,c.gi(c)>>>16&255,c.gi(c)>>>8&255,c.gi(c)&255)
+n=b.er(P.aJ(222,c.gi(c)>>>16&255,c.gi(c)>>>8&255,c.gi(c)&255))
+return K.asj(s,a,m,r,q,m,m,b.er(P.aJ(222,j,i,k)),C.xX,m,n,o,p,m,m,m,m)},
 aE_:function(a,b,c){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d=P.N(a.a,b.a,c)
 d.toString
 s=P.N(a.b,b.b,c)
@@ -13967,8 +13970,8 @@ return K.asj(d,f,m,s,r,e,l,h,k,P.ad(a.fr,b.fr,c),g,p,q,n,o,i,j)},
 aDZ:function(a,b,c){var s=a==null
 if(s&&b==null)return null
 if(s){s=b.a
-return Y.bo(new Y.cQ(P.aI(0,s.gi(s)>>>16&255,s.gi(s)>>>8&255,s.gi(s)&255),0,C.aa),b,c)}if(b==null){s=a.a
-return Y.bo(new Y.cQ(P.aI(0,s.gi(s)>>>16&255,s.gi(s)>>>8&255,s.gi(s)&255),0,C.aa),a,c)}return Y.bo(a,b,c)},
+return Y.bo(new Y.cQ(P.aJ(0,s.gi(s)>>>16&255,s.gi(s)>>>8&255,s.gi(s)&255),0,C.aa),b,c)}if(b==null){s=a.a
+return Y.bo(new Y.cQ(P.aJ(0,s.gi(s)>>>16&255,s.gi(s)>>>8&255,s.gi(s)&255),0,C.aa),a,c)}return Y.bo(a,b,c)},
 aDY:function(a,b,c){if(a==null&&b==null)return null
 return t.KX.a(Y.fv(a,b,c))},
 Ew:function Ew(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q){var _=this
@@ -15027,7 +15030,7 @@ b1=p}if(r){p=C.aG.h(0,800)
 p.toString
 b2=p}else b2=C.w
 b3=i.l(0,o)?C.w:i
-b4=r?C.wd:P.aI(153,0,0,0)
+b4=r?C.wd:P.aJ(153,0,0,0)
 p=C.li.h(0,700)
 p.toString
 b5=p
@@ -15051,8 +15054,8 @@ default:c7=d6}if(r){p=d8.b.h(0,600)
 p.toString
 c8=p}else{p=C.aG.h(0,300)
 p.toString
-c8=p}c9=r?P.aI(31,255,255,255):P.aI(31,0,0,0)
-d0=r?P.aI(10,255,255,255):P.aI(10,0,0,0)
+c8=p}c9=r?P.aJ(31,255,255,255):P.aJ(31,0,0,0)
+d0=r?P.aJ(10,255,255,255):P.aJ(10,0,0,0)
 d1=M.anx(!1,c8,a5,d6,c9,36,d6,d0,C.oJ,c7,88,d6,d6,d6,C.hs)
 d2=r?C.wa:C.w9
 d3=r?C.p3:C.kq
@@ -15186,7 +15189,7 @@ l=U.aKL(a6,new P.O(n,m).eS(0,b3),o)
 k=l.a.ah(0,b3)
 j=l.b
 if(b2!==C.fy&&j.l(0,o))b2=C.fy
-i=H.aH()
+i=H.aI()
 h=i?H.be():new H.b2(new H.b4())
 h.snv(!1)
 if(a3!=null)h.sMz(a3)
@@ -18955,7 +18958,7 @@ return a.dW(D.rx(s,b,!0))},
 aGE:function(a,b){var s=a.d
 if(s>=b.length)return a
 return a.dW(D.ye(s,b,!0))},
-avD:function(){var s=H.aH()
+avD:function(){var s=H.aI()
 s=s?H.be():new H.b2(new H.b4())
 return new D.Co(s,C.ff,C.cm,new P.aR(t.V))},
 tv:function tv(a,b){this.a=a
@@ -20052,7 +20055,7 @@ if(r.l(0,C.n)&&a.b.l(0,C.n))return new F.eL(Y.bo(a.a,b.a,c),Y.bo(C.n,q,c),Y.bo(C
 if(c<0.5){q=c*2
 return new F.ck(Y.bo(a.a,b.a,c),Y.bo(a.b,C.n,q),Y.bo(a.c,b.d,c),Y.bo(r,C.n,q))}r=(c-0.5)*2
 return new F.eL(Y.bo(a.a,b.a,c),Y.bo(C.n,q,r),Y.bo(C.n,b.c,r),Y.bo(a.c,b.d,c))}throw H.b(U.a_U(H.a([U.wd("BoxBorder.lerp can only interpolate Border and BorderDirectional classes."),U.bW("BoxBorder.lerp() was called with two objects of type "+J.a_(a).k(0)+" and "+J.a_(b).k(0)+":\n  "+H.c(a)+"\n  "+H.c(b)+"\nHowever, only Border and BorderDirectional classes are supported by this method."),U.a_b("For a more general interpolation method, consider using ShapeBorder.lerp instead.")],t.qe)))},
-as6:function(a,b,c,d){var s,r,q=H.aH(),p=q?H.be():new H.b2(new H.b4())
+as6:function(a,b,c,d){var s,r,q=H.aI(),p=q?H.be():new H.b2(new H.b4())
 p.sar(0,c.a)
 s=d.hW(b)
 r=c.b
@@ -23802,7 +23805,7 @@ j.a.filter=H.awx(n)}}else if(n!=null){s=j.a
 s.save()
 s.shadowBlur=n.b*2
 q=a.r
-if(q!=null){q=H.cK(P.aI(255,q.gi(q)>>>16&255,q.gi(q)>>>8&255,q.gi(q)&255))
+if(q!=null){q=H.cK(P.aJ(255,q.gi(q)>>>16&255,q.gi(q)>>>8&255,q.gi(q)&255))
 q.toString
 s.shadowColor=q}else{q=H.cK(C.B)
 q.toString
@@ -23977,53 +23980,53 @@ this.b.b.push(new H.F_(b,c))},
 gPG:function(){return this.b}}
 H.XL.prototype={
 afE:function(){var s,r,q,p,o=new self.window.flutterCanvasKit.PictureRecorder(),n=J.l(o),m=n.ld(o,H.ee(this.a))
-for(s=this.b,r=s.length,q=0;q<s.length;s.length===r||(0,H.U)(s),++q)s[q].bb(m)
+for(s=this.b,r=s.length,q=0;q<s.length;s.length===r||(0,H.U)(s),++q)s[q].b9(m)
 p=n.NW(o)
 n.dY(o)
 return p}}
 H.cC.prototype={}
 H.EU.prototype={
-bb:function(a){J.arJ(a)}}
+b9:function(a){J.arJ(a)}}
 H.ER.prototype={
-bb:function(a){J.arG(a)}}
+b9:function(a){J.arG(a)}}
 H.ES.prototype={
-bb:function(a){J.arH(a,this.a)}}
+b9:function(a){J.arH(a,this.a)}}
 H.F_.prototype={
-bb:function(a){J.arO(a,this.a,this.b)}}
+b9:function(a){J.arO(a,this.a,this.b)}}
 H.EX.prototype={
-bb:function(a){J.arK(a,this.a,this.b)}}
+b9:function(a){J.arK(a,this.a,this.b)}}
 H.ET.prototype={
-bb:function(a){J.arI(a,this.a*180/3.141592653589793,0,0)}}
+b9:function(a){J.arI(a,this.a*180/3.141592653589793,0,0)}}
 H.EZ.prototype={
-bb:function(a){J.aqZ(a,H.axx(this.a))}}
+b9:function(a){J.aqZ(a,H.axx(this.a))}}
 H.EA.prototype={
-bb:function(a){J.aqX(a,H.ee(this.a),$.aqH()[this.b.a],this.c)}}
+b9:function(a){J.aqX(a,H.ee(this.a),$.aqH()[this.b.a],this.c)}}
 H.Ez.prototype={
-bb:function(a){J.aqW(a,H.n6(this.a),$.SW(),!0)}}
+b9:function(a){J.aqW(a,H.n6(this.a),$.SW(),!0)}}
 H.Ey.prototype={
-bb:function(a){J.aqV(a,this.a.gZ(),$.SW(),this.b)}}
+b9:function(a){J.aqV(a,this.a.gZ(),$.SW(),this.b)}}
 H.EE.prototype={
-bb:function(a){var s=this.a,r=this.b
+b9:function(a){var s=this.a,r=this.b
 J.ar3(a,s.a,s.b,r.a,r.b,this.c.gZ())}}
 H.EF.prototype={
-bb:function(a){J.ar4(a,this.a.gZ())}}
+b9:function(a){J.ar4(a,this.a.gZ())}}
 H.EK.prototype={
-bb:function(a){J.ar8(a,H.ee(this.a),this.b.gZ())}}
+b9:function(a){J.ar8(a,H.ee(this.a),this.b.gZ())}}
 H.EJ.prototype={
-bb:function(a){J.ar7(a,H.n6(this.a),this.b.gZ())}}
+b9:function(a){J.ar7(a,H.n6(this.a),this.b.gZ())}}
 H.EC.prototype={
-bb:function(a){J.ar0(a,H.n6(this.a),H.n6(this.b),this.c.gZ())}}
+b9:function(a){J.ar0(a,H.n6(this.a),H.n6(this.b),this.c.gZ())}}
 H.EB.prototype={
-bb:function(a){var s=this.a
+b9:function(a){var s=this.a
 J.ar_(a,s.a,s.b,this.b,this.c.gZ())}}
 H.EH.prototype={
-bb:function(a){J.ar6(a,this.a.gZ(),this.b.gZ())}}
+b9:function(a){J.ar6(a,this.a.gZ(),this.b.gZ())}}
 H.EL.prototype={
-bb:function(a){var s=this,r=$.bg().x
+b9:function(a){var s=this,r=$.bg().x
 if(r==null)r=H.bf()
 H.ax2(a,s.a,s.b,s.c,s.d,r)}}
 H.ED.prototype={
-bb:function(a){var s,r,q=this,p="canvasKit",o=q.d,n=o.cx,m=q.a,l=q.b,k=q.c
+b9:function(a){var s,r,q=this,p="canvasKit",o=q.d,n=o.cx,m=q.a,l=q.b,k=q.c
 if(n===C.pz)J.ar1(a,m.gdV().gZ(),H.ee(l),H.ee(k),0.3333333333333333,0.3333333333333333,o.gZ())
 else{m=m.gdV().gZ()
 l=H.ee(l)
@@ -24036,16 +24039,16 @@ if(n===C.py)r=J.T9(J.Ta(r==null?H.d(H.p(p)):r))
 else r=J.anc(J.Ta(r==null?H.d(H.p(p)):r))
 J.ar2(a,m,l,k,s,r,o.gZ())}}}
 H.EG.prototype={
-bb:function(a){var s=this.b
+b9:function(a){var s=this.b
 J.ar5(a,this.a.gZ(),s.a,s.b)}}
 H.EI.prototype={
-bb:function(a){J.ana(a,this.a.gZ())}}
+b9:function(a){J.ana(a,this.a.gZ())}}
 H.EV.prototype={
-bb:function(a){var s=this.b
+b9:function(a){var s=this.b
 s=s==null?null:s.gZ()
 J.Td(a,s,H.ee(this.a),null,null)}}
 H.EW.prototype={
-bb:function(a){var s=t.Oe.a(this.b)
+b9:function(a){var s=t.Oe.a(this.b)
 return J.Td(a,null,H.ee(this.a),s.gZ(),0)}}
 H.nl.prototype={}
 H.UK.prototype={}
@@ -24897,7 +24900,7 @@ p.pop()
 p.pop()
 o.b=o.b.af(0,r,s)},
 ha:function(a){var s,r,q,p=this,o=H.be()
-o.sar(0,P.aI(p.f,0,0,0))
+o.sar(0,P.aJ(p.f,0,0,0))
 s=a.a
 s.bE(0)
 r=p.r
@@ -25737,7 +25740,7 @@ s=s===C.a8}else s=!0}else s=!0
 if(s)r.insertRule(".transparentTextEditing:-webkit-autofill,\n.transparentTextEditing:-webkit-autofill:hover,\n.transparentTextEditing:-webkit-autofill:focus,\n.transparentTextEditing:-webkit-autofill:active {\n    -webkit-transition-delay: 99999s;\n}\n",r.cssRules.length)
 s=b.body
 s.toString
-o=H.aH()
+o=H.aI()
 s.setAttribute("flt-renderer",(o?"canvaskit":"html")+" (auto-selected)")
 s.setAttribute("flt-build-mode","release")
 H.cD(s,"position","fixed")
@@ -25799,7 +25802,7 @@ $.atg=s}h.f.setAttribute("aria-hidden","true")
 if(window.visualViewport==null&&q){s=window.innerWidth
 s.toString
 c.a=0
-P.adw(C.aF,new H.Z3(c,h,s))}s=H.aH()
+P.adw(C.aF,new H.Z3(c,h,s))}s=H.aI()
 if(s){s=h.e
 if(s!=null)C.HV.c1(s)
 s=b.createElement("script")
@@ -27673,10 +27676,10 @@ H.a7B.prototype={
 Ay:function(a,b){var s,r,q,p,o,n,m,l
 try{m=this.b
 m.toString
-if(H.axu(b,m))for(s=0,m=this.c,r=m.length;s<r;++s)m[s].bb(a)
+if(H.axu(b,m))for(s=0,m=this.c,r=m.length;s<r;++s)m[s].b9(a)
 else for(q=0,m=this.c,p=m.length;q<p;++q){o=m[q]
 if(o instanceof H.w1)if(o.acU(b))continue
-o.bb(a)}}catch(l){n=H.a7(l)
+o.b9(a)}}catch(l){n=H.a7(l)
 if(!J.f(n.name,"NS_ERROR_FAILURE"))throw l}},
 co:function(a,b,c){var s,r,q=this,p=c.a
 if(p.x!=null)q.d.c=!0
@@ -27786,79 +27789,79 @@ acU:function(a){var s=this
 if(s.a)return!0
 return s.e<a.b||s.c>a.d||s.d<a.a||s.b>a.c}}
 H.xE.prototype={
-bb:function(a){a.bE(0)},
+b9:function(a){a.bE(0)},
 k:function(a){var s=this.bT(0)
 return s}}
 H.I0.prototype={
-bb:function(a){a.bx(0)},
+b9:function(a){a.bx(0)},
 k:function(a){var s=this.bT(0)
 return s}}
 H.I4.prototype={
-bb:function(a){a.af(0,this.a,this.b)},
+b9:function(a){a.af(0,this.a,this.b)},
 k:function(a){var s=this.bT(0)
 return s}}
 H.I2.prototype={
-bb:function(a){a.d4(0,this.a,this.b)},
+b9:function(a){a.d4(0,this.a,this.b)},
 k:function(a){var s=this.bT(0)
 return s}}
 H.I1.prototype={
-bb:function(a){a.hf(0,this.a)},
+b9:function(a){a.hf(0,this.a)},
 k:function(a){var s=this.bT(0)
 return s}}
 H.I3.prototype={
-bb:function(a){a.al(0,this.a)},
+b9:function(a){a.al(0,this.a)},
 k:function(a){var s=this.bT(0)
 return s}}
 H.HR.prototype={
-bb:function(a){a.lf(0,this.f,this.r)},
+b9:function(a){a.lf(0,this.f,this.r)},
 k:function(a){var s=this.bT(0)
 return s}}
 H.HQ.prototype={
-bb:function(a){a.jW(0,this.f)},
+b9:function(a){a.jW(0,this.f)},
 k:function(a){var s=this.bT(0)
 return s}}
 H.HP.prototype={
-bb:function(a){a.fY(0,this.f)},
+b9:function(a){a.fY(0,this.f)},
 k:function(a){var s=this.bT(0)
 return s}}
 H.HV.prototype={
-bb:function(a){a.hB(0,this.f,this.r,this.x)},
+b9:function(a){a.hB(0,this.f,this.r,this.x)},
 k:function(a){var s=this.bT(0)
 return s}}
 H.HZ.prototype={
-bb:function(a){a.co(0,this.f,this.r)},
+b9:function(a){a.co(0,this.f,this.r)},
 k:function(a){var s=this.bT(0)
 return s}}
 H.HY.prototype={
-bb:function(a){a.d8(0,this.f,this.r)},
+b9:function(a){a.d8(0,this.f,this.r)},
 k:function(a){var s=this.bT(0)
 return s}}
 H.HT.prototype={
-bb:function(a){var s=this.x
+b9:function(a){var s=this.x
 if(s.b==null)s.b=C.b2
 a.c6(0,this.y,s)},
 k:function(a){var s=this.bT(0)
 return s}}
 H.HS.prototype={
-bb:function(a){a.ea(0,this.f,this.r,this.x)},
+b9:function(a){a.ea(0,this.f,this.r,this.x)},
 k:function(a){var s=this.bT(0)
 return s}}
 H.HX.prototype={
-bb:function(a){a.c6(0,this.f,this.r)},
+b9:function(a){a.c6(0,this.f,this.r)},
 k:function(a){var s=this.bT(0)
 return s}}
 H.I_.prototype={
-bb:function(a){var s=this
+b9:function(a){var s=this
 a.hC(0,s.f,s.r,s.x,s.y)},
 k:function(a){var s=this.bT(0)
 return s}}
 H.HU.prototype={
-bb:function(a){var s=this
+b9:function(a){var s=this
 a.ir(s.f,s.r,s.x,s.y)},
 k:function(a){var s=this.bT(0)
 return s}}
 H.HW.prototype={
-bb:function(a){a.f5(0,this.f,this.r)},
+b9:function(a){a.f5(0,this.f,this.r)},
 k:function(a){var s=this.bT(0)
 return s}}
 H.ait.prototype={
@@ -29124,7 +29127,7 @@ if(s!=null)H.li(s,this.fx,a,b,c)
 else $.T3().PU(a,b,c)}},
 YU:function(a,b,c){var s,r,q,p,o,n,m,l,k,j,i,h=this
 switch(a){case"flutter/skia":s=C.bl.h0(b)
-switch(s.a){case"Skia.setResourceCacheMaxBytes":r=H.aH()
+switch(s.a){case"Skia.setResourceCacheMaxBytes":r=H.aI()
 if(r){q=H.fg(s.b)
 r=h.gwq().a
 r.d=q
@@ -29186,7 +29189,7 @@ H.cD(m,"cursor",r==null?"default":r)
 break}return
 case"flutter/web_test_e2e":h.f3(c,C.av.cd([H.aJT(C.bl,b)]))
 return
-case"flutter/platform_views":r=H.aH()
+case"flutter/platform_views":r=H.aI()
 if(r)h.gwq().a.z.acb(b,c)
 else{b.toString
 c.toString
@@ -29208,7 +29211,7 @@ default:return 50}},
 iJ:function(){var s=$.axv
 if(s==null)throw H.b(P.cv("scheduleFrameCallback must be initialized first."))
 s.$0()},
-af7:function(a,b){var s=H.aH()
+af7:function(a,b){var s=H.aI()
 if(s){H.awj()
 H.awk()
 t.h_.a(a)
@@ -29227,7 +29230,7 @@ $.hN.push(new H.ZY(r))},
 gBc:function(){var s=this.y2
 return s==null?this.y2=this.d.h(0,0).guy().gj1():s},
 gwq:function(){var s,r,q,p,o=this.a1
-if(o===$){o=H.aH()
+if(o===$){o=H.aI()
 if(o){o=t.S
 s=t.bo
 r=t.t
@@ -31673,7 +31676,7 @@ q=new P.B(q.a,q.b,q.c,q.d).c5(a0)
 r.b=!0
 a.co(0,q,r.a)}p=s.fx
 if(p!=null){t.Vh.a(p)
-o=p}else{q=H.aH()
+o=p}else{q=H.aI()
 q=q?H.be():new H.b2(new H.b4())
 n=s.a
 n.toString
@@ -32018,7 +32021,7 @@ c2=a5.fy
 if(c2!=null)i=c2;++a4}if(a3==null&&h==null)a3=C.ph
 c3=H.anK(g,a3,a2,a1,a0,a,d3,c,c9,s,d2,d1,h,f,d,l,i,b,e)
 if(h!=null)c4=h
-else{j=H.aH()
+else{j=H.aI()
 c4=j?H.be():new H.b2(new H.b4())
 a3.toString
 c4.sar(0,a3)}if(a4>=k.length){k=c8.a
@@ -39997,7 +40000,7 @@ av:function(){return new M.LN(C.v)}}
 M.LN.prototype={
 aN:function(){this.bi()
 this.a.toString},
-ba:function(a){this.bC(a)
+bb:function(a){this.bC(a)
 this.a.toString},
 I:function(a,b){return new A.ki(new M.aey(this),null)},
 ZV:function(a,b,c){var s,r,q,p,o,n,m,l,k,j=this,i=j.a
@@ -41098,7 +41101,7 @@ l=-1
 break
 default:m=null
 l=null}for(s=b.b,r=s+p,k=0,j=0;j<q;++j){if(C.h.i6(j,o)!==k)++k
-i=H.aH()
+i=H.aI()
 h=i?H.be():new H.b2(new H.b4())
 i=P.N(g[k],g[k+1],C.h.eT(j,o)/o)
 i.toString
@@ -41172,7 +41175,7 @@ E.afw.prototype={
 $1:function(a){return X.wz()},
 $S:369}
 F.QZ.prototype={
-at:function(a,b){var s,r,q,p=H.aH(),o=p?H.be():new H.b2(new H.b4())
+at:function(a,b){var s,r,q,p=H.aI(),o=p?H.be():new H.b2(new H.b4())
 o.sar(0,this.b)
 s=P.mf(C.DT,6)
 r=P.aoO(C.DU,new P.n(7,b.b))
@@ -42768,9 +42771,9 @@ a5=a5.id
 if(a5!==1){i=C.yF.al(0,a5)
 if((j==null?a0:j.b)!=null){a5=j.b
 a5.toString
-j=j.er(P.aI(C.d.aZ(255*i),a5.gi(a5)>>>16&255,a5.gi(a5)>>>8&255,a5.gi(a5)&255))}if((k==null?a0:k.b)!=null){a5=k.b
+j=j.er(P.aJ(C.d.aZ(255*i),a5.gi(a5)>>>16&255,a5.gi(a5)>>>8&255,a5.gi(a5)&255))}if((k==null?a0:k.b)!=null){a5=k.b
 a5.toString
-k=k.er(P.aI(C.d.aZ(255*i),a5.gi(a5)>>>16&255,a5.gi(a5)>>>8&255,a5.gi(a5)&255))}a5=m.gdL(m)
+k=k.er(P.aJ(C.d.aZ(255*i),a5.gi(a5)>>>16&255,a5.gi(a5)>>>8&255,a5.gi(a5)&255))}a5=m.gdL(m)
 m=m.MT(i*(a5==null?1:a5))
 a5=l.gdL(l)
 l=l.MT(i*(a5==null?1:a5))}h=a.a.c
@@ -42827,7 +42830,7 @@ this.e=null},
 aN:function(){this.bi()
 this.a7Y()
 this.a8_()},
-ba:function(a){this.bC(a)
+bb:function(a){this.bC(a)
 this.a.toString},
 I:function(a,b){var s,r,q,p,o,n,m,l,k=this,j=null
 k.a.toString
@@ -43097,7 +43100,7 @@ a28:function(a){if(this.d.B(0,C.aN)!==a)this.aA(new Z.aiL(this,a))},
 aN:function(){this.bi()
 this.a.toString
 this.d.v(0,C.aH)},
-ba:function(a){var s,r=this
+bb:function(a){var s,r=this
 r.bC(a)
 r.a.toString
 s=r.d
@@ -43232,8 +43235,8 @@ s=q==null?null:q.X(a)
 q=p==null
 if(q&&s==null)return null
 if(q){q=s.a
-return Y.bo(new Y.cQ(P.aI(0,q.gi(q)>>>16&255,q.gi(q)>>>8&255,q.gi(q)&255),0,C.aa),s,r.c)}if(s==null){q=p.a
-return Y.bo(p,new Y.cQ(P.aI(0,q.gi(q)>>>16&255,q.gi(q)>>>8&255,q.gi(q)&255),0,C.aa),r.c)}return Y.bo(p,s,r.c)},
+return Y.bo(new Y.cQ(P.aJ(0,q.gi(q)>>>16&255,q.gi(q)>>>8&255,q.gi(q)&255),0,C.aa),s,r.c)}if(s==null){q=p.a
+return Y.bo(p,new Y.cQ(P.aJ(0,q.gi(q)>>>16&255,q.gi(q)>>>8&255,q.gi(q)&255),0,C.aa),r.c)}return Y.bo(p,s,r.c)},
 $ibj:1}
 A.O2.prototype={
 X:function(a){var s,r=this.a,q=r==null?null:r.X(a)
@@ -43254,7 +43257,7 @@ this.r.v(0,C.aH)},
 n:function(a){var s=this.d
 if(s!=null)s.n(0)
 this.W8(0)},
-ba:function(a){var s,r=this
+bb:function(a){var s,r=this
 r.bC(a)
 r.a.toString
 s=r.r
@@ -43527,7 +43530,7 @@ return new K.LZ(new K.LY(new P.aR(t.V)),s,s,s,s,s,s,s,s,s,s,!1,!1,s,C.v)}}
 K.LZ.prototype={
 aN:function(){this.Wb()
 this.e=this.a.c},
-ba:function(a){var s,r=this
+bb:function(a){var s,r=this
 r.bC(a)
 s=a.c
 if(s!==r.a.c){r.e=s
@@ -43584,12 +43587,12 @@ p.D(0,C.aX)
 b.a.toString
 j=n==null?a:n.X(p)
 f=j
-if(f==null)f=P.aI(31,m.gi(m)>>>16&255,m.gi(m)>>>8&255,m.gi(m)&255)
+if(f==null)f=P.aJ(31,m.gi(m)>>>16&255,m.gi(m)>>>8&255,m.gi(m)&255)
 o.D(0,C.aX)
 b.a.toString
 n=n==null?a:n.X(o)
 e=n
-if(e==null)e=P.aI(31,m.gi(m)>>>16&255,m.gi(m)>>>8&255,m.gi(m)&255)
+if(e==null)e=P.aJ(31,m.gi(m)>>>16&255,m.gi(m)>>>8&255,m.gi(m)&255)
 b.a.toString
 n=s.c
 n=n==null?a:n.X(b.geV())
@@ -43680,7 +43683,7 @@ s.toString
 a.hB(0,b.V(0,r),b.V(0,s),d)},
 at:function(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g=this
 g.PC(a,b.fX(C.m))
-s=H.aH()
+s=H.aI()
 r=s?H.be():new H.b2(new H.b4())
 s=g.dx
 s.toString
@@ -43696,7 +43699,7 @@ o=s?p.gi(p):1-p.gi(p)
 if(g.fr===!1||g.dy===!1){n=g.dy===!1?1-o:o
 m=g.J3(q,n)
 l=g.fx.lh(g.fy).rB(m)
-s=H.aH()
+s=H.aI()
 k=s?H.be():new H.b2(new H.b4())
 k.sar(0,g.GC(n))
 if(n<=0.5){s=g.fx
@@ -43707,7 +43710,7 @@ j.lh(g.fy).at(a,m)}else{a.c6(0,l,k)
 i=(n-0.5)*2
 if(g.fr==null||g.dy==null)g.yw(a,q,i,r)
 else g.yv(a,q,i,r)}}else{m=g.J3(q,1)
-s=H.aH()
+s=H.aI()
 k=s?H.be():new H.b2(new H.b4())
 k.sar(0,g.GC(1))
 a.c6(0,g.fx.lh(g.fy).rB(m),k)
@@ -43906,7 +43909,7 @@ n:function(a){var s=this.d
 if(s!=null)s.b.D6(s)
 this.gdu().n(0)
 this.V6(0)},
-ba:function(a){var s,r=this
+bb:function(a){var s,r=this
 r.bC(a)
 s=r.a
 if(s.z!==a.z)switch(r.gdu().giU()){case C.a9:case C.N:s=r.gdu()
@@ -44194,7 +44197,7 @@ a03:function(){var s=this
 if(s.x!==s.gbK(s).gfs())s.aA(new K.afS(s))},
 a04:function(a){if(this.c==null)return
 this.aA(new K.afV(this,a))},
-ba:function(a){var s,r=this
+bb:function(a){var s,r=this
 r.bC(a)
 s=a.go
 if(r.a.go!=s){if(s!=null)s.a2(0,r.gtg())
@@ -44386,7 +44389,7 @@ K.pd.prototype={
 gH:function(){return this.$ti.j("dK<1>").a(N.al.prototype.gH.call(this))},
 q7:function(a){this.Fa(a)
 this.$ti.j("dK<1>").a(N.al.prototype.gH.call(this)).Q.$1(a)},
-ba:function(a){var s,r=this
+bb:function(a){var s,r=this
 r.bC(a)
 s=r.$ti.j("dK<1>")
 if(!J.f(a.f,s.a(N.al.prototype.gH.call(r)).f))r.d=s.a(N.al.prototype.gH.call(r)).f}}
@@ -44580,12 +44583,12 @@ case C.E:s=q.ch
 if(!s.l(0,C.c3))a.d8(0,P.a7f(b,s.c,s.d,s.a,s.b),c)
 else a.co(0,b,c)
 break}a.bx(0)},
-wh:function(a,b){var s,r,q,p,o=this,n=H.aH(),m=n?H.be():new H.b2(new H.b4())
+wh:function(a,b){var s,r,q,p,o=this,n=H.aI(),m=n?H.be():new H.b2(new H.b4())
 n=o.e
 s=o.dx
 if(s==null)s=H.d(H.p("_alpha"))
 r=s.a
-m.sar(0,P.aI(s.b.al(0,r.gi(r)),n.gi(n)>>>16&255,n.gi(n)>>>8&255,n.gi(n)&255))
+m.sar(0,P.aJ(s.b.al(0,r.gi(r)),n.gi(n)>>>16&255,n.gi(n)>>>8&255,n.gi(n)&255))
 q=T.a4o(b)
 n=o.cy
 if(n!=null)p=n.$0()
@@ -44679,10 +44682,10 @@ s=n.a
 r=n.b.al(0,s.gi(s))}else{n=o.fy
 if(n==null)n=H.d(H.p("_fadeOut"))
 s=n.a
-r=n.b.al(0,s.gi(s))}n=H.aH()
+r=n.b.al(0,s.gi(s))}n=H.aI()
 q=n?H.be():new H.b2(new H.b4())
 n=o.e
-q.sar(0,P.aI(r,n.gi(n)>>>16&255,n.gi(n)>>>8&255,n.gi(n)&255))
+q.sar(0,P.aJ(r,n.gi(n)>>>16&255,n.gi(n)>>>8&255,n.gi(n)&255))
 n=P.m7(o.z,o.b.r2.fX(C.m),C.bn.al(0,o.gtI().gbv()))
 n.toString
 s=o.dx
@@ -44730,12 +44733,12 @@ s.gu_().n(0)
 s.fy.n(0)
 s.fy=null
 s.m9(0)},
-wh:function(a,b){var s,r,q,p=this,o=H.aH(),n=o?H.be():new H.b2(new H.b4())
+wh:function(a,b){var s,r,q,p=this,o=H.aI(),n=o?H.be():new H.b2(new H.b4())
 o=p.e
 s=p.fx
 if(s==null)s=H.d(H.p("_alpha"))
 r=s.a
-n.sar(0,P.aI(s.b.al(0,r.gi(r)),o.gi(o)>>>16&255,o.gi(o)>>>8&255,o.gi(o)&255))
+n.sar(0,P.aJ(s.b.al(0,r.gi(r)),o.gi(o)>>>16&255,o.gi(o)>>>8&255,o.gi(o)&255))
 q=p.z
 if(p.db)q=P.m7(q,p.b.r2.fX(C.m),p.gu_().gbv())
 q.toString
@@ -44786,7 +44789,7 @@ this.Il()},
 a6Y:function(){return this.Kh(null)},
 aN:function(){this.Wg()
 $.E.w$.f.d.D(0,this.gIk())},
-ba:function(a){var s,r=this
+bb:function(a){var s,r=this
 r.bC(a)
 s=r.a
 s.toString
@@ -45097,7 +45100,7 @@ p=q.x.al(0,p.gi(p))
 p.toString
 s=P.asn(p,q.r)
 if((s.gi(s)>>>24&255)>0){p=o.dS(n,q.f)
-r=H.aH()
+r=H.aI()
 r=r?H.be():new H.b2(new H.b4())
 r.sar(0,s)
 r.sdd(0,C.b2)
@@ -45127,7 +45130,7 @@ r.y=new R.fj(C.aU,r.a.r)},
 n:function(a){this.gf0().n(0)
 this.gp7().n(0)
 this.W7(0)},
-ba:function(a){var s,r=this
+bb:function(a){var s,r=this
 r.bC(a)
 s=a.c
 if(!r.a.c.l(0,s)){r.r=new L.B3(s,r.a.c)
@@ -45173,7 +45176,7 @@ s.a.push(r.gze())},
 n:function(a){this.gf0().n(0)
 this.We(0)},
 zf:function(){this.aA(new L.ah9())},
-ba:function(a){var s,r=this
+bb:function(a){var s,r=this
 r.bC(a)
 s=r.a.r!=null
 if(s!==(a.r!=null)||!1)if(s){r.f=r.oO()
@@ -45866,7 +45869,7 @@ gHx:function(){var s,r=this
 r.ga9(r).toString
 s=r.ga9(r)
 return s.db!==C.pA},
-ba:function(a){var s,r,q,p,o,n=this
+bb:function(a){var s,r,q,p,o,n=this
 n.bC(a)
 s=a.c
 if(!n.a.c.l(0,s))n.r=null
@@ -45894,12 +45897,12 @@ s=q.ga9(q).x2
 s.toString
 if(s)return a.x2
 s=a.K.z.a
-r=P.aI(97,s>>>16&255,s>>>8&255,s&255)
+r=P.aJ(97,s>>>16&255,s>>>8&255,s&255)
 if(q.a.x){q.ga9(q).toString
 s=!0}else s=!1
 if(s){q.ga9(q).toString
 s=a.db.a
-return P.asn(P.aI(31,s>>>16&255,s>>>8&255,s&255),r)}return r},
+return P.asn(P.aJ(31,s>>>16&255,s>>>8&255,s&255),r)}return r},
 a18:function(a){var s,r=this
 if(r.ga9(r).x2!==!0)return C.aU
 if(r.ga9(r).y1!=null){s=r.ga9(r).y1
@@ -46701,7 +46704,7 @@ return}if(a){s=this.a
 r=s.e
 r.toString
 r.$1(s.c)}},
-ba:function(a){var s
+bb:function(a){var s
 this.bC(a)
 s=this.a
 if(s.c===s.d!==(a.c===a.d))this.LT()},
@@ -46755,12 +46758,12 @@ r.D(0,C.aX)
 e.a.toString
 l=p==null?d:p.X(r)
 h=l
-if(h==null)h=P.aI(31,o.gi(o)>>>16&255,o.gi(o)>>>8&255,o.gi(o)&255)
+if(h==null)h=P.aJ(31,o.gi(o)>>>16&255,o.gi(o)>>>8&255,o.gi(o)&255)
 q.D(0,C.aX)
 e.a.toString
 p=p==null?d:p.X(q)
 g=p
-if(g==null)g=P.aI(31,o.gi(o)>>>16&255,o.gi(o)>>>8&255,o.gi(o)&255)
+if(g==null)g=P.aJ(31,o.gi(o)>>>16&255,o.gi(o)>>>8&255,o.gi(o)&255)
 p=e.a
 l=p.c
 p=p.d
@@ -46803,7 +46806,7 @@ Y.Pl.prototype={
 at:function(a,b){var s,r,q,p,o,n=this
 n.PC(a,b.fX(C.m))
 s=new P.B(0,0,0+b.a,0+b.b).gbo()
-r=H.aH()
+r=H.aI()
 q=r?H.be():new H.b2(new H.b4())
 r=n.f
 r.toString
@@ -47009,7 +47012,7 @@ r.KV()
 r.a.r.si(0,1)},
 n:function(a){this.gmD().n(0)
 this.Wc(0)},
-ba:function(a){var s,r,q,p=this
+bb:function(a){var s,r,q,p=this
 p.bC(a)
 s=p.a
 r=a.c
@@ -47146,7 +47149,7 @@ r.fx=C.vW
 r.fy=s
 r.fr=G.c_(q,new P.aU(4e5),0,q,1,1,r)
 r.id=G.c_(q,C.a3,0,q,1,q,r)},
-ba:function(a){var s=this,r=s.a
+bb:function(a){var s=this,r=s.a
 r=r.x
 if(r!=a.x)s.a4u(r==null?C.oZ:r)
 s.a.toString
@@ -47307,7 +47310,7 @@ q=this.b4$
 if(q!=null)for(q=P.cJ(q,q.r),r=H.r(q).c;q.t();)r.a(q.d).sdm(0,s)
 this.cm()}}
 M.C5.prototype={
-ba:function(a){this.bC(a)
+bb:function(a){this.bC(a)
 this.qf()},
 aM:function(){var s,r,q,p,o=this
 o.VL()
@@ -47384,24 +47387,24 @@ switch(k.cx){case C.ad:k=l.a
 p=k>>>16&255
 o=k>>>8&255
 k&=255
-s.$1(P.aI(153,p,o,k))
-r.$1(P.aI(C.d.aZ(127.5),p,o,k))
+s.$1(P.aJ(153,p,o,k))
+r.$1(P.aJ(C.d.aZ(127.5),p,o,k))
 if(n.gmU()){k=n.c
 k.toString
 k=K.as(k).dx.a
-k=P.aI(255,k>>>16&255,k>>>8&255,k&255)}else k=P.aI(C.d.aZ(25.5),p,o,k)
+k=P.aJ(255,k>>>16&255,k>>>8&255,k&255)}else k=P.aJ(C.d.aZ(25.5),p,o,k)
 q.$1(k)
 break
 case C.aj:k=l.a
 p=k>>>16&255
 o=k>>>8&255
 k&=255
-s.$1(P.aI(191,p,o,k))
-r.$1(P.aI(166,p,o,k))
+s.$1(P.aJ(191,p,o,k))
+r.$1(P.aJ(166,p,o,k))
 if(n.gmU()){k=n.c
 k.toString
 k=K.as(k).dx.a
-k=P.aI(255,k>>>16&255,k>>>8&255,k&255)}else k=P.aI(C.d.aZ(76.5),p,o,k)
+k=P.aJ(255,k>>>16&255,k>>>8&255,k&255)}else k=P.aJ(C.d.aZ(76.5),p,o,k)
 q.$1(k)
 break}return new V.eq(new E.ahX(n,new E.ahR(m),new E.ahT(m),new E.ahV(m)),t.h2)},
 ga7D:function(){var s=this.gmj()
@@ -47634,18 +47637,18 @@ X:function(a){var s
 if(a.B(0,C.aH)){s=this.b
 if(s==null)s=null
 else{s=s.a
-s=P.aI(97,s>>>16&255,s>>>8&255,s&255)}return s}return this.a},
+s=P.aJ(97,s>>>16&255,s>>>8&255,s&255)}return s}return this.a},
 k:function(a){var s=this.b
 if(s==null)s=null
 else{s=s.a
-s=P.aI(97,s>>>16&255,s>>>8&255,s&255)}return"{disabled: "+H.c(s)+", otherwise: "+H.c(this.a)+"}"}}
+s=P.aJ(97,s>>>16&255,s>>>8&255,s&255)}return"{disabled: "+H.c(s)+", otherwise: "+H.c(this.a)+"}"}}
 U.QV.prototype={
 X:function(a){var s
 if(a.B(0,C.aq)){s=this.a
-return P.aI(10,s.gi(s)>>>16&255,s.gi(s)>>>8&255,s.gi(s)&255)}if(a.B(0,C.aN)||a.B(0,C.aX)){s=this.a
-return P.aI(31,s.gi(s)>>>16&255,s.gi(s)>>>8&255,s.gi(s)&255)}return null},
+return P.aJ(10,s.gi(s)>>>16&255,s.gi(s)>>>8&255,s.gi(s)&255)}if(a.B(0,C.aN)||a.B(0,C.aX)){s=this.a
+return P.aJ(31,s.gi(s)>>>16&255,s.gi(s)>>>8&255,s.gi(s)&255)}return null},
 k:function(a){var s=this.a
-return"{hovered: "+P.aI(10,s.gi(s)>>>16&255,s.gi(s)>>>8&255,s.gi(s)&255).k(0)+", focused,pressed: "+P.aI(31,s.gi(s)>>>16&255,s.gi(s)>>>8&255,s.gi(s)&255).k(0)+", otherwise: null}"}}
+return"{hovered: "+P.aJ(10,s.gi(s)>>>16&255,s.gi(s)>>>8&255,s.gi(s)&255).k(0)+", focused,pressed: "+P.aJ(31,s.gi(s)>>>16&255,s.gi(s)>>>8&255,s.gi(s)&255).k(0)+", otherwise: null}"}}
 U.QU.prototype={
 X:function(a){if(a.B(0,C.aH))return this.b
 return this.a}}
@@ -47797,7 +47800,7 @@ return!0
 case C.fK:return!0}},
 aM:function(){this.Wl()
 this.gjz().sd6(this.gKE())},
-ba:function(a){var s=this
+bb:function(a){var s=this
 s.Wm(a)
 s.a.toString
 s.gjz().sd6(s.gKE())
@@ -47852,7 +47855,7 @@ l=b1.a
 if(l==null)l=n.giC()
 k=b1.b
 if(k==null){o=n.giC()
-k=P.aI(102,o.gi(o)>>>16&255,o.gi(o)>>>8&255,o.gi(o)&255)}j=new P.n(-2/b4.R(t.w).f.b,0)
+k=P.aJ(102,o.gi(o)>>>16&255,o.gi(o)>>>8&255,o.gi(o)&255)}j=new P.n(-2/b4.R(t.w).f.b,0)
 i=k
 h=!0
 g=!0
@@ -47865,7 +47868,7 @@ l=b1.a
 if(l==null)l=n.giC()
 k=b1.b
 if(k==null){o=n.giC()
-k=P.aI(102,o.gi(o)>>>16&255,o.gi(o)>>>8&255,o.gi(o)&255)}j=new P.n(-2/b4.R(t.w).f.b,0)
+k=P.aJ(102,o.gi(o)>>>16&255,o.gi(o)>>>8&255,o.gi(o)&255)}j=new P.n(-2/b4.R(t.w).f.b,0)
 a9.a=new Z.ak0(a7)
 i=a8
 h=!0
@@ -47878,7 +47881,7 @@ l=b1.a
 if(l==null)l=b0.K.a
 k=b1.b
 if(k==null){o=b0.K.a
-k=P.aI(102,o.gi(o)>>>16&255,o.gi(o)>>>8&255,o.gi(o)&255)}f=a8
+k=P.aJ(102,o.gi(o)>>>16&255,o.gi(o)>>>8&255,o.gi(o)&255)}f=a8
 i=f
 j=i
 h=!1
@@ -47890,7 +47893,7 @@ l=b1.a
 if(l==null)l=b0.K.a
 k=b1.b
 if(k==null){o=b0.K.a
-k=P.aI(102,o.gi(o)>>>16&255,o.gi(o)>>>8&255,o.gi(o)&255)}f=a8
+k=P.aJ(102,o.gi(o)>>>16&255,o.gi(o)>>>8&255,o.gi(o)&255)}f=a8
 i=f
 j=i
 h=!1
@@ -47982,7 +47985,7 @@ Z.akJ.prototype={
 $2:function(a,b){if(!a.a)a.a2(0,b)},
 $S:54}
 Z.D1.prototype={
-ba:function(a){this.bC(a)
+bb:function(a){this.bC(a)
 this.qf()},
 aM:function(){var s,r,q,p,o=this
 o.cm()
@@ -48011,7 +48014,7 @@ og:function(a,b){switch(a){case C.f5:return C.DR
 case C.f6:return C.m
 default:return C.DP}}}
 F.QY.prototype={
-at:function(a,b){var s,r,q,p=H.aH(),o=p?H.be():new H.b2(new H.b4())
+at:function(a,b){var s,r,q,p=H.aI(),o=p?H.be():new H.b2(new H.b4())
 o.sar(0,this.b)
 s=b.a/2
 r=P.mf(new P.n(s,s),s)
@@ -48748,7 +48751,7 @@ PC:function(a,b){var s,r,q,p,o=this,n=o.b
 if(n.gbg(n)===C.N){n=o.c
 if(n.gbg(n)===C.N){n=o.d
 n=n.gbg(n)!==C.N}else n=!0}else n=!0
-if(n){n=H.aH()
+if(n){n=H.aI()
 s=n?H.be():new H.b2(new H.b4())
 n=o.r
 n.toString
@@ -48919,12 +48922,12 @@ s=K.as(b).bq
 r=k.a1.z
 if(k.K.cx===C.aj){r.toString
 q=r.MY(C.B,m.HG())
-p=new S.b9(P.aI(C.d.aZ(229.5),255,255,255),l,l,C.fe,l,l,C.E)}else{r.toString
+p=new S.b9(P.aJ(C.d.aZ(229.5),255,255,255),l,l,C.fe,l,l,C.E)}else{r.toString
 q=r.MY(C.w,m.HG())
 r=C.aG.h(0,700)
 r.toString
 r=r.a
-p=new S.b9(P.aI(C.d.aZ(229.5),r>>>16&255,r>>>8&255,r&255),l,l,C.fe,l,l,C.E)}m.a.toString
+p=new S.b9(P.aJ(C.d.aZ(229.5),r>>>16&255,r>>>8&255,r&255),l,l,C.fe,l,l,C.E)}m.a.toString
 r=s.a
 m.d=r==null?m.a14():r
 m.a.toString
@@ -49151,13 +49154,13 @@ k:function(a){return this.b}}
 Y.cQ.prototype={
 bN:function(a,b){var s=Math.max(0,this.b*b),r=b<=0?C.az:this.c
 return new Y.cQ(this.a,s,r)},
-kA:function(){switch(this.c){case C.aa:var s=H.aH()
+kA:function(){switch(this.c){case C.aa:var s=H.aI()
 s=s?H.be():new H.b2(new H.b4())
 s.sar(0,this.a)
 s.si2(this.b)
 s.sdd(0,C.at)
 return s
-case C.az:s=H.aH()
+case C.az:s=H.aI()
 s=s?H.be():new H.b2(new H.b4())
 s.sar(0,C.aU)
 s.si2(0)
@@ -49382,7 +49385,7 @@ break}},
 Zz:function(a,b,c){var s,r,q,p,o,n,m=this.b.e
 if(m==null)return
 for(s=m.length,r=0;r<m.length;m.length===s||(0,H.U)(m),++r){q=m[r]
-p=H.aH()
+p=H.aI()
 o=p?H.be():new H.b2(new H.b4())
 o.sar(0,q.a)
 o.sCu(new P.r_(C.kf,q.c*0.57735+0.5))
@@ -49399,7 +49402,7 @@ m=n==null
 if(!m||!1){s=p.c
 if(s!=null)r=!1
 else r=!0
-if(r){s=H.aH()
+if(r){s=H.aI()
 q=s?H.be():new H.b2(new H.b4())
 if(!m)q.sar(0,n)
 p.c=q
@@ -49413,7 +49416,7 @@ U.jT.prototype={
 k:function(a){return this.b}}
 U.G7.prototype={}
 O.bt.prototype={
-kA:function(){var s=H.aH(),r=s?H.be():new H.b2(new H.b4())
+kA:function(){var s=H.aI(),r=s?H.be():new H.b2(new H.b4())
 r.sar(0,this.a)
 r.sCu(new P.r_(C.kf,this.c*0.57735+0.5))
 return r},
@@ -49460,7 +49463,7 @@ case C.kp:a.$1(!0)
 break
 case C.eC:a.$1(!0)
 s=q.gcE(q)
-r=H.aH()
+r=H.aI()
 s.fe(0,c,r?H.be():new H.b2(new H.b4()))
 break}d.$0()
 if(b===C.eC)q.gcE(q).bx(0)
@@ -50162,7 +50165,7 @@ r=this.b
 if(s===0)a.d8(0,r.X(c).hW(b),n.kA())
 else{q=r.X(c).hW(b)
 p=q.iv(-s)
-r=H.aH()
+r=H.aI()
 o=r?H.be():new H.b2(new H.b4())
 o.sar(0,n.a)
 a.h1(0,q,p,o)}break}},
@@ -50229,7 +50232,7 @@ a.d8(0,r.hW(n.xP(b)),m.kA())}else{r=n.xO(b,c)
 r.toString
 q=r.hW(n.xP(b))
 p=q.iv(-s)
-r=H.aH()
+r=H.aI()
 o=r?H.be():new H.b2(new H.b4())
 o.sar(0,m.a)
 a.h1(0,q,p,o)}break}},
@@ -50271,20 +50274,20 @@ o.cw(0,60,60)
 o.cw(0,20,60)
 o.d1(0)
 n=[b,q,p,o]
-m=H.aH()
+m=H.aI()
 m=m?H.be():new H.b2(new H.b4())
 m.snv(!0)
 m.sdd(0,C.b2)
-l=H.aH()
+l=H.aI()
 l=l?H.be():new H.b2(new H.b4())
 l.snv(!1)
 l.sdd(0,C.b2)
-k=H.aH()
+k=H.aI()
 k=k?H.be():new H.b2(new H.b4())
 k.snv(!0)
 k.sdd(0,C.at)
 k.si2(10)
-j=H.aH()
+j=H.aI()
 j=j?H.be():new H.b2(new H.b4())
 j.snv(!0)
 j.sdd(0,C.at)
@@ -50310,7 +50313,7 @@ for(m=[0,0.5],g=0;g<2;++g){c=m[g]
 a.bE(0)
 a.af(0,c,c)
 a.jW(0,new P.hA(8,8,328,248,16,16,16,16,16,16,16,16,!0))
-l=H.aH()
+l=H.aI()
 a.co(0,C.HH,l?H.be():new H.b2(new H.b4()))
 a.bx(0)
 a.af(0,0,0)}a.af(0,0,0)
@@ -50342,7 +50345,7 @@ a5G:function(a,b){var s,r,q=this
 if(a.l(0,q.c)&&b==q.d)return
 if(q.r==null)s=q.b.a!=null||!1
 else s=!1
-if(s){s=H.aH()
+if(s){s=H.aI()
 s=s?H.be():new H.b2(new H.b4())
 q.r=s
 r=q.b.a
@@ -50725,7 +50728,7 @@ E0:function(a){var s,r,q=this,p=q.geJ(),o=q.r
 o=o==null?null:o*a
 s=q.dy
 if(s==null){s=q.c
-if(s!=null){r=H.aH()
+if(s!=null){r=H.aI()
 r=r?H.be():new H.b2(new H.b4())
 r.sar(0,s)
 s=r}else s=null}return P.ap_(s,q.b,q.fr,q.fx,q.fy,q.go,q.d,p,q.k2,o,q.y,q.x,q.dx,q.cx,q.cy,q.z,q.db,q.k1,q.ch,q.Q)},
@@ -51279,7 +51282,7 @@ r.eA(s)
 r.L=s}else p.sqX(q)
 r.a7=a},
 ge5:function(){var s=this,r=s.ae
-if(r==null){r=H.aH()
+if(r==null){r=H.aI()
 r=r?H.be():new H.b2(new H.b4())
 r=new D.AM(s.ga4J(),r,C.m,new P.aR(t.V))
 if(s.ae==null)s.ae=r
@@ -52177,10 +52180,10 @@ if(h==null)a.co(0,i,o)
 else a.d8(0,P.aoN(i,h),o)}f.c.$1(i)}o=f.r
 if(o==null)g=null
 else{o=o.a
-g=P.aI(191,o>>>16&255,o>>>8&255,o&255)}if(r||g==null||!f.b)return
+g=P.aJ(191,o>>>16&255,o>>>8&255,o&255)}if(r||g==null||!f.b)return
 r=P.aoN(s.c5(c.gez()),C.fZ)
 o=f.f
-if(o==null){o=H.aH()
+if(o==null){o=H.aI()
 o=o?H.be():new H.b2(new H.b4())
 if(f.f==null)f.f=o
 else o=H.d(H.c9("floatingCursorPaint"))}o.sar(0,g)
@@ -52230,7 +52233,7 @@ n=b.a
 m=b.b
 l=o.a
 o=o.b
-k=H.aH()
+k=H.aI()
 k=k?H.be():new H.b2(new H.b4())
 k.sar(0,$.az2())
 p.co(0,new P.B(n,m,n+l,m+o),k)
@@ -53905,7 +53908,7 @@ r=b.a
 q=b.b
 p=new P.B(r,q,r+s.a,q+s.b)
 if(g.an!=null){s=a.gcE(a)
-r=H.aH()
+r=H.aI()
 s.fe(0,p,r?H.be():new H.b2(new H.b4()))}else a.gcE(a).bE(0)
 a.gcE(a).jX(0,p)}s=g.E
 r=a.gcE(a)
@@ -53933,7 +53936,7 @@ k.toString
 i=n.a(k).a_$
 f.a=i;++l
 q=i}if(g.ae){if(g.an!=null){a.gcE(a).af(0,r,o)
-s=H.aH()
+s=H.aI()
 h=s?H.be():new H.b2(new H.b4())
 h.sMi(C.hn)
 h.sEI(g.an)
@@ -59260,7 +59263,7 @@ U.cg.prototype={}
 U.hf.prototype={
 bL:function(a){return this.b.$1(a)}}
 U.TR.prototype={
-acL:function(a,b,c){if(a instanceof U.cg)return a.b9(b,c)
+acL:function(a,b,c){if(a instanceof U.cg)return a.ba(b,c)
 else return a.bL(b)}}
 U.fH.prototype={
 av:function(){return new U.A3(P.b7(t.od),new P.F(),C.v)}}
@@ -59292,7 +59295,7 @@ if(n.a>0){n.b=n.c=n.d=n.e=null
 n.a=0}C.b.v(o.a,p)}for(l=q.gU(q);l.t();){o=l.gG(l).a
 o.b=!0
 o.a.push(p)}m.d=s},
-ba:function(a){this.bC(a)
+bb:function(a){this.bC(a)
 this.KU()},
 n:function(a){var s,r,q,p,o,n=this
 n.bk(0)
@@ -59344,7 +59347,7 @@ if(p!==n)m.a.y.$1(n)
 if(q!==o)m.a.z.$1(o)},
 tS:function(a){return this.IF(null,a)},
 a4j:function(a){return this.IF(a,null)},
-ba:function(a){this.bC(a)
+bb:function(a){this.bC(a)
 if(this.a.c!==a.c)$.c4.fx$.push(new U.agQ(this,a))},
 gYX:function(){var s,r=this.c
 r.toString
@@ -59452,7 +59455,7 @@ s.a7T()
 $.E.toString
 s.f=s.JN($.bg().b.a.f,s.a.k3)
 $.E.aI$.push(s)},
-ba:function(a){this.bC(a)
+bb:function(a){this.bC(a)
 this.Le(a)},
 n:function(a){var s
 C.b.v($.E.aI$,this)
@@ -59611,7 +59614,7 @@ av:function(){return new L.A7(C.v)}}
 L.A7.prototype={
 aN:function(){this.bi()
 this.G7()},
-ba:function(a){this.bC(a)
+bb:function(a){this.bC(a)
 this.G7()},
 G7:function(){this.e=new U.fT(this.a.c,this.gZ7(),null,t.Jc)},
 n:function(a){var s,r,q=this.d
@@ -60331,7 +60334,7 @@ r=b.a
 q=b.b
 p=s.a
 s=s.b
-o=H.aH()
+o=H.aI()
 o=o?H.be():new H.b2(new H.b4())
 o.sar(0,n.bj)
 m.co(0,new P.B(r,q,r+p,q+s),o)}m=n.q$
@@ -60643,152 +60646,152 @@ return o}}
 E.Fv.prototype={}
 E.MF.prototype={
 AX:function(a){return!1},
-b9:function(a,b){},
-bL:function(a){return this.b9(a,null)}}
+ba:function(a,b){},
+bL:function(a){return this.ba(a,null)}}
 E.MY.prototype={
-b9:function(a,b){var s=this.gcN().r
+ba:function(a,b){var s=this.gcN().r
 s=$.E.w$.Q.h(0,s).gC()
 s.toString
 t.E.a(s).abg(C.U)},
-bL:function(a){return this.b9(a,null)}}
+bL:function(a){return this.ba(a,null)}}
 E.MZ.prototype={
-b9:function(a,b){var s=this.gcN().r
+ba:function(a,b){var s=this.gcN().r
 s=$.E.w$.Q.h(0,s).gC()
 s.toString
 t.E.a(s).abh(C.U)},
-bL:function(a){return this.b9(a,null)}}
+bL:function(a){return this.ba(a,null)}}
 E.N_.prototype={
-b9:function(a,b){var s=this.gcN().r
+ba:function(a,b){var s=this.gcN().r
 s=$.E.w$.Q.h(0,s).gC()
 s.toString
 t.E.a(s).abi(C.U)},
-bL:function(a){return this.b9(a,null)}}
+bL:function(a){return this.ba(a,null)}}
 E.N0.prototype={
-b9:function(a,b){var s=this.gcN().r
+ba:function(a,b){var s=this.gcN().r
 s=$.E.w$.Q.h(0,s).gC()
 s.toString
 t.E.a(s).abj(C.U)},
-bL:function(a){return this.b9(a,null)}}
+bL:function(a){return this.ba(a,null)}}
 E.N1.prototype={
-b9:function(a,b){var s=this.gcN().r
+ba:function(a,b){var s=this.gcN().r
 s=$.E.w$.Q.h(0,s).gC()
 s.toString
 t.E.a(s).abl(C.U)},
-bL:function(a){return this.b9(a,null)}}
+bL:function(a){return this.ba(a,null)}}
 E.N2.prototype={
-b9:function(a,b){var s=this.gcN().r
+ba:function(a,b){var s=this.gcN().r
 s=$.E.w$.Q.h(0,s).gC()
 s.toString
 t.E.a(s).abn(C.U)},
-bL:function(a){return this.b9(a,null)}}
+bL:function(a){return this.ba(a,null)}}
 E.N3.prototype={
-b9:function(a,b){var s=this.gcN().r
+ba:function(a,b){var s=this.gcN().r
 s=$.E.w$.Q.h(0,s).gC()
 s.toString
 t.E.a(s).NL(C.U,!1,!0)},
-bL:function(a){return this.b9(a,null)}}
+bL:function(a){return this.ba(a,null)}}
 E.N4.prototype={
-b9:function(a,b){var s=this.gcN().r
+ba:function(a,b){var s=this.gcN().r
 s=$.E.w$.Q.h(0,s).gC()
 s.toString
 t.E.a(s).abo(C.U,!1)},
-bL:function(a){return this.b9(a,null)}}
+bL:function(a){return this.ba(a,null)}}
 E.N5.prototype={
-b9:function(a,b){var s=this.gcN().r
+ba:function(a,b){var s=this.gcN().r
 s=$.E.w$.Q.h(0,s).gC()
 s.toString
 t.E.a(s).abm(C.U)},
-bL:function(a){return this.b9(a,null)}}
+bL:function(a){return this.ba(a,null)}}
 E.N6.prototype={
-b9:function(a,b){var s=this.gcN().r
+ba:function(a,b){var s=this.gcN().r
 s=$.E.w$.Q.h(0,s).gC()
 s.toString
 t.E.a(s).abq(C.U)},
-bL:function(a){return this.b9(a,null)}}
+bL:function(a){return this.ba(a,null)}}
 E.N7.prototype={
-b9:function(a,b){var s=this.gcN().r
+ba:function(a,b){var s=this.gcN().r
 s=$.E.w$.Q.h(0,s).gC()
 s.toString
 t.E.a(s).NM(C.U,!1,!0)},
-bL:function(a){return this.b9(a,null)}}
+bL:function(a){return this.ba(a,null)}}
 E.N8.prototype={
-b9:function(a,b){var s=this.gcN().r
+ba:function(a,b){var s=this.gcN().r
 s=$.E.w$.Q.h(0,s).gC()
 s.toString
 t.E.a(s).abr(C.U,!1)},
-bL:function(a){return this.b9(a,null)}}
+bL:function(a){return this.ba(a,null)}}
 E.N9.prototype={
-b9:function(a,b){var s=this.gcN().r
+ba:function(a,b){var s=this.gcN().r
 s=$.E.w$.Q.h(0,s).gC()
 s.toString
 t.E.a(s).abp(C.U)},
-bL:function(a){return this.b9(a,null)}}
+bL:function(a){return this.ba(a,null)}}
 E.Na.prototype={
-b9:function(a,b){var s=this.gcN().r
+ba:function(a,b){var s=this.gcN().r
 s=$.E.w$.Q.h(0,s).gC()
 s.toString
 t.E.a(s).abs(C.U)},
-bL:function(a){return this.b9(a,null)}}
+bL:function(a){return this.ba(a,null)}}
 E.Op.prototype={
-b9:function(a,b){var s=this.gcN().r
+ba:function(a,b){var s=this.gcN().r
 s=$.E.w$.Q.h(0,s).gC()
 s.toString
 t.E.a(s).Pk(C.U)},
-bL:function(a){return this.b9(a,null)}}
+bL:function(a){return this.ba(a,null)}}
 E.Os.prototype={
-b9:function(a,b){var s=this.gcN().r
+ba:function(a,b){var s=this.gcN().r
 s=$.E.w$.Q.h(0,s).gC()
 s.toString
 t.E.a(s).Pl(C.U)},
-bL:function(a){return this.b9(a,null)}}
+bL:function(a){return this.ba(a,null)}}
 E.Ov.prototype={
-b9:function(a,b){var s=this.gcN().r
+ba:function(a,b){var s=this.gcN().r
 s=$.E.w$.Q.h(0,s).gC()
 s.toString
 t.E.a(s).Pm(C.U)},
-bL:function(a){return this.b9(a,null)}}
+bL:function(a){return this.ba(a,null)}}
 E.Oy.prototype={
-b9:function(a,b){var s=this.gcN().r
+ba:function(a,b){var s=this.gcN().r
 s=$.E.w$.Q.h(0,s).gC()
 s.toString
 t.E.a(s).Pp(C.U)},
-bL:function(a){return this.b9(a,null)}}
+bL:function(a){return this.ba(a,null)}}
 E.Oq.prototype={
-b9:function(a,b){var s=this.gcN().r
+ba:function(a,b){var s=this.gcN().r
 s=$.E.w$.Q.h(0,s).gC()
 s.toString
 t.E.a(s).CA(C.U)},
-bL:function(a){return this.b9(a,null)}}
+bL:function(a){return this.ba(a,null)}}
 E.Or.prototype={
-b9:function(a,b){var s=this.gcN().r
+ba:function(a,b){var s=this.gcN().r
 s=$.E.w$.Q.h(0,s).gC()
 s.toString
 t.E.a(s).ady(C.U,!1)},
-bL:function(a){return this.b9(a,null)}}
+bL:function(a){return this.ba(a,null)}}
 E.Ot.prototype={
-b9:function(a,b){var s=this.gcN().r
+ba:function(a,b){var s=this.gcN().r
 s=$.E.w$.Q.h(0,s).gC()
 s.toString
 t.E.a(s).CB(C.U)},
-bL:function(a){return this.b9(a,null)}}
+bL:function(a){return this.ba(a,null)}}
 E.Ou.prototype={
-b9:function(a,b){var s=this.gcN().r
+ba:function(a,b){var s=this.gcN().r
 s=$.E.w$.Q.h(0,s).gC()
 s.toString
 t.E.a(s).adz(C.U,!1)},
-bL:function(a){return this.b9(a,null)}}
+bL:function(a){return this.ba(a,null)}}
 E.Ow.prototype={
-b9:function(a,b){var s=this.gcN().r
+ba:function(a,b){var s=this.gcN().r
 s=$.E.w$.Q.h(0,s).gC()
 s.toString
 t.E.a(s).Pn(C.U)},
-bL:function(a){return this.b9(a,null)}}
+bL:function(a){return this.ba(a,null)}}
 E.Ox.prototype={
-b9:function(a,b){var s=this.gcN().r
+ba:function(a,b){var s=this.gcN().r
 s=$.E.w$.Q.h(0,s).gC()
 s.toString
 t.E.a(s).Po(C.U)},
-bL:function(a){return this.b9(a,null)}}
+bL:function(a){return this.ba(a,null)}}
 E.Fw.prototype={}
 K.FE.prototype={
 gbu:function(a){var s=this.a
@@ -60864,7 +60867,7 @@ aM:function(){var s=this
 s.V8()
 s.c.R(t.BY)
 if(!s.dx)s.a.toString},
-ba:function(a){var s,r,q,p,o=this
+bb:function(a){var s,r,q,p,o=this
 o.bC(a)
 s=a.c
 if(o.a.c!==s){r=o.gyt()
@@ -61126,7 +61129,7 @@ a4L:function(){var s,r=this,q=$.E.w$.Q.h(0,r.r).gC()
 q.toString
 t.E.a(q)
 s=r.a.k3
-s=P.aI(C.d.aZ(255*r.ghm().gbv()),s.gi(s)>>>16&255,s.gi(s)>>>8&255,s.gi(s)&255)
+s=P.aJ(C.d.aZ(255*r.ghm().gbv()),s.gi(s)>>>16&255,s.gi(s)>>>8&255,s.gi(s)&255)
 q.ge5().sAO(s)
 q=r.a.cx&&r.ghm().gbv()>0
 r.f.si(0,q)},
@@ -61373,7 +61376,7 @@ s=a5.a98()
 r=a5.a
 q=r.c.a
 r=r.k3
-r=P.aI(C.d.aZ(255*a5.ghm().gbv()),r.gi(r)>>>16&255,r.gi(r)>>>8&255,r.gi(r)&255)
+r=P.aJ(C.d.aZ(255*a5.ghm().gbv()),r.gi(r)>>>16&255,r.gi(r)>>>8&255,r.gi(r)&255)
 p=a5.a
 o=p.r1
 n=p.y
@@ -61811,7 +61814,7 @@ dX:function(){this.me()
 var s=this.y
 if(s!=null)s.rd()
 this.x=!1},
-ba:function(a){var s,r,q=this
+bb:function(a){var s,r,q=this
 q.bC(a)
 s=q.a
 if(a.x==s.x){if(!J.f(s.e,q.gbK(q).e))q.gbK(q).e=q.a.e
@@ -62293,7 +62296,7 @@ gH:function(){var s=this.a
 s.toString
 return s},
 aN:function(){},
-ba:function(a){},
+bb:function(a){},
 aA:function(a){a.$0()
 this.c.hL()},
 dX:function(){},
@@ -62628,7 +62631,7 @@ s=p
 o.ch=!0
 q.a=t.lb.a(o.e)
 try{o.db=!0
-r=q.ba(s)}finally{o.db=!1}o.ra()},
+r=q.bb(s)}finally{o.db=!1}o.ra()},
 uk:function(){this.TD()
 this.hL()},
 dX:function(){this.y1.dX()
@@ -62954,7 +62957,7 @@ s=q.a
 r=s.r
 q.e=r==null?new D.Mx(q):r
 q.A0(s.d)},
-ba:function(a){var s,r=this
+bb:function(a){var s,r=this
 r.bC(a)
 if(!(a.r==null&&r.a.r==null)){s=r.a.r
 r.e=s==null?new D.Mx(r):s}r.A0(r.a.d)},
@@ -63410,7 +63413,7 @@ if(m==null)m=1
 l=this.e
 if(l==null){q=p.a
 q.toString
-l=q}if(m!==1)l=P.aI(C.d.aZ(255*((l.gi(l)>>>24&255)/255*m)),l.gi(l)>>>16&255,l.gi(l)>>>8&255,l.gi(l)&255)
+l=q}if(m!==1)l=P.aJ(C.d.aZ(255*((l.gi(l)>>>24&255)/255*m)),l.gi(l)>>>16&255,l.gi(l)>>>8&255,l.gi(l)&255)
 q=H.hz(i.a)
 k=T.auk(j,j,C.tc,!0,j,Q.mE(j,j,A.tx(j,j,l,j,j,j,j,j,"MaterialIcons",j,j,n,j,j,j,j,!1,j,j,j,j,j,j,j),q),C.al,s,j,1,C.aP)
 if(i.d)switch(s){case C.D:i=new E.bm(new Float64Array(16))
@@ -63475,7 +63478,7 @@ s.toString
 if(U.dz(s))r.a4d()
 else r.Kt(!0)
 r.cm()},
-ba:function(a){var s=this
+bb:function(a){var s=this
 s.bC(a)
 if(s.r)s.a.toString
 if(!s.a.c.l(0,a.c))s.JL()},
@@ -63595,7 +63598,7 @@ s.bi()
 s.gl_().d0(new G.a38(s))
 s.GM()
 s.Br()},
-ba:function(a){var s,r=this
+bb:function(a){var s,r=this
 r.bC(a)
 if(r.a.c!==a.c){s=r.gl_()
 r.e=S.cl(r.a.c,s,null)}r.gl_().e=r.a.d
@@ -63919,7 +63922,7 @@ n=o instanceof H.cR?H.er(o):null
 if(m===H.aY(n==null?H.aV(o):n)){p.xd(o)
 m=!1}else m=!0
 if(m)return!0}return!1},
-ba:function(a){var s,r=this
+bb:function(a){var s,r=this
 r.bC(a)
 if(r.a.c.l(0,a.c)){r.a.toString
 s=r.Zo(a)}else s=!0
@@ -64336,7 +64339,7 @@ r.L1()}},
 L1:function(){var s=this,r=s.Q,q=s.a
 if(r!=null)s.ch=C.b.V(q.y,H.a([r],t.tc))
 else s.ch=q.y},
-ba:function(a){var s,r,q,p=this
+bb:function(a){var s,r,q,p=this
 p.Vf(a)
 s=a.y
 if(s!==p.a.y){for(r=s.length,q=0;q<r;++q)s[q].a=null
@@ -64681,7 +64684,7 @@ q=this.b4$
 if(q!=null)for(q=P.cJ(q,q.r),r=H.r(q).c;q.t();)r.a(q.d).sdm(0,s)
 this.cm()}}
 K.BC.prototype={
-ba:function(a){this.bC(a)
+bb:function(a){this.bC(a)
 this.qf()},
 aM:function(){var s,r,q,p,o=this
 o.Vc()
@@ -64963,7 +64966,7 @@ q.e=s
 r=q.d
 r.toString
 q.f=new B.pj(H.a([r,s],t.Eo))},
-ba:function(a){var s,r=this
+bb:function(a){var s,r=this
 r.bC(a)
 if(!a.f.l(0,r.a.f)||G.c2(a.e)!==G.c2(r.a.e)){s=r.d
 s.toString
@@ -65143,12 +65146,12 @@ i=k.gp4()
 p=i.a
 p=i.b.al(0,p.gi(p))
 i=k.cx
-o=H.aH()
+o=H.aI()
 n=o?H.be():new H.b2(new H.b4())
 o=k.db
 m=k.gms()
 l=m.a
-n.sar(0,P.aI(C.d.aZ(255*m.b.al(0,l.gi(l))),o.gi(o)>>>16&255,o.gi(o)>>>8&255,o.gi(o)&255))
+n.sar(0,P.aJ(C.d.aZ(255*m.b.al(0,l.gi(l))),o.gi(o)>>>16&255,o.gi(o)>>>8&255,o.gi(o)&255))
 a.bE(0)
 a.af(0,0,k.d+k.e)
 a.d4(0,1,p*s)
@@ -65262,7 +65265,7 @@ r.r=K.rC(s)
 r.zo()
 if(r.d==null){r.a.toString
 r.d=!1}},
-ba:function(a){this.bC(a)
+bb:function(a){this.bC(a)
 this.zo()},
 gIs:function(){this.a.toString
 return!1},
@@ -65372,7 +65375,7 @@ K.akI.prototype={
 $2:function(a,b){if(!a.a)a.a2(0,b)},
 $S:54}
 K.S7.prototype={
-ba:function(a){this.bC(a)
+bb:function(a){this.bC(a)
 this.qf()},
 aM:function(){var s,r,q,p,o=this
 o.cm()
@@ -65552,7 +65555,7 @@ r=q.a.c.k2
 if(r!=null)s.push(r)
 q.e=new B.pj(s)
 if(q.a.c.gjd())q.a.c.a.y.m2(q.f)},
-ba:function(a){var s=this
+bb:function(a){var s=this
 s.bC(a)
 if(s.a.c.gjd())s.a.c.a.y.m2(s.f)},
 aM:function(){this.cm()
@@ -65677,7 +65680,7 @@ ZF:function(a){var s,r,q,p,o,n=this,m=null
 if(n.glb()!=null&&(n.glb().a>>>24&255)!==0&&!n.id){s=n.k1
 s.toString
 r=n.glb().a
-r=P.aI(0,r>>>16&255,r>>>8&255,r&255)
+r=P.aJ(0,r>>>16&255,r>>>8&255,r&255)
 q=n.glb()
 p=t.IC.j("fe<aL.T>")
 t.m.a(s)
@@ -66653,7 +66656,7 @@ n=p.a.d
 n=n==null?o:H.H(n)
 s=a.d
 return n!=(s==null?o:H.H(s))},
-ba:function(a){var s,r,q=this
+bb:function(a){var s,r,q=this
 q.VU(a)
 s=a.d
 if(q.a.d!=s){if(s==null){s=q.x
@@ -66978,7 +66981,7 @@ q=this.b4$
 if(q!=null)for(q=P.cJ(q,q.r),r=H.r(q).c;q.t();)r.a(q.d).sdm(0,s)
 this.cm()}}
 F.C7.prototype={
-ba:function(a){this.bC(a)
+bb:function(a){this.bC(a)
 this.qf()},
 aM:function(){var s,r,q,p,o=this
 o.VR()
@@ -67033,25 +67036,25 @@ this.ch=a
 this.ao()},
 gjM:function(){var s=this.dy
 return s==null?H.d(H.p("_thumbOffset")):s},
-gJ8:function(){var s,r,q=H.aH()
+gJ8:function(){var s,r,q=H.aI()
 q=q?H.be():new H.b2(new H.b4())
 s=this.a
 r=this.f
-q.sar(0,P.aI(C.d.aZ(255*((s.gi(s)>>>24&255)/255*r.gi(r))),s.gi(s)>>>16&255,s.gi(s)>>>8&255,s.gi(s)&255))
+q.sar(0,P.aJ(C.d.aZ(255*((s.gi(s)>>>24&255)/255*r.gi(r))),s.gi(s)>>>16&255,s.gi(s)>>>8&255,s.gi(s)&255))
 return q},
 J9:function(a){var s,r,q,p=this
-if(a){s=H.aH()
+if(a){s=H.aI()
 s=s?H.be():new H.b2(new H.b4())
 r=p.c
 q=p.f
-s.sar(0,P.aI(C.d.aZ(255*((r.gi(r)>>>24&255)/255*q.gi(q))),r.gi(r)>>>16&255,r.gi(r)>>>8&255,r.gi(r)&255))
+s.sar(0,P.aJ(C.d.aZ(255*((r.gi(r)>>>24&255)/255*q.gi(q))),r.gi(r)>>>16&255,r.gi(r)>>>8&255,r.gi(r)&255))
 s.sdd(0,C.at)
 s.si2(1)
-return s}s=H.aH()
+return s}s=H.aI()
 s=s?H.be():new H.b2(new H.b4())
 r=p.b
 q=p.f
-s.sar(0,P.aI(C.d.aZ(255*((r.gi(r)>>>24&255)/255*q.gi(q))),r.gi(r)>>>16&255,r.gi(r)>>>8&255,r.gi(r)&255))
+s.sar(0,P.aJ(C.d.aZ(255*((r.gi(r)>>>24&255)/255*q.gi(q))),r.gi(r)>>>16&255,r.gi(r)>>>8&255,r.gi(r)&255))
 return s},
 a5f:function(){return this.J9(!1)},
 KG:function(){var s,r,q,p,o,n,m,l,k,j=this,i=j.cx.gBF(),h=j.cy
@@ -67241,7 +67244,7 @@ s=r.a.r
 q.sDf(s==null?6:s)
 q.sr8(r.a.f)
 q.sdM(0,r.c.R(t.w).f.f)},
-ba:function(a){var s,r=this
+bb:function(a){var s,r=this
 r.bC(a)
 s=r.a.e
 if(s!=a.e)if(s===!0){r.IJ()
@@ -67514,7 +67517,7 @@ s.bi()
 s.a.toString
 s.d=X.aH5()
 s.gw3().sEJ(s.a.d)},
-ba:function(a){var s=this
+bb:function(a){var s=this
 s.bC(a)
 s.a.toString
 s.gw3().sEJ(s.a.d)},
@@ -67965,7 +67968,7 @@ s.cb(s.c,new B.bU(r.gz8()),!1)},
 z9:function(){var s=this.a
 if(s.gps(s).a)this.gue().c9(0)
 else this.gue().dC(0)},
-ba:function(a){var s,r,q=this
+bb:function(a){var s,r,q=this
 q.bC(a)
 s=q.gz8()
 a.gps(a).a2(0,s)
@@ -68292,7 +68295,7 @@ av:function(){return new K.A4(C.v)}}
 K.A4.prototype={
 aN:function(){this.bi()
 this.a.c.aF(0,this.gA7())},
-ba:function(a){var s,r,q=this
+bb:function(a){var s,r,q=this
 q.bC(a)
 s=a.c
 if(q.a.c!==s){r=q.gA7()
@@ -69165,7 +69168,7 @@ if(s!=null)s.$0()
 r.r=r.f=r.e=r.d=null},
 aM:function(){this.cm()
 this.a.toString},
-ba:function(a){this.bC(this.$ti.j("nQ<1>").a(a))
+bb:function(a){this.bC(this.$ti.j("nQ<1>").a(a))
 this.a.toString},
 I:function(a,b){var s,r=this.a
 r.toString
@@ -69266,10 +69269,10 @@ q=J.az(s)
 p=t.d
 o=p.a(q.h(s,"names"))
 n=J.az(o)
-r.a=R.aJ(new B.xn(H.b5(n.h(o,"player")),H.b5(n.h(o,"hero")),H.b5(n.h(o,"alias"))),t.Jm)
+r.a=R.aH(new B.xn(H.b5(n.h(o,"player")),H.b5(n.h(o,"hero")),H.b5(n.h(o,"alias"))),t.Jm)
 o=p.a(q.h(s,"physicalAttributes"))
 n=J.az(o)
-r.b=R.aJ(new Z.xP(H.b5(n.h(o,"gender")),H.fg(n.h(o,"age")),H.b5(n.h(o,"height")),H.b5(n.h(o,"eyes")),H.b5(n.h(o,"hair")),H.b5(n.h(o,"skin")),H.b5(n.h(o,"build")),H.b5(n.h(o,"costume"))),t.u8)
+r.b=R.aH(new Z.xP(H.b5(n.h(o,"gender")),H.fg(n.h(o,"age")),H.b5(n.h(o,"height")),H.b5(n.h(o,"eyes")),H.b5(n.h(o,"hair")),H.b5(n.h(o,"skin")),H.b5(n.h(o,"build")),H.b5(n.h(o,"costume"))),t.u8)
 o=p.a(q.h(s,"characteristics"))
 n=R.asg()
 m=J.az(o)
@@ -69278,7 +69281,7 @@ n.b=C.vD.bH(H.b5(m.h(o,"powerSource")))
 n.c=C.oR.bH(H.iQ(m.h(o,"archetype")))
 n.d=C.oR.bH(H.iQ(m.h(o,"secondaryArchetype")))
 n.e=C.vC.bH(H.b5(m.h(o,"personality")))
-r.c=R.aJ(n,t.Qr)
+r.c=R.aH(n,t.Qr)
 r.d=C.oW.bH(H.b5(q.h(s,"principle1")))
 r.e=C.oW.bH(H.b5(q.h(s,"principle2")))
 p=p.a(q.h(s,"heroPoints"))
@@ -69289,7 +69292,7 @@ n.b=R.kI(H.fg(o.h(p,"plusOneRewards")))
 n.c=R.kI(H.fg(o.h(p,"plusTwoRewards")))
 n.d=R.kI(H.fg(o.h(p,"plusThreeRewards")))
 n.e=R.kI(H.fg(o.h(p,"plusFourRewards")))
-r.f=R.aJ(n,t.WW)
+r.f=R.aH(n,t.WW)
 n=t.kc
 r.r=C.oS.bH(n.a(q.h(s,"backIssues")))
 r.x=C.oT.bH(n.a(q.h(s,"collections")))
@@ -69306,7 +69309,7 @@ r.fx=R.aoP(H.aw3(q.h(s,"isRollForHealth")))
 r.fy=R.auq(H.D5(q.h(s,"rolledHealth")))
 s=t.nA.a(q.h(s,"outGameTextChoice"))
 q=t.j8
-r.go=s!=null?R.aJ(S.av6(s),q):R.aJ(null,q)
+r.go=s!=null?R.aH(S.av6(s),q):R.aH(null,q)
 s=this.fx
 q=s.a
 p=r.a
@@ -69564,7 +69567,7 @@ q=r.go
 if(q.gi(q)!=null){r=r.go
 r=r.gi(r)
 r.toString
-s.bb(H.a([r],t._))}return s.goc()},
+s.b9(H.a([r],t._))}return s.goc()},
 gS2:function(){var s=P.bl(this.fx.z,t.e),r=H.K(s).j("T<1>")
 return P.L(new H.T(s,new B.VH(),r),!0,r.j("k.E"))},
 gaeB:function(){var s=P.bl(this.fx.z,t.e),r=H.K(s).j("T<1>")
@@ -69751,11 +69754,17 @@ g.push(new B.eJ(B.U_(p===$?H.d(H.p(h)):p),r,e,q))}e=f.d
 if(e.gi(e)!==C.b3){e=f.d
 e=T.au0(e.gi(e))
 e.toString
-g.push(B.n9(e))}e=f.e
-if(e.gi(e)!==C.b3){f=f.e
-f=T.au0(f.gi(f))
+r=f.id
+if(r.gi(r)!=null){r=r.gi(r)
+r.toString
+e.f.b9(H.a([r],t._))}g.push(B.n9(e))}e=f.e
+if(e.gi(e)!==C.b3){e=f.e
+e=T.au0(e.gi(e))
+e.toString
+f=f.k1
+if(f.gi(f)!=null){f=f.gi(f)
 f.toString
-g.push(B.n9(f))}return g},
+e.f.b9(H.a([f],t._))}g.push(B.n9(e))}return g},
 gR3:function(){var s,r,q,p,o,n,m=this,l="_value",k=H.a([],t.h3),j=m.fx,i=j.c
 i=i.gi(i).b
 s=Math.min(Y.aGa(i.gi(i)),m.M6().length+1)
@@ -69867,7 +69876,7 @@ s.he(s,q,q+1,H.a([b],t.Ew))},
 mE:function(){var s=this.fx.dy
 s.a0s(s,new B.V1(this),!1)},
 M3:function(a,b){var s,r,q=a==null?"":a,p=b==null
-if(p&&q!==""){p=R.aJ(A.eu(q,"",null),t.A)
+if(p&&q!==""){p=R.aH(A.eu(q,"",null),t.A)
 s=this.fx.dy
 J.es(s.gcn(),p)
 s.e$.cC(s.gi(s))}else{p=!p
@@ -69875,7 +69884,7 @@ if(p&&q==="")this.a60(b)
 else{if(p)A.eu(b,"",null)
 r=A.eu(q,"",null)
 b.toString
-this.a67(b,R.aJ(r,t.A))}}},
+this.a67(b,R.aH(r,t.A))}}},
 a8K:function(a){return this.M3(a,null)},
 M5:function(){var s=this.fx.cx
 return P.bl(new H.z(s,new B.Ve(),s.$ti.j("z<I.E,@>")),t.A)},
@@ -69887,7 +69896,7 @@ a65:function(a,b){var s=this.fx,r=s.cx,q=r.h7(r,new B.V9(a))
 s=s.cx
 s.he(s,q,q+1,H.a([b],t.Ew))},
 M0:function(a,b){var s,r,q=a==null?"":a,p=b==null
-if(p&&q!==""){p=R.aJ(A.eu(q,"",null),t.A)
+if(p&&q!==""){p=R.aH(A.eu(q,"",null),t.A)
 s=this.fx.cx
 J.es(s.gcn(),p)
 s.e$.cC(s.gi(s))}else{p=!p
@@ -69895,7 +69904,7 @@ if(p&&q==="")this.a5Z(b)
 else{if(p)A.eu(b,"",null)
 r=A.eu(q,"",null)
 b.toString
-this.a65(b,R.aJ(r,t.A))}}},
+this.a65(b,R.aH(r,t.A))}}},
 a8H:function(a){return this.M0(a,null)},
 M6:function(){var s=this.fx.cy
 return P.bl(new H.z(s,new B.Vf(),s.$ti.j("z<I.E,@>")),t.A)},
@@ -69907,7 +69916,7 @@ a66:function(a,b){var s=this.fx,r=s.cy,q=r.h7(r,new B.Va(a))
 s=s.cy
 s.he(s,q,q+1,H.a([b],t.Ew))},
 M1:function(a,b){var s,r,q=a==null?"":a,p=b==null
-if(p&&q!==""){p=R.aJ(A.eu(q,"",null),t.A)
+if(p&&q!==""){p=R.aH(A.eu(q,"",null),t.A)
 s=this.fx.cy
 J.es(s.gcn(),p)
 s.e$.cC(s.gi(s))}else{p=!p
@@ -69915,7 +69924,7 @@ if(p&&q==="")this.a6_(b)
 else{if(p)A.eu(b,"",null)
 r=A.eu(q,"",null)
 b.toString
-this.a66(b,R.aJ(r,t.A))}}},
+this.a66(b,R.aH(r,t.A))}}},
 a8J:function(a){return this.M1(a,null)},
 AF:function(){var s=this.fx.db
 return P.bl(new H.z(s,new B.Vc(),s.$ti.j("z<I.E,@>")),t.A)},
@@ -69933,7 +69942,7 @@ a61:function(a,b){var s=this.fx,r=s.db,q=r.h7(r,new B.V7(a))
 s=s.db
 s.he(s,q,q+1,H.a([b],t.Ew))},
 LZ:function(a,b){var s,r,q=a==null?"":a,p=b==null
-if(p&&q!==""){p=R.aJ(A.eu(q,"",null),t.A)
+if(p&&q!==""){p=R.aH(A.eu(q,"",null),t.A)
 s=this.fx.db
 J.es(s.gcn(),p)
 s.e$.cC(s.gi(s))}else{p=!p
@@ -69941,7 +69950,7 @@ if(p&&q==="")this.a5V(b)
 else{if(p)A.eu(b,"",null)
 r=A.eu(q,"",null)
 b.toString
-this.a61(b,R.aJ(r,t.A))}}},
+this.a61(b,R.aH(r,t.A))}}},
 a8D:function(a){return this.LZ(a,null)},
 M4:function(){var s=this.fx.dx
 return P.bl(new H.z(s,new B.Vd(),s.$ti.j("z<I.E,@>")),t.A)},
@@ -69953,7 +69962,7 @@ a62:function(a,b){var s=this.fx,r=s.dx,q=r.h7(r,new B.V8(a))
 s=s.dx
 s.he(s,q,q+1,H.a([b],t.Ew))},
 M_:function(a,b){var s,r,q=a==null?"":a,p=b==null
-if(p&&q!==""){p=R.aJ(A.eu(q,"",null),t.A)
+if(p&&q!==""){p=R.aH(A.eu(q,"",null),t.A)
 s=this.fx.dx
 J.es(s.gcn(),p)
 s.e$.cC(s.gi(s))}else{p=!p
@@ -69961,7 +69970,7 @@ if(p&&q==="")this.a5W(b)
 else{if(p)A.eu(b,"",null)
 r=A.eu(q,"",null)
 b.toString
-this.a62(b,R.aJ(r,t.A))}}},
+this.a62(b,R.aH(r,t.A))}}},
 a8F:function(a){return this.M_(a,null)},
 RR:function(){var s=this,r=s.fx,q=r.fr,p=s.fy
 q.si(0,p==null?C.h_:p)
@@ -70207,9 +70216,9 @@ B.bn.prototype={
 k:function(a){return this.b}}
 B.a9r.prototype={
 bH:function(a){var s,r=t.K2
-if(a==null)r=R.aJ(C.b9,r)
+if(a==null)r=R.aH(C.b9,r)
 else{s=new H.T(C.q5,new B.a9s(a),t.Dw)
-r=R.aJ(s.gM(s),r)}return r}}
+r=R.aH(s.gM(s),r)}return r}}
 B.a9s.prototype={
 $1:function(a){return B.hd(a)===this.a},
 $S:133}
@@ -70226,7 +70235,7 @@ S.bs.prototype={
 k:function(a){return this.b}}
 S.a9w.prototype={
 bH:function(a){var s=new H.T(C.q2,new S.a9x(a),t.xf)
-return R.aJ(s.gM(s),t.XN)}}
+return R.aH(s.gM(s),t.XN)}}
 S.a9x.prototype={
 $1:function(a){return S.pU(a)===this.a},
 $S:437}
@@ -70273,7 +70282,7 @@ r=R.eo(s,r)}return r},
 eP:function(a){var s=a.$ti.j("z<I.E,ab<o,@>>")
 return P.L(new H.z(a,new B.a9v(),s),!0,s.j("aq.E"))}}
 B.a9u.prototype={
-$1:function(a){return R.aJ(new S.hY(H.b5(J.b8(a,"name"))),t.a0)},
+$1:function(a){return R.aH(new S.hY(H.b5(J.b8(a,"name"))),t.a0)},
 $S:439}
 B.a9v.prototype={
 $1:function(a){return P.at(["name",a.gi(a).a],t.N,t.z)},
@@ -70288,7 +70297,7 @@ return P.L(new H.z(a,new B.a9A(),s),!0,s.j("aq.E"))}}
 B.a9z.prototype={
 $1:function(a){var s=J.az(a),r=new G.i3(H.b5(s.h(a,"name")),R.Jm(!1))
 r.b=R.Jm(H.mX(s.h(a,"isUsed")))
-return R.aJ(r,t.MO)},
+return R.aH(r,t.MO)},
 $S:441}
 B.a9A.prototype={
 $1:function(a){return G.aHT(a.gi(a))},
@@ -70301,11 +70310,11 @@ r=R.eo(s,r)}return r},
 eP:function(a){var s=a.$ti.j("z<I.E,ab<o,@>>")
 return P.L(new H.z(a,new B.a9H(),s),!0,s.j("aq.E"))}}
 B.a9G.prototype={
-$1:function(a){var s=new R.bX(R.aJ(C.bY,t.pl),R.aJ(C.aD,t.Pc)),r=J.az(a)
+$1:function(a){var s=new R.bX(R.aH(C.bY,t.pl),R.aH(C.aD,t.Pc)),r=J.az(a)
 s.a=C.vF.bH(H.b5(r.h(a,"name")))
 s.b=C.oU.bH(H.b5(r.h(a,"dieType")))
 s.c=H.b5(r.h(a,"customName"))
-return R.aJ(s,t.a)},
+return R.aH(s,t.a)},
 $S:443}
 B.a9H.prototype={
 $1:function(a){return R.aHX(a.gi(a))},
@@ -70318,11 +70327,11 @@ r=R.eo(s,r)}return r},
 eP:function(a){var s=a.$ti.j("z<I.E,ab<o,@>>")
 return P.L(new H.z(a,new B.a9O(),s),!0,s.j("aq.E"))}}
 B.a9N.prototype={
-$1:function(a){var s=new X.c1(R.aJ(C.bZ,t.UQ),R.aJ(C.aD,t.Pc)),r=J.az(a)
+$1:function(a){var s=new X.c1(R.aH(C.bZ,t.UQ),R.aH(C.aD,t.Pc)),r=J.az(a)
 s.a=C.vG.bH(H.b5(r.h(a,"name")))
 s.b=C.oU.bH(H.b5(r.h(a,"dieType")))
 s.c=H.b5(r.h(a,"customName"))
-return R.aJ(s,t.h)},
+return R.aH(s,t.h)},
 $S:445}
 B.a9O.prototype={
 $1:function(a){return X.aHY(a.gi(a))},
@@ -70339,7 +70348,7 @@ B.a9o.prototype={
 $1:function(a){return $.a8().am(0,J.b8(a,"name"))},
 $S:70}
 B.a9p.prototype={
-$1:function(a){return R.aJ(new A.DC().bH(a),t.A)},
+$1:function(a){return R.aH(new A.DC().bH(a),t.A)},
 $S:447}
 B.a9q.prototype={
 $1:function(a){return C.v1.eP(a.gi(a))},
@@ -70366,7 +70375,7 @@ Q.d6.prototype={
 k:function(a){return this.b}}
 Q.a9B.prototype={
 bH:function(a){var s=new H.T(C.l1,new Q.a9C(a),t.iq)
-return R.aJ(s.gM(s),t.Pc)}}
+return R.aH(s.gM(s),t.Pc)}}
 Q.a9C.prototype={
 $1:function(a){return Q.hi(a)===this.a},
 $S:449}
@@ -70385,7 +70394,7 @@ goc:function(){var s={}
 s.a=this.a
 C.b.a0(this.b,new S.a1k(s))
 return s.a},
-bb:function(a){var s,r,q,p,o
+b9:function(a){var s,r,q,p,o
 for(s=this.b,r=0;r<a.length;++r){q=s[r].b
 p=a[r].b
 o=$.eR
@@ -70433,7 +70442,7 @@ G.bx.prototype={
 k:function(a){return this.b}}
 G.a9D.prototype={
 bH:function(a){var s=new H.T(C.q6,new G.a9E(a),t.dw)
-return R.aJ(s.gM(s),t.gJ)}}
+return R.aH(s.gM(s),t.gJ)}}
 G.a9E.prototype={
 $1:function(a){return G.rg(a)===this.a},
 $S:452}
@@ -70454,7 +70463,7 @@ Y.by.prototype={
 k:function(a){return this.b}}
 Y.a9I.prototype={
 bH:function(a){var s=new H.T(C.qf,new Y.a9J(a),t.AI)
-return R.aJ(s.gM(s),t.Pq)}}
+return R.aH(s.gM(s),t.Pq)}}
 Y.a9J.prototype={
 $1:function(a){return Y.rk(a)===this.a},
 $S:454}
@@ -70465,7 +70474,7 @@ T.ak.prototype={
 k:function(a){return this.b}}
 T.a9K.prototype={
 bH:function(a){var s=new H.T(C.pZ,new T.a9L(a),t.Az)
-return R.aJ(s.gM(s),t.lY)}}
+return R.aH(s.gM(s),t.lY)}}
 T.a9L.prototype={
 $1:function(a){return T.Iy(a)===this.a},
 $S:142}
@@ -70482,9 +70491,9 @@ F.dc.prototype={
 k:function(a){return this.b}}
 F.a9P.prototype={
 bH:function(a){var s,r=t.OU
-if(a==null)r=R.aJ(C.h_,r)
+if(a==null)r=R.aH(C.h_,r)
 else{s=new H.T(C.q4,new F.a9Q(a),t.F9)
-r=R.aJ(s.gM(s),r)}return r}}
+r=R.aH(s.gM(s),r)}return r}}
 F.a9Q.prototype={
 $1:function(a){return a.b===this.a},
 $S:457}
@@ -70524,7 +70533,7 @@ D.ay.prototype={
 k:function(a){return this.b}}
 D.a9R.prototype={
 bH:function(a){var s=new H.T(C.bd,new D.a9S(a),t.qT)
-return R.aJ(s.gM(s),t.pl)}}
+return R.aH(s.gM(s),t.pl)}}
 D.a9S.prototype={
 $1:function(a){return D.bZ(a)===this.a},
 $S:15}
@@ -70537,7 +70546,7 @@ O.bq.prototype={
 k:function(a){return this.b}}
 O.a9T.prototype={
 bH:function(a){var s=new H.T(C.q0,new O.a9U(a),t.J_)
-return R.aJ(s.gM(s),t.UQ)}}
+return R.aH(s.gM(s),t.UQ)}}
 O.a9U.prototype={
 $1:function(a){return O.cP(a)===this.a},
 $S:138}
@@ -70863,7 +70872,7 @@ $R:0,
 $S:467}
 G.TH.prototype={
 $0:function(){var s=this.a.d
-s.gcA(s).f.bb(this.b)
+s.gcA(s).f.b9(this.b)
 Y.lL($.bk())},
 $S:0}
 G.TC.prototype={
@@ -70936,7 +70945,7 @@ G.Tl.prototype={
 $1:function(a){return S.a0u(a)},
 $S:84}
 G.Tm.prototype={
-$0:function(){this.b.f.bb(this.c)
+$0:function(){this.b.f.b9(this.c)
 Y.lL($.bk())},
 $S:0}
 G.Ti.prototype={
@@ -70992,7 +71001,7 @@ $S:82}
 B.Uj.prototype={
 $2:function(a,b){var s=this.a.c.fx,r=s.r
 if(J.aZ(r.gi(r))>b)return B.Uh(b,P.bl(s.r,t.SM)[b])
-else return B.Uh(b,R.aJ(new S.hY(""),t.a0))},
+else return B.Uh(b,R.aH(new S.hY(""),t.a0))},
 $C:"$2",
 $R:2,
 $S:183}
@@ -71703,7 +71712,7 @@ $S:78}
 E.WJ.prototype={
 $2:function(a,b){var s=this.a.c.fx,r=s.r
 if(J.aZ(r.gi(r))>b)return B.Uh(b,P.bl(s.r,t.SM)[b])
-else return B.Uh(b,R.aJ(new S.hY(""),t.a0))},
+else return B.Uh(b,R.aH(new S.hY(""),t.a0))},
 $C:"$2",
 $R:2,
 $S:183}
@@ -71716,7 +71725,7 @@ $S:78}
 E.WI.prototype={
 $2:function(a,b){var s=this.a.c.fx,r=s.x
 if(J.aZ(r.gi(r))>b)return Z.XZ(b,P.bl(s.x,t.z)[b])
-else return Z.XZ(b,R.aJ(new G.i3("",R.Jm(!1)),t.MO))},
+else return Z.XZ(b,R.aH(new G.i3("",R.Jm(!1)),t.MO))},
 $C:"$2",
 $R:2,
 $S:218}
@@ -71729,7 +71738,7 @@ $S:78}
 E.WH.prototype={
 $2:function(a,b){var s=this.a.c.fx,r=t.e,q=t.w
 if(P.bl(s.z,r).length>b)return E.a6H(b,P.bl(s.z,r)[b],a.R(q).f.a.a-75,75,!0)
-else return E.a6H(b,R.aJ(new R.bX(R.aJ(C.bY,t.pl),R.aJ(C.aD,t.Pc)),t.a),a.R(q).f.a.a-75,75,!1)},
+else return E.a6H(b,R.aH(new R.bX(R.aH(C.bY,t.pl),R.aH(C.aD,t.Pc)),t.a),a.R(q).f.a.a-75,75,!1)},
 $C:"$2",
 $R:2,
 $S:184}
@@ -71742,7 +71751,7 @@ $S:78}
 E.WG.prototype={
 $2:function(a,b){var s=this.a.c.fx,r=t.c,q=t.w
 if(P.bl(s.Q,r).length>b)return F.a77(b,P.bl(s.Q,r)[b],a.R(q).f.a.a-75,75,!0)
-else return F.a77(b,R.aJ(new X.c1(R.aJ(C.bZ,t.UQ),R.aJ(C.aD,t.Pc)),t.h),a.R(q).f.a.a-75,75,!1)},
+else return F.a77(b,R.aH(new X.c1(R.aH(C.bZ,t.UQ),R.aH(C.aD,t.Pc)),t.h),a.R(q).f.a.a-75,75,!1)},
 $C:"$2",
 $R:2,
 $S:179}
@@ -71952,7 +71961,7 @@ $S:82}
 Z.Y2.prototype={
 $2:function(a,b){var s=this.a.c.fx,r=s.x
 if(J.aZ(r.gi(r))>b)return Z.XZ(b,P.bl(s.x,t.z)[b])
-else return Z.XZ(b,R.aJ(new G.i3("",R.Jm(!1)),t.MO))},
+else return Z.XZ(b,R.aH(new G.i3("",R.Jm(!1)),t.MO))},
 $C:"$2",
 $R:2,
 $S:218}
@@ -72787,7 +72796,7 @@ a4x:function(){var s=this
 if(s.x!==s.gbK(s).gfs())s.aA(new L.afT(s))},
 a24:function(a){if(this.c==null)return
 this.aA(new L.afU(this,a))},
-ba:function(a){this.bC(a)
+bb:function(a){this.bC(a)
 this.a.toString
 this.IR()},
 IR:function(){var s,r=this,q=r.a,p=q.c
@@ -72962,7 +72971,7 @@ L.pe.prototype={
 gH:function(){return this.$ti.j("m4<1>").a(N.al.prototype.gH.call(this))},
 q7:function(a){this.Fa(a)
 this.$ti.j("m4<1>").a(N.al.prototype.gH.call(this)).Q.$1(a)},
-ba:function(a){var s,r=this
+bb:function(a){var s,r=this
 r.bC(a)
 s=r.$ti.j("m4<1>")
 if(!J.f(a.f,s.a(N.al.prototype.gH.call(r)).f))r.d=s.a(N.al.prototype.gH.call(r)).f}}
@@ -73146,7 +73155,7 @@ E.a6P.prototype={
 $2:function(a,b){var s=this.a,r=s.c.fx,q=t.e,p=s.e-10
 s=s.f-10
 if(P.bl(r.z,q).length>b)return E.a6H(b,P.bl(r.z,q)[b],p,s,!0)
-else return E.a6H(b,R.aJ(new R.bX(R.aJ(C.bY,t.pl),R.aJ(C.aD,t.Pc)),t.a),p,s,!1)},
+else return E.a6H(b,R.aH(new R.bX(R.aH(C.bY,t.pl),R.aH(C.aD,t.Pc)),t.a),p,s,!1)},
 $C:"$2",
 $R:2,
 $S:184}
@@ -73294,7 +73303,7 @@ F.a75.prototype={
 $2:function(a,b){var s=this.a,r=s.c.fx,q=t.c,p=s.e-10
 s=s.f-10
 if(P.bl(r.Q,q).length>b)return F.a77(b,P.bl(r.Q,q)[b],p,s,!0)
-else return F.a77(b,R.aJ(new X.c1(R.aJ(C.bZ,t.UQ),R.aJ(C.aD,t.Pc)),t.h),p,s,!1)},
+else return F.a77(b,R.aH(new X.c1(R.aH(C.bZ,t.UQ),R.aH(C.aD,t.Pc)),t.h),p,s,!1)},
 $C:"$2",
 $R:2,
 $S:179}
@@ -73894,13 +73903,13 @@ s=M.C4.prototype
 s.VM=s.n
 s.VL=s.aM
 s=M.C5.prototype
-s.VO=s.ba
+s.VO=s.bb
 s.VN=s.aM
 s.VP=s.n
 s=M.CV.prototype
 s.Wc=s.n
 s=Z.D1.prototype
-s.Wm=s.ba
+s.Wm=s.bb
 s.Wl=s.aM
 s.Wn=s.n
 s=S.D3.prototype
@@ -74059,7 +74068,7 @@ s=A.ic.prototype
 s.Fa=s.q7
 s=N.al.prototype
 s.bi=s.aN
-s.bC=s.ba
+s.bC=s.bb
 s.me=s.dX
 s.bk=s.n
 s.cm=s.aM
@@ -74122,7 +74131,7 @@ s=K.BB.prototype
 s.Vd=s.n
 s.Vc=s.aM
 s=K.BC.prototype
-s.Vf=s.ba
+s.Vf=s.bb
 s.Ve=s.aM
 s.Vg=s.n
 s=U.xx.prototype
@@ -74172,7 +74181,7 @@ s=F.C6.prototype
 s.VS=s.n
 s.VR=s.aM
 s=F.C7.prototype
-s.VU=s.ba
+s.VU=s.bb
 s.VT=s.aM
 s.VV=s.n
 s=E.jn.prototype
@@ -78699,7 +78708,7 @@ r($,"aOR","azh",function(){return new L.Lk(P.d0("[/\\\\]",!0),P.d0("[^/\\\\]$",!
 r($,"aOQ","aqw",function(){return new F.L5(P.d0("/",!0),P.d0("(^[a-zA-Z][-+.a-zA-Z\\d]*://|[^/])$",!0),P.d0("[a-zA-Z][-+.a-zA-Z\\d]*://[^/]*",!0),P.d0("^/",!0))})
 r($,"aOO","azf",function(){return O.aHq()})
 r($,"aMs","a8",function(){var q=null,p="Adaptive Programming",o="Aerial Bombardment",n="Aerial Surveillance",m="Boost using [Power or Quality]. Apply that bonus to all hero Attack and Overcome actions until the start of your next turn.",l="Boost all nearby allies using [Power]. Use your Max+Mid dice. Hinder yourself with your Min die.",k="Alternate Outcome",j="Always Be Prepared",i="Always on the Move",h="Ambush Awareness",g="Analyze Probabilities",f="Analyze Weakness",e="A Plan For Everything",d="Attack multiple targets using [Power], using your Min die against each.",c="Reduce any physical or energy damage you take by 1 while you are in the Green zone, 2 while in the Yellow zone, and 3 while in the Red zone.",b="Astral Projection",a="When you would take damage from [Element/Energy], you may Recover that amount of Health instead.",a0="Call to the Wild",a1="Change in Circumstance",a2="Whenever you roll a 1 on one or more dice, you may reroll those dice. You must accept the result of the reroll.",a3="Construction Focus",a4="Cosmic Ray Absorption",a5="If you would take damage from [Obtained Element/Energy], instead reduce that damage to 0 and Recover that amount of Health.",a6="Created Immunity",a7="Damage Reduction",a8="Damage Resistant",a9="Dangerous Explosion",b0="Defensive Strike",b1="Device Transform",b2="Diagnostic Subroutine",b3="Displacement Assault",b4="Double Edged Luck",b5="Boost yourself using [Power]. That bonus is persistent and exclusive.",b6="Emergency Change",b7="Emergency Switch",b8="Empower and Repair",b9="Energy Alignment",c0="Energy Conversion",c1="Energy Converter",c2="Energy Redirection",c3="Expect the Unexpected",c4="Exploit Vulnerability",c5="Explosive Attack",c6="External Combustion",c7="Extrasensory Awareness",c8="Attack using [Power]. Use your Mid die to Attack one extra target for each bonus you have. Apply a different bonus to each Attack.",c9="Focused Apparatus",d0="Frontline Fighting",d1="Hair Trigger Reflexes",d2="Harvest Life Force",d3="Helpful Analysis",d4="Helpful Invention",d5="Illusionary Double",d6="Imbue with Element",d7="Indiscriminate Fabrication",d8="Live Dangerously",d9="Mass Modification",e0="Minion Formation",e1="Minion Suggestion",e2="Modification Wave",e3="Multiple Assault",e4="Mystic Redirection",e5="Attack using [Power]. Use your Max die.",e6="Negative Likelihood",e7="Non-stop Assault",e8="Offensive Strike",e9="Overcome From the Darkness",f0="Overwhelming Vision",f1="Personal Upgrade",f2="Postcognitive Understanding",f3="Power From Beyond",f4="Attack using [Power or Quality]. Ignore all penalties on this Attack, ignore any Defend actions, and it cannot be affected by Reactions.",f5="Precognitive Alteration",f6="Probability Insight",f7="Psychic Analysis",f8="Psychic Coordination",f9="Radioactive Aura",g0="Radioactive Recharge",g1="Boost yourself using [Power]. Then either remove a penalty on yourself or Recover using your Min die.",g2="Rapid Deployment",g3="Reach through Veil",g4="Recalculating...",g5="After rolling during your turn, you may take 1 irreducible damage to reroll your entire dice pool.",g6="Regenerating Form",g7="Retroactive Rewrite",g8="Self-Improvement",g9="Attack one target using [Power]. Attack a different target with your Min die. At the end of your turn, you may change modes.",h0="Something for Everyone",h1="Strange Enhancement",h2="Strength in Victory",h3="Supersonic Streak",h4="Surprise Results",h5="Tactical Analysis",h6="Telekinetic Assault",h7="Telepathic Whammy",h8="Throw Minion",h9="Uncontrolled Transform",i0="Unstable Reaction",i1="Unstoppable Charge",i2="Volatile Creations",i3="Athletic Major Regeneration",i4="Major Regeneration",i5="Athletic Paragon Feat",i6="Athletic Push Your Limits",i7="Athletic Reactive Strike",i8="Elemental/Energy Charged Up Blast",i9="Charged Up Blast",j0="Elemental/Energy Eruption",j1="Elemental/Energy Improved Immunity",j2="Elemental/Energy Powerful Strike",j3="Powerful Strike",j4="Elemental/Energy Purification",j5="Remove all bonuses and penalties from the scene. You cannot use this ability again this scene.",j6="Purification",j7="Elemental/Energy Summoned Allies",j8="Summoned Allies",j9="Hallmark Charged Up Blast",k0="Hallmark Quick Exit",k1="Hallmark Sacrificial Ram",k2="Hallmark Ultimate Weaponry",k3="Ultimate Weaponry",k4="Information Critical Eye",k5="Information Discern Weakness",k6="Information Reliable Aptitude",k7="Reliable Aptitude",k8="Information Specialized Info",k9="Intellectual Calculated Dodge",l0="You may take 1 irreducible damage to reroll the dice pool of a target that is Attacking or Hindering you.",l1="Calculated Dodge",l2="Intellectual Give Time",l3="Give Time",l4="Intellectual Reliable Aptitude",l5="Intellectual Unerring Strike",l6="Materials Field of Hazards",l7="Materials Impenetrable Defense",l8="Impenetrable Defense",l9="Materials Like the Wind",m0="Materials Powerful Strike",m1="Materials Summoned Allies",m2="Mental Aware Response",m3="Mental Canny Awareness",m4="Mental Considered Planning",m5="Mental Final Wrath",m6="Final Wrath",m7="Mental Purification",m8="Mobility Calculated Dodge",m9="Mobility Heroic Interruption",n0="Mobility Intercession",n1="Mobility Take Down",n2="Mobility Untouchable Movement",n3="Physical Book It",n4="Physical Endurance Fighting",n5="Physical Finishing Blow",n6="Physical Reactive Defense",n7="Psychic Dangerous Hinder",n8="Psychic Dire Control",n9="Psychic Final Wrath",o0="Psychic Give Time",o1="Psychic Impenetrable Defense",o2="Psychic Impossible Knowledge",o3="Psychic Summoned Allies",o4="Self Control Change Self",o5="Self Control Empowerment",o6="Self Control Impenetrable Defense",o7="Self Control Major Regeneration",o8="Self Control Defensive Deflection",o9="Self Control Mutable Form",p0="Self Control Powerful Strike",p1="Self Control Resurrection",p2="Self Control Summoned Allies",p3="Social Heroic Sacrifice",p4="Social Inspiring Totem",p5="Social Lead by Example",p6="Social Ultimatum",p7="Technological Combustion",p8="Technological Final Wrath",p9="Technological Full Defensive",q0="Technological Ultimate Weaponry",q1="Technological Unload",q2=t.D,q3=t._
-return P.at(["Absorb Essence",A.e("Absorb Essence",H.a([C.p],q2),C.y,"When you defeat a minion, roll that minion's die and Boost yourself using that roll.",q,C.i),"Adaptive",A.e("Adaptive",H.a([C.p,C.a6],q2),C.e,"Boost yourself using [Power], then either remove a penalty on yourself or Recover using your Min die.",q,H.a([S.u(C.j)],q3)),p,A.e(p,H.a([C.p,C.I],q2),C.e,"Boost yourself using [Power] and Defend with your Min die.",q,H.a([S.u(C.j)],q3)),o,A.e(o,H.a([C.k],q2),C.e,"Attack up to three targets using [Power or Quality]. Apply your Min die to each of them.",q,H.a([S.u(C.a_)],q3)),n,A.e(n,H.a([C.p],q2),C.e,m,q,H.a([S.u(C.a_)],q3)),"Agile Form",A.e("Agile Form",H.a([C.k,C.I],q2),C.e,"Attack using [Power]. Defend against all attacks until your next turn with your Min die.",q,H.a([S.u(C.j)],q3)),"Alien Boost",A.e("Alien Boost",H.a([C.p,C.A],q2),C.e,l,q,H.a([S.u(C.j)],q3)),k,A.e(k,H.a([],q2),C.y,"When a nearby enemy rolls their dice pool for the turn, you may lose 1 Health to reroll their entire pool",q,C.i),j,A.e(j,H.a([C.p,C.k],q2),C.e,"Boost yourself using [Power]. That bonus is persistent and exclusive. Then, Attack using your Min die. You may use the bonus you just created on that Attack.",q,H.a([S.u(C.j)],q3)),i,A.e(i,H.a([C.k,C.I],q2),C.e,"Attack using [Power or Quality]. Defend yourself using your Min die.",q,H.a([S.u(C.a_)],q3)),h,A.e(h,H.a([C.I],q2),C.y,"If you haven't yet acted in an action scene, you may Defend against an Attack by rolling your single [Power] die.",q,H.a([S.u(C.j)],q3)),"Analysis",A.e("Analysis",H.a([C.A,C.o],q2),C.e,"Hinder or use one of your principles to Overcome using [Power]. Use your Max+Min dice.",q,H.a([S.u(C.j)],q3)),g,A.e(g,H.a([],q2),C.y,"After rolling your dice pool, you may take 1 irreducible damage to reroll your dice pool.",q,C.i),f,A.e(f,H.a([C.A],q2),C.e,"Hinder using [Power]. Use your Max die, or use your Mid die and make it persistent and exclusive.",q,H.a([S.u(C.j)],q3)),e,A.e(e,H.a([C.p,C.I],q2),C.y,"When you are attacked, first roll your single [Power] die. Defend yourself with that roll. Then, Boost yourself using that roll.",q,H.a([S.u(C.j)],q3)),"Area Alteration",A.e("Area Alteration",H.a([C.p,C.A],q2),C.e,"[Boost or Hinder] any number of targets using [Power]. Use your Max die.",q,H.a([S.u(C.j)],q3)),"Area Assault",A.e("Area Assault",H.a([C.k],q2),C.e,d,q,H.a([S.u(C.j)],q3)),"Area Healing",A.e("Area Healing",H.a([C.p,C.a6],q2),C.e,"Boost an ally using [Power]. You and nearby heroes in the Yellow and Red zones Recover Health equal to your Min die.",q,H.a([S.u(C.j)],q3)),"Armored",A.e("Armored",H.a([],q2),C.L,c,q,C.i),b,A.e(b,H.a([C.o],q2),C.e,"Overcome using Remote Viewing and use your Max+Min dice. You do not have to be physically present in the area you are Overcoming.",q,C.i),"Attune",A.e("Attune",H.a([C.p],q2),C.e,"Boost yourself using [Power]. That bonus is persistent and exclusive. Damage dealt using that bonus is also [Element/Energy]",q,H.a([S.u(C.j),S.u(C.br)],q3)),"Attunement",A.e("Attunement",H.a([C.a6],q2),C.L,a,q,H.a([S.u(C.br)],q3)),"Aura of Pain",A.e("Aura of Pain",H.a([C.k],q2),C.e,"Attack multiple targets using [Power]. The, take irreducible damage equal to the number of targets hit.",q,H.a([S.u(C.j)],q3)),"Backlash",A.e("Backlash",H.a([C.k],q2),C.e,"Attack using [Power]. Use your Max die. Take damage equal to your Min die.",q,H.a([S.u(C.j)],q3)),"Banish",A.e("Banish",H.a([C.A,C.k],q2),C.e,"Hinder using [Power]. Use your Max die. If you roll doubles, also Attack using your Mid die.",q,H.a([S.u(C.j)],q3)),"Barrel Roll",A.e("Barrel Roll",H.a([C.I],q2),C.y,"When you are Attacked while Flying, you may Defend yourself by rolling your single [Power or Quality] die.",q,H.a([S.u(C.a_)],q3)),"Blinding Strike",A.e("Blinding Strike",H.a([C.k,C.A],q2),C.e,"Attack multiple targets using [Quality]. Hinder each target equal to your Min die.",q,H.a([S.u(C.ao)],q3)),"Bizarre Strike",A.e("Bizarre Strike",H.a([C.k,C.A],q2),C.e,"Attack using [Power]. Use your Max die. Hinder that target with your Mid die. Hinder yourself with your Min die.",q,H.a([S.u(C.j)],q3)),"Bombardment",A.e("Bombardment",H.a([C.I,C.k],q2),C.e,"Defend yourself using [Power]. You may Attack one target with your Max die.",q,H.a([S.u(C.j)],q3)),"Brainstorm",A.e("Brainstorm",H.a([C.k,C.p],q2),C.e,"Attack using [Power]. Hit one target using your Min die, another target with your mid die, and Boost using your Max die.",q,H.a([S.u(C.j)],q3)),"Break the 4th",A.e("Break the 4th",H.a([],q2),C.y,"You may uncheck a checked off collection on your hero sheet.",q,C.i),a0,A.e(a0,H.a([],q2),C.e,"Gain a d8 minion. It takes its turn before yours, but goes away at the end of the scene. You may only have one such minion at a time.",q,C.i),"Called Shot",A.e("Called Shot",H.a([C.k,C.p],q2),C.e,"Attack using [Quality]. Boost another hero using your Max die.",q,H.a([S.u(C.ao)],q3)),"Change Forms",A.e("Change Forms",H.a([C.p,C.A,C.I,C.k,C.o],q2),C.e,"Take a basic action using [Self Control Power], then switch to any available form.",q,H.a([S.u(C.aW)],q3)),a1,A.e(a1,H.a([C.p],q2),C.y,"When you change personal zones, you may Boost by rolling your single [Power] die.",q,H.a([S.u(C.j)],q3)),"Charged Up",A.e("Charged Up",H.a([],q2),C.L,a2,q,C.i),"Clever Form",A.e("Clever Form",H.a([C.p,C.o],q2),C.e,"Boost or Overcome using [Power]. Use your Max die.",q,H.a([S.u(C.j)],q3)),"Command Power",A.e("Command Power",H.a([],q2),C.y,"When you take damage from [Element/Energy], you may deal that much damage to another target.",q,H.a([S.u(C.br)],q3)),a3,A.e(a3,H.a([],q2),C.e,"Create two minions using [Power], one with your Max die and one with your Mid die. Choose which one basic action each of them can perform. They act on the start of your turn.",q,H.a([S.u(C.j)],q3)),"Cords of Magic",A.e("Cords of Magic",H.a([C.A],q2),C.e,"Destroy all bonuses and penalties on a target. Then Hinder that target using [Power], using your Max die.",q,H.a([S.u(C.j)],q3)),a4,A.e(a4,H.a([C.a6],q2),C.L,a5,q,H.a([S.u(C.bb)],q3)),"Costly Strength",A.e("Costly Strength",H.a([C.p,C.A],q2),C.e,l,q,H.a([S.u(C.j)],q3)),"Created Form",A.e("Created Form",H.a([],q2),C.L,"Reduce physical damage to yourself by 1 while you are in the Green zone, 2 while in the Yellow zone, and 3 while in the Red zone.",q,C.i),a6,A.e(a6,H.a([C.a6],q2),C.L,"When you would take damage from [Element/Energy], you may Recover that amount of Health instead",q,H.a([S.u(C.br)],q3)),"Cursed Resolve",A.e("Cursed Resolve",H.a([C.p,C.a6],q2),C.e,"Boost yourself using [Power]. Then, either remove a penalty on yourself or Recover using your Min die.",q,H.a([S.u(C.j)],q3)),a7,A.e(a7,H.a([],q2),C.L,"Reduce [Physical or Energy] damage you take by 1 while you are in the Green zone, 2 while in the Yellow zone, and 3 while in the Red zone.",q,H.a([S.u(C.hO)],q3)),a8,A.e(a8,H.a([],q2),C.L,"Reduce physical or energy damage you take by 1 while you are in the Green zone, 2 while in the Yellow zone, and 3 while in the Red zone.",q,C.i),"Damage Spike",A.e("Damage Spike",H.a([C.k],q2),C.e,"Attack using [Power]. Use your Max+Min dice. Take damage equal to your Mid die.",q,H.a([S.u(C.j)],q3)),a9,A.e(a9,H.a([C.k,C.A],q2),C.e,"Attack multiple targets using [Power]. User your Mid die. Hinder all targets damaged by this ability with your Min die. Hinder yourself with your Max die.",q,H.a([S.u(C.j)],q3)),"Dangerous Lash",A.e("Dangerous Lash",H.a([C.k],q2),C.e,"Attack multiple targets using [Power], applying your Min die to each. If you roll doubles, also attack an ally using your Mid die.",q,H.a([S.u(C.j)],q3)),"Danger Sense",A.e("Danger Sense",H.a([C.I],q2),C.y,"When damaged by an environment target or surprise Attack, Defend by rolling your single [Power] die.",q,H.a([S.u(C.j)],q3)),"Danger Zone",A.e("Danger Zone",H.a([C.k],q2),C.e,"Attack multiple targets using [power]. User your Min die against each.",q,H.a([S.u(C.j)],q3)),"Danger!",A.e("Danger!",H.a([C.k],q2),C.e,"Attack multiple targets using [Power]. If you roll doubles, one nearby ally is also hit with the Attack.",q,H.a([S.u(C.j)],q3)),"Debilitator",A.e("Debilitator",H.a([C.A,C.k],q2),C.e,"Hinder all nearby opponents using [Power]. If you roll doubles, take damage equal to your Max die, and then you may also attack all nearby opponents with your Min die.",q,H.a([S.u(C.j)],q3)),b0,A.e(b0,H.a([C.I,C.k],q2),C.e,"Defend using [Power or Quality]. Attack using your Min die.",q,H.a([S.u(C.a_)],q3)),"Deflect",A.e("Deflect",H.a([],q2),C.y,"When you would be dealt damage, you may deal damage to a nearby target equal to the amount reduced by your Armored ability.",q,C.i),"Destroyer",A.e("Destroyer",H.a([C.k],q2),C.L,"Whenever you take a basic Attack action, either use your Max+Min dice to Attack one target, or Attack two different targets, one using your Max die and one using your Mid die.",q,C.i),b1,A.e(b1,H.a([],q2),C.e,"If you have access to your device, change from your civilian form to your heroic form, or vice versa. After your transformation, take a basic action using your Min die. If you have any penalties that separate you from your device or otherwise inhibit you having full access to your device, you cannot use this ability.",q,C.i),b2,A.e(b2,H.a([],q2),C.L,"Whenever your status changes due to a change in your current Health, you may remove a penalty on yourself.",q,C.i),"Disabling Blast",A.e("Disabling Blast",H.a([C.k,C.A],q2),C.e,"Attack using [Power]. Hinder using your Min die.",q,H.a([S.u(C.j)],q3)),b3,A.e(b3,H.a([C.k,C.A],q2),C.e,"Attack using [Power]. Either Hinder your target with your min die or move them somewhere else in the scene.",q,H.a([S.u(C.j)],q3)),"Dive & Drop",A.e("Dive & Drop",H.a([C.k],q2),C.e,"Attack a minion using [Power]. Use whatever that minion rolls for its save as an Attack against another target of your choice.",q,H.a([S.u(C.j)],q3)),"Diversion",A.e("Diversion",H.a([C.I],q2),C.y,"When you would take damage, Defend against that damage by rolling your single [Power or Quality] die.",q,H.a([S.u(C.a_)],q3)),"Divided Psyche",A.e("Divided Psyche",H.a([],q2),C.L,"While you are in your civilian form, use two qualities instead of a power and a quality. While in your heroic form, use two powers instead of a power and a quality. (Use your status in both cases.) You cannot use abilities related to a power or quality you don't have access to.",q,C.i),b4,A.e(b4,H.a([],q2),C.L,a2,q,C.i),"Draw Power",A.e("Draw Power",H.a([C.p],q2),C.e,b5,q,H.a([S.u(C.j)],q3)),"Dread Pallor",A.e("Dread Pallor",H.a([C.A],q2),C.e,"Hinder multiple targets using [Power]. User your Mid die for one and your Min die for the rest.",q,H.a([S.u(C.j)],q3)),"Dual Offense",A.e("Dual Offense",H.a([C.k],q2),C.e,"Attack using [Power]. Attack a second target with your Min die.",q,H.a([S.u(C.j)],q3)),"Dual Strike",A.e("Dual Strike",H.a([C.k],q2),C.e,"Attack one target using [Power or Quality]. Attack a second target using your Min die.",q,H.a([S.u(C.a_)],q3)),"Dual Wielder",A.e("Dual Wielder",H.a([C.k],q2),C.e,"Attack two different targets using [Power or Quality], one target using your Mid die and the other your Min die.",q,H.a([S.u(C.a_)],q3)),"Embolden",A.e("Embolden",H.a([C.k,C.p],q2),C.e,"Attack using [Power], and Boost all nearby heroes taking [Basic Action] or [Basic Action] using your Min die until your next turn.",q,H.a([S.u(C.j),S.u(C.fv),S.u(C.fv)],q3)),b6,A.e(b6,H.a([],q2),C.y,"When hit with an Attack, change to any form before resolving the Attack. Take a minor twist.",q,C.i),b7,A.e(b7,H.a([],q2),C.y,"When you are hit with an Attack, you may change to any mode. If you do, take extra damage to the Min die or take a minor twist.",q,C.i),b8,A.e(b8,H.a([C.p,C.A,C.I,C.k,C.a6],q2),C.e,"Boost, Hinder, Defend, or Attack using [Power]. You and all nearby heroes in the Yellow or Red zone Recover Health equal to your Min die.",q,H.a([S.u(C.j)],q3)),"Encourage",A.e("Encourage",H.a([C.k,C.p],q2),C.e,"Attack using [Power]. Boost all nearby heroes taking Attack or Overcome actions using your Min die until your next turn.",q,H.a([S.u(C.j)],q3)),b9,A.e(b9,H.a([C.a6],q2),C.L,"If you would take damage from [Obtained Element/Energy], reduce that damage to 0 and Recover that amount of Health instead.",q,H.a([S.u(C.bb)],q3)),"Energy Burst",A.e("Energy Burst",H.a([C.k],q2),C.e,d,q,H.a([S.u(C.j)],q3)),c0,A.e(c0,H.a([C.I,C.p],q2),C.e,"Defend using [Power]. Use your Max die. Boost using your Min die.",q,H.a([S.u(C.j)],q3)),c1,A.e(c1,H.a([C.p],q2),C.y,"When you take damage from [Element/Energy], treat the amount of damage you take as a Boost action for yourself.",q,H.a([S.u(C.br)],q3)),"Energy Immunity",A.e("Energy Immunity",H.a([C.a6],q2),C.L,a5,q,H.a([S.u(C.bb)],q3)),"Energy Jaunt",A.e("Energy Jaunt",H.a([C.k],q2),C.e,"Attack multiple targets using [Power], applying your Min die against each.",q,H.a([S.u(C.j)],q3)),c2,A.e(c2,H.a([],q2),C.L,"Whenever you take damage from [Obtained Element/Energy], you may also inflict that much damage on another target.",q,H.a([S.u(C.bb)],q3)),"Equip",A.e("Equip",H.a([C.p],q2),C.e,"Boost using [Power]. Make one bonus for one ally using your Mid die and another for another ally using your Min die.",q,H.a([S.u(C.j)],q3)),"Expanded Mind",A.e("Expanded Mind",H.a([C.p,C.k],q2),C.e,"Boost yourself using [Power]. User your Max die. That bonus is persistent and exclusive. Then Attack using your Min die.",q,H.a([S.u(C.j)],q3)),c3,A.e(c3,H.a([],q2),C.y,"Apply a bonus after rolling your action, instead of before.",q,C.i),"Exploding Ammo",A.e("Exploding Ammo",H.a([C.k,C.o],q2),C.e,"Attack or Overcome using [Quality] on an environmental target, using your Max+Min dice. If you roll doubles, take a minor twist.",q,H.a([S.u(C.ao)],q3)),c4,A.e(c4,H.a([C.k],q2),C.e,"Attack using [Power]. If you Attacked or Hindered that target in your previous turn, use your Max die in this Attack.",q,H.a([S.u(C.j)],q3)),c5,A.e(c5,H.a([C.k],q2),C.e,"Attack up to three different targets using [Power]. Apply your Max die to one, your Mid die to another, your Min die to the third. If you roll doubles, take a minor twist or take irreducible damage equal to that die.",q,H.a([S.u(C.j)],q3)),c6,A.e(c6,H.a([C.k],q2),C.e,"Attack up to two targets using [Power]. Also take an amount of damage equal to your Mid die.",q,H.a([S.u(C.j)],q3)),c7,A.e(c7,H.a([C.I],q2),C.y,"When you would take damage that would change your zone, Defend against that damage by rolling your single [Quality] die.",q,H.a([S.u(C.ao)],q3)),"Extremes",A.e("Extremes",H.a([],q2),C.L,"Whenever you roll a die's max value, treat that value as 1 higher. Whenever you roll a 1 on a die, treat that die as if it had rolled a 0.",q,C.i),"Fast Fingers",A.e("Fast Fingers",H.a([C.p,C.A,C.k],q2),C.e,"Boost or Hinder using [Power]. User your Max die. If you roll doubles, you may also Attack using your Mid die.",q,H.a([S.u(C.j)],q3)),"Field of Energy",A.e("Field of Energy",H.a([C.k],q2),C.e,"Attack multiple targets near each other using [Power].",q,H.a([S.u(C.j)],q3)),"Flexible Stance",A.e("Flexible Stance",H.a([],q2),C.e,"Take any two basic actions using [Power or Quality], each using your Min die.",q,H.a([S.u(C.a_)],q3)),"Flowing Fight",A.e("Flowing Fight",H.a([C.k],q2),C.e,c8,q,H.a([S.u(C.j)],q3)),"Flurry of Fists",A.e("Flurry of Fists",H.a([C.k],q2),C.e,"Attack using [Quality]. User your Max die. If you roll doubles, use Max+Min instead.",q,H.a([S.u(C.ao)],q3)),c9,A.e(c9,H.a([C.A,C.k],q2),C.e,"Hinder using [Power]. Attack using your Min die. If you are in the Red zone, you may apply the penalty to any number of nearby targets.",q,H.a([S.u(C.j)],q3)),"Form Recovery",A.e("Form Recovery",H.a([C.k,C.a6],q2),C.e,"Attack using [Self Control Power] and Recover Health equal to your Min die. Return to your base form.",q,H.a([S.u(C.aW)],q3)),d0,A.e(d0,H.a([C.k],q2),C.e,"Attack using [Power or Quality]. The target of the Attack must take an Attack action against you as its next turn, if possible",q,H.a([S.u(C.a_)],q3)),"Galvanize",A.e("Galvanize",H.a([C.p],q2),C.e,m,q,H.a([S.u(C.a_)],q3)),"Gimmick",A.e("Gimmick",H.a([C.k,C.p,C.A],q2),C.e,"Boost or Hinder using [Power]. Use your Max die. If you roll doubles, you may also Attack using your Mid die.",q,H.a([S.u(C.j)],q3)),"Grasping Vines",A.e("Grasping Vines",H.a([C.A],q2),C.e,"Hinder using [Power]. Use your Max die. You may split that penalty across multiple nearby targets.",q,H.a([S.u(C.j)],q3)),"Growth",A.e("Growth",H.a([C.p],q2),C.e,"Boost yourself using [Quality]. That bonus is persistent and exclusive.",q,H.a([S.u(C.ao)],q3)),d1,A.e(d1,H.a([C.k],q2),C.y,"When a new target enters close range, Attack that target by rolling your single [Quality] die.",q,H.a([S.u(C.ao)],q3)),"Halt",A.e("Halt",H.a([C.I],q2),C.y,"When you are Attacked at close range, Defend yourself by rolling your single [Power] die.",q,H.a([S.u(C.j)],q3)),d2,A.e(d2,H.a([C.k,C.a6],q2),C.e,"Attack using [Power]. Use your Min die. Take damage equal to your Mid die, and one nearby ally Recovers Health equal to your Max die.",q,H.a([S.u(C.j)],q3)),"Heedless Blast",A.e("Heedless Blast",H.a([C.k],q2),C.e,"Attack multiple targets using [Power]. Use your Mid die against each target. Take irreducible damage equal to your Mid die.",q,H.a([S.u(C.j)],q3)),d3,A.e(d3,H.a([],q2),C.y,"One nearby ally may reroll their dice pool. You lose Health equal to the Min die of the new roll.",q,C.i),d4,A.e(d4,H.a([C.p],q2),C.e,"Boost using [Power]. use your Max die, or use your Mid die and make it persistent and exclusive.",q,H.a([S.u(C.j)],q3)),"Hit & Run",A.e("Hit & Run",H.a([C.k,C.I],q2),C.e,"Attack using [Power]. Defend against all Attacks against you using your Min die until your next turn.",q,H.a([S.u(C.j)],q3)),"Hunter/Killer",A.e("Hunter/Killer",H.a([C.A,C.k],q2),C.e,"Move to any target in this scene and Hinder that target using [Power]. Then, Attack that target using your Max+Min dice.",q,H.a([S.u(C.j)],q3)),d5,A.e(d5,H.a([C.I],q2),C.y,"When you are Attacked, Defend by rolling your single Illusions die.",q,C.i),d6,A.e(d6,H.a([C.k,C.p],q2),C.e,"Attack using [Power]. Use your Max die. If you choose another hero to go next, Boost that hero using your Mid die.",q,H.a([S.u(C.j)],q3)),"Imitation",A.e("Imitation",H.a([],q2),C.e,"Use a Green action ability of a nearby ally (using the same size power/quality die they would use.)",q,C.i),"Immunity",A.e("Immunity",H.a([],q2),C.L,"You do not take damage from [Element/Energy]",q,H.a([S.u(C.br)],q3)),"Improvement",A.e("Improvement",H.a([C.p],q2),C.e,"Boost yourself using [Power]. Create one bonus using your Max die and one bonus using your Mid die. These bonuses are persistent and exclusive.",q,H.a([S.u(C.j)],q3)),d7,A.e(d7,H.a([C.p],q2),C.e,"Boost yourself using [Power], assigning your Min, Mid, and Max dice to 3 different bonuses, one of which must be given to an enemy.",q,H.a([S.u(C.j)],q3)),"Inflict",A.e("Inflict",H.a([C.k,C.A],q2),C.e,"Attack using [Power]. Hinder that same target using your Min die.",q,H.a([S.u(C.j)],q3)),"Intentionality",A.e("Intentionality",H.a([],q2),C.L,a2,q,C.i),d8,A.e(d8,H.a([C.k],q2),C.e,"Attack multiple targets using [Power]. take damage equal to your Max die.",q,H.a([S.u(C.j)],q3)),"Living Arsenal",A.e("Living Arsenal",H.a([C.k],q2),C.e,"Attack using [Power] with a bonus equal to the number of bonuses you currently have.",q,H.a([S.u(C.j)],q3)),"Living Bomb",A.e("Living Bomb",H.a([C.k],q2),C.e,"Destroy one d6 or d8 minion. Roll that minion's die as an Attack against another target.",q,C.i),"Living Bulwark",A.e("Living Bulwark",H.a([C.k,C.I],q2),C.e,"Attack using [Power]. Defend another target with your Min die.",q,H.a([S.u(C.j)],q3)),"Load",A.e("Load",H.a([C.p],q2),C.e,"Boost using [Power or Quality] to create one bonus Using your Max die and another using your Mid die.",q,H.a([S.u(C.a_)],q3)),"Magical Shield",A.e("Magical Shield",H.a([C.I],q2),C.y,"When another hero in the Yellow or Red zone would take damage, you may Defend them by rolling your single [Power] die.",q,H.a([S.u(C.j)],q3)),"Make Minion",A.e("Make Minion",H.a([],q2),C.e,"Create a minion using [Power]. Reference the minion chart to see what size of minion it is. Choose whether it can Attack, Defend, Boost, Hinder, or Overcome. it acts on the start of your turn. You can only use this ability in a situation conducive to how you create minions.",q,H.a([S.u(C.j)],q3)),"Mass Effect",A.e("Mass Effect",H.a([C.p,C.A],q2),C.e,"Boost or Hinder using [Power] and apply that mod to multiple close targets.",q,H.a([S.u(C.j)],q3)),d9,A.e(d9,H.a([C.p,C.A],q2),C.e,"Boost or Hinder using [Power], and apply that mod to multiple close targets.",q,H.a([S.u(C.j)],q3)),"Merge",A.e("Merge",H.a([],q2),C.e,"If you have access to a willing compatible person to enable your transform, change from your civilian form to your heroic form, or vice versa. After your transformation, take a basic action using your Min die. If you have any penalties that separate you from that person, you cannot use this ability.",q,C.i),"Metal Skin",A.e("Metal Skin",H.a([],q2),C.L,"Reduce the amount of physical damage taken by 1 while you are in the Green zone, 2 while in the Yellow zone, and 3 while in the Red zone.",q,C.i),e0,A.e(e0,H.a([],q2),C.y,"Reduce any damage you take by the number of minions you have. Whenever damage is reduced this way, reduce the size of one of your minions.",q,C.i),e1,A.e(e1,H.a([C.k,C.A],q2),C.e,"Attack a minion using Suggestion. If that minion would be taken out, you control its next action, and then it is removed. Otherwise, Hinder it using your Min die.",q,C.i),"Minuscule Form",A.e("Minuscule Form",H.a([C.I],q2),C.e,"Defend using [Power]. Use your Max die. Remove all penalties on you.",q,H.a([S.u(C.j)],q3)),"Misdirection",A.e("Misdirection",H.a([C.I],q2),C.y,"When a nearby hero in the Yellow or Red zone would take damage, Defend against that damage by rolling your single [Power] die, then redirect any remaining damage to a nearby minion of your choice.",q,H.a([S.u(C.j)],q3)),"Mobile Assist",A.e("Mobile Assist",H.a([C.p,C.k],q2),C.e,"Boost another hero using [Power]. Attack using your Min die.",q,H.a([S.u(C.j)],q3)),"Mobile Dodge",A.e("Mobile Dodge",H.a([C.k],q2),C.y,"When you are hit with an Attack, you may take 1 irreducible damage to have the attacker reroll their dice pool.",q,C.i),e2,A.e(e2,H.a([C.p,C.A],q2),C.e,"Boost or Hinder using [Power], and apply that mod to multiple nearby targets.",q,H.a([S.u(C.j)],q3)),"Momentary Power",A.e("Momentary Power",H.a([C.p,C.A],q2),C.e,"Boost yourself using [Power]. Use your Max die. Hinder a nearby opponent with your Min die.",q,H.a([S.u(C.j)],q3)),e3,A.e(e3,H.a([C.k],q2),C.e,"Attack using [Power] against multiple targets using your Min die against each.",q,H.a([S.u(C.j)],q3)),"Multitask",A.e("Multitask",H.a([C.p,C.A,C.I,C.k,C.o],q2),C.e,"Take any two different basic actions using [Power or Quality], each using your Min die.",q,H.a([S.u(C.a_)],q3)),e4,A.e(e4,H.a([C.I],q2),C.y,"When another hero in the Yellow or Red zone would take damage, you may redirect it to yourself and Defend against it by rolling your single [Power] die.",q,H.a([S.u(C.j)],q3)),"Natural Weapon",A.e("Natural Weapon",H.a([C.k],q2),C.e,e5,q,H.a([S.u(C.j)],q3)),e6,A.e(e6,H.a([C.A],q2),C.e,"Hinder using [Power]. That penalty is persistent and exclusive.",q,H.a([S.u(C.j)],q3)),"Never Happened",A.e("Never Happened",H.a([],q2),C.y,"When a nearby enemy would create a bonus or penalty, you may remove it immediately.",q,C.i),e7,A.e(e7,H.a([C.k,C.A],q2),C.e,"Attack multiple targets using [Quality]. User your Min die. Hinder each target equal to your Mid die.",q,H.a([S.u(C.ao)],q3)),"Not Quite Right",A.e("Not Quite Right",H.a([],q2),C.y,"After a dice pool is rolled, adjust one die up or down one value on the die.",q,C.i),e8,A.e(e8,H.a([C.k],q2),C.e,"Attack using [Power or Quality]. Use your Max die.",q,H.a([S.u(C.a_)],q3)),"Onboard Upgrade",A.e("Onboard Upgrade",H.a([C.p],q2),C.e,"Boost yourself using Power Suit. Use your Min+Mid dice. That bonus is persistent and exclusive.",q,C.i),"Organi-Hack",A.e("Organi-Hack",H.a([C.k,C.A],q2),C.e,"Attack a target using [Power]. Hinder that target with your Min die.",q,H.a([S.u(C.j)],q3)),e9,A.e(e9,H.a([C.o,C.k,C.p],q2),C.e,"Attack or Overcome using [Power or Quality]. Boost yourself using your Min die.",q,H.a([S.u(C.a_)],q3)),"Overpower",A.e("Overpower",H.a([],q2),C.L,"Whenever you are Boosted, increase that bonus by +1. Then, if that bonus is +5 or higher, take damage equal to that bonus and remove it.",q,C.i),f0,A.e(f0,H.a([C.k,C.a6],q2),C.e,"Attack using [Power]. Then, if the target of the Attack survived, also Attack that target with your Max die. Otherwise, Recover an amount of Health equal to your Min die.",q,H.a([S.u(C.j)],q3)),f1,A.e(f1,H.a([C.p],q2),C.e,"Boost yourself using [Power]. User your Max die. That bonus is persistent and exclusive.",q,H.a([S.u(C.j)],q3)),"Possess Object",A.e("Possess Object",H.a([C.o],q2),C.e,"Overcome using [Archetype Quality]. On a success, merge with an item and then use your min die to take a basic action.",q,H.a([S.u(C.fu)],q3)),"Possess Person",A.e("Possess Person",H.a([C.k],q2),C.e,"Attack using [Archetype Power]. If you incapacitate the target and change forms, you may use your Min die as a bonus to your next action. Alternatively, you may possess a willing target for no bonus.",q,H.a([S.u(C.fs)],q3)),f2,A.e(f2,H.a([C.A],q2),C.y,"After an enemy rolls dice to take an action for their turn but before using the result, Hinder that enemy's roll using your single Postcognition die.",q,C.i),f3,A.e(f3,H.a([C.p,C.k],q2),C.e,"Boost yourself using [Power]. Use your Max die. That bonus is persistent and exclusive. Then Attack with your Min die.",q,H.a([S.u(C.j)],q3)),"Power Strike",A.e("Power Strike",H.a([C.k],q2),C.e,"Attack using [Power or Quality] and use your Max die.",q,H.a([S.u(C.a_)],q3)),"Power Up",A.e("Power Up",H.a([C.p],q2),C.e,"Boost another hero or one of your minions using [Power]. Either use your Max die, or use your Mid die and make that bonus persistent.",q,H.a([S.u(C.j)],q3)),"Powerful Blast",A.e("Powerful Blast",H.a([C.k],q2),C.e,"Attack using [Power] and use your Max die.",q,H.a([S.u(C.j)],q3)),"Precise Hit",A.e("Precise Hit",H.a([C.k],q2),C.e,"Attack using [Power]. Ignore all penalties on this Attack, ignore any Defend actions, and it cannot be affected by Reactions.",q,H.a([S.u(C.j)],q3)),"Precise Shot",A.e("Precise Shot",H.a([C.k],q2),C.e,f4,q,H.a([S.u(C.a_)],q3)),"Precise Strike",A.e("Precise Strike",H.a([C.k],q2),C.e,f4,q,H.a([S.u(C.a_)],q3)),f5,A.e(f5,H.a([C.p],q2),C.y,"After an ally rolls dice to take an action for their turn but before using the result, Boost that ally's roll using your single Precognition die.",q,C.i),"Predator's Eye",A.e("Predator's Eye",H.a([C.k,C.p],q2),C.e,"Attack using [Power]. User your Max+Min dice. Then gain a Boost using your Mid die. The target of the Attack gains a bonus of the same size.",q,H.a([S.u(C.j)],q3)),f6,A.e(f6,H.a([C.p,C.k],q2),C.e,"Boost using [Power]. Use your Max die. If you roll doubles, you may also Attack using your Mid die.",q,H.a([S.u(C.j)],q3)),f7,A.e(f7,H.a([C.p],q2),C.e,"Boost yourself using [Mental Quality]. Either use your Max die, or use your Mid die and make it persistent.",q,H.a([S.u(C.bL)],q3)),"Psychic Assault",A.e("Psychic Assault",H.a([C.k,C.A],q2),C.e,"Attack using [Psychic Power]. Hinder the target using your Min die.",q,H.a([S.u(C.bs)],q3)),f8,A.e(f8,H.a([C.p],q2),C.e,"Boost using [Psychic Power]. Apply that bonus to all hero Attack and Overcome actions until the start of your next turn.",q,H.a([S.u(C.bs)],q3)),"Psychic Insight",A.e("Psychic Insight",H.a([],q2),C.y,"After rolling during your turn, you make take 1 irreducible damage to reroll your entire dice pool.",q,C.i),"Punishment",A.e("Punishment",H.a([],q2),C.L,"Whenever you Attack an enemy that has inflicted a penalty on you, treat that penalty as if it were a bonus for the purpose of that Attack.",q,C.i),"Quick Switch",A.e("Quick Switch",H.a([],q2),C.e,"Destroy one bonus on you. Change modes, then take an action in the new mode.",q,C.i),f9,A.e(f9,H.a([C.k],q2),C.y,"When a new target enters the scene close to you, you may Attack it by rolling your single [Power] die.",q,H.a([S.u(C.j)],q3)),g0,A.e(g0,H.a([C.p,C.a6],q2),C.e,g1,q,H.a([S.u(C.j)],q3)),"Rally",A.e("Rally",H.a([C.k,C.a6],q2),C.e,"Attack using [Quality]. Other nearby heroes in the Yellow or Red zone Recover equal to your Min die.",q,H.a([S.u(C.ao)],q3)),g2,A.e(g2,H.a([],q2),C.e,"Create a minion using [Power]. Use your Min die. Choose which basic action it can perform. It acts now and at the start of your turns.",q,H.a([S.u(C.j)],q3)),g3,A.e(g3,H.a([C.I],q2),C.y,"When a nearby ally would take damage, Defend that ally by rolling your single status die, and move them elsewhere in the same scene.",q,C.i),"Reactive Field",A.e("Reactive Field",H.a([],q2),C.y,"When you are attacked by a nearby enemy, the attacker also takes an equal amount of damage.",q,C.i),"Reality Scorned",A.e("Reality Scorned",H.a([C.k],q2),C.e,"Attack using [Power]. If your target survived, Hinder them using your Max die.",q,H.a([S.u(C.j)],q3)),g4,A.e(g4,H.a([],q2),C.y,g5,q,C.i),"Recharge",A.e("Recharge",H.a([C.p,C.a6],q2),C.e,g1,q,H.a([S.u(C.j)],q3)),"Reflexive Burst",A.e("Reflexive Burst",H.a([C.k],q2),C.y,"When your personal zone changes, Attack all close enemy targets by rolling your single [Power] die.",q,H.a([S.u(C.j)],q3)),"Regeneration",A.e("Regeneration",H.a([C.I,C.a6],q2),C.e,"Defend using [Power]. use your Max die. Recover Health equal to your Min die.",q,H.a([S.u(C.j)],q3)),g6,A.e(g6,H.a([C.p,C.a6],q2),C.e,"Boost using [Power]. Recover Health equal to your Min die.",q,H.a([S.u(C.j)],q3)),"Relic Drain",A.e("Relic Drain",H.a([C.A,C.a6],q2),C.e,"Hinder using [Power]. Also Recover Health equal to your Min die.",q,H.a([S.u(C.j)],q3)),"Repair",A.e("Repair",H.a([C.k,C.a6],q2),C.e,"Attack using [Power]. Recover Health equal to your Min die.",q,H.a([S.u(C.j)],q3)),"Resilience",A.e("Resilience",H.a([],q2),C.L,"At the start of your turn, remove any -1 penalties on you.",q,C.i),"Resolve",A.e("Resolve",H.a([C.p,C.a6],q2),C.e,"Boost yourself using [Power], then remove a penalty on yourself or Recover using your Min die.",q,H.a([S.u(C.j)],q3)),"Respond In Kind",A.e("Respond In Kind",H.a([],q2),C.y,"When you are hit with an Attack at close range, the attacker also takes damage equal to their effect die.",q,C.i),g7,A.e(g7,H.a([],q2),C.y,"You may apply a bonus to a roll after rolling instead of before.",q,C.i),"Ricochet",A.e("Ricochet",H.a([C.k],q2),C.e,"Attack using [Quality]. Use your Max die. If you roll doubles, use Max+Min instead.",q,H.a([S.u(C.ao)],q3)),"Run Down",A.e("Run Down",H.a([C.k],q2),C.e,"Attack multiple targets using [Power]. Use your Min die against each.",q,H.a([S.u(C.j)],q3)),"Sabotage",A.e("Sabotage",H.a([C.k,C.A],q2),C.e,"Attack using [Power or Quality]. Remove on physical bonus or penalty, Hinder a target using your Min die, or maneuver to a new location in your environment.",q,H.a([S.u(C.a_)],q3)),"Sacrifice",A.e("Sacrifice",H.a([],q2),C.y,"When you are Attacked, redirect the Attack to one of your nearby minions",q,C.i),"Scout",A.e("Scout",H.a([C.o,C.I],q2),C.e,"Overcome using [Power]. Defend yourself with your Max die. Then, you may end up anywhere in the current scene.",q,H.a([S.u(C.j)],q3)),g8,A.e(g8,H.a([C.p],q2),C.e,b5,q,H.a([S.u(C.j)],q3)),"Sever Link",A.e("Sever Link",H.a([C.o,C.p],q2),C.e,"Overcome an environmental challenge using [Power]. Use your Max die. Either remove any penalty in the scene or Boost equal to your Mid die.",q,H.a([S.u(C.j)],q3)),"Shadowy Figure",A.e("Shadowy Figure",H.a([C.k,C.I],q2),C.e,"Attack using [Power or Quality]. Defend using your Min die against all Attacks until your next turn.",q,H.a([S.u(C.a_)],q3)),"Shield",A.e("Shield",H.a([C.I,C.A],q2),C.y,"When you are attacked, you may Defend against the Attack by rolling your single [Power] die. If you reduce the damage to 0 or less, you may also Hinder the source of the damage with the result of the die you rolled.",q,H.a([S.u(C.j)],q3)),"Skirmish",A.e("Skirmish",H.a([C.k],q2),C.e,g9,q,H.a([S.u(C.j)],q3)),"Snap Decision",A.e("Snap Decision",H.a([C.p,C.k],q2),C.e,"Boost yourself using [Power]. Use your Max+Min dice. Then Attack using your Mid die with that bonus.",q,H.a([S.u(C.j)],q3)),"Sniper Aim",A.e("Sniper Aim",H.a([C.p],q2),C.e,"Boost yourself using [Power or Quality]. Use your Max+Min dice. This bonus can only be used against one chosen target, and is persistent & exclusive against that target until it leaves the scene.",q,H.a([S.u(C.a_)],q3)),h0,A.e(h0,H.a([C.k],q2),C.e,c8,q,H.a([S.u(C.j)],q3)),"Sonic Boom",A.e("Sonic Boom",H.a([C.A],q2),C.e,"Hinder multiple targets using [Power]. Apply your Min die to each of them.",q,H.a([S.u(C.j)],q3)),"Speedy Analysis",A.e("Speedy Analysis",H.a([C.p],q2),C.e,"Boost multiple targets using [Power]. Use your Max die.",q,H.a([S.u(C.j)],q3)),"Speedy Form",A.e("Speedy Form",H.a([C.A],q2),C.e,"Hinder multiple targets using [Power].",q,H.a([S.u(C.j)],q3)),"Spin & Shoot",A.e("Spin & Shoot",H.a([C.k,C.I],q2),C.e,"Attack using [Power or Quality]. Defend using your Min die.",q,H.a([S.u(C.a_)],q3)),"Split Form",A.e("Split Form",H.a([],q2),C.L,"Choose two powers and two qualities that you always have access to in either form. You must divide up the remainder of your powers and qualities between your civilian and heroic forms so they are only usable within those forms. You cannot use abilities related to a power or quality you don't have access to. In the next step, when you create a roleplaying quality, you will have access to that in either form.",q,C.i),"Stalwart",A.e("Stalwart",H.a([C.k],q2),C.e,g9,q,H.a([S.u(C.j)],q3)),h1,A.e(h1,H.a([C.p,C.A],q2),C.e,"Boost all nearby allies using [Power] using your Max+Mid dice. Hinder yourself with your Min die.",q,H.a([S.u(C.j)],q3)),h2,A.e(h2,H.a([C.a6],q2),C.y,"When you eliminate a minion with an Attack using [Power or Quality], Recover Health equal to your Min die.",q,H.a([S.u(C.a_)],q3)),"Strike & Swoop",A.e("Strike & Swoop",H.a([C.k,C.I],q2),C.e,"Attack using [Power or Quality]. Defend against all Attacks against you using your Min die until your next turn.",q,H.a([S.u(C.a_)],q3)),"Strong Form",A.e("Strong Form",H.a([C.k],q2),C.e,e5,q,H.a([S.u(C.j)],q3)),"Subdue",A.e("Subdue",H.a([C.k,C.A],q2),C.e,"Attack using [Power]. Hinder the same target using your Min die.",q,H.a([S.u(C.j)],q3)),h3,A.e(h3,H.a([C.k],q2),C.e,"Attack multiple targets using [Power]. User your Mad die against one target, and your Mid die against each other target. If you roll doubles, take irreducible damage equal to your Mid die.",q,H.a([S.u(C.j)],q3)),h4,A.e(h4,H.a([],q2),C.y,"After rolling your dice pool for the turn, you may take 1 irreducible damage to reroll your entire poll.",q,C.i),"Surprise Shift",A.e("Surprise Shift",H.a([C.k],q2),C.e,"Attack using [Self Control Power] and use your Max die. Then change to any available form.",q,H.a([S.u(C.aW)],q3)),"Swarm",A.e("Swarm",H.a([C.k],q2),C.e,"Attack multiple targets using Animal Control and use your Min die.",q,C.i),"Swarm Combat",A.e("Swarm Combat",H.a([C.k],q2),C.e,"Attack using [Power]. Use your Max die plus a bonus equal to the number of minions you have.",q,H.a([S.u(C.j)],q3)),"Switch",A.e("Switch",H.a([C.p],q2),C.e,"Boost yourself using [Power or Quality]. Then change modes.",q,H.a([S.u(C.a_)],q3)),h5,A.e(h5,H.a([C.p],q2),C.y,"When Attacked, treat the amount of damage you take as a Boost action for yourself.",q,C.i),"Techno-Absorb",A.e("Techno-Absorb",H.a([C.a6],q2),C.L,a,q,H.a([S.u(C.br)],q3)),h6,A.e(h6,H.a([C.k],q2),C.e,"Attack using Telekinesis. Either Attack one target and use your Max die, or two targets and use your Mid die against one and your Min die against another.",q,C.i),h7,A.e(h7,H.a([C.k,C.A],q2),C.e,"Attack using Telepathy and use your Max die. Hinder the target with a persistent penalty using your Min die.",q,C.i),"Throw Minion",A.e(h8,H.a([C.k],q2),C.e,"Attack a minion using [Power]. The result of the minion's save Attacks another target of your choice.",q,H.a([S.u(C.j)],q3)),"Throw Minion 2",A.e("Throw Minion 2",H.a([C.k],q2),C.e,"Attack a minion using [Power or Quality]. Whatever that minion rolls as defense Attacks another target of your choice.",h8,H.a([S.u(C.a_)],q3)),"Tough Form",A.e("Tough Form",H.a([],q2),C.L,c,q,C.i),"Towering Form",A.e("Towering Form",H.a([C.k],q2),C.e,"Attack multiple targets using [Power].",q,H.a([S.u(C.j)],q3)),"Transform",A.e("Transform",H.a([],q2),C.e,"Change from your civilian form to your heroic form, or vice versa.",q,C.i),"Tricky Form",A.e("Tricky Form",H.a([C.p,C.A],q2),C.e,"Boost or Hinder using [Power]. Use your Max die.",q,H.a([S.u(C.j)],q3)),"Turn the Tables",A.e("Turn the Tables",H.a([],q2),C.e,"Change any bonus into a penalty of equal size or vice versa",q,C.i),"Twist Reality",A.e("Twist Reality",H.a([],q2),C.y,g5,q,C.i),h9,A.e(h9,H.a([],q2),C.e,"The first time you take damage or change zones in a scene, you must transform from your civilian form to your heroic form. You can also transform by taking an action and taking damage equal to a roll of your current status die. After an action scene, you change back to your civilian form.",q,C.i),"Unflagging",A.e("Unflagging",H.a([],q2),C.L,"At the start of your turn, remove a penalty on yourself.",q,C.i),"Unknown Results",A.e("Unknown Results",H.a([C.p,C.A,C.I,C.k,C.o],q2),C.e,"Take any basic action using [Power]. Then roll a d6. On 1, Boost with your Min die. On 2, Hinder with your Min die. On 3, Defend with your Min die. On 4, lose Health equal to your Min die. On 5, your basic action uses your Max die. On 6, your basic action uses your Min die.",q,H.a([S.u(C.j)],q3)),i0,A.e(i0,H.a([],q2),C.y,"After rolling during your turn, you may take 1 irreducible damage to reroll your entire dice pool",q,C.i),i1,A.e(i1,H.a([C.k],q2),C.e,f4,q,H.a([S.u(C.a_)],q3)),"Untouchable",A.e("Untouchable",H.a([C.k],q2),C.y,"When you would be dealt damage roll a d4 while in the Green zone, d6 while in the Yellow, or d8 while in the Red. Reduce the damage you take by the value rolled. Attack another target with that roll.",q,C.i),"Upgrade Minion",A.e("Upgrade Minion",H.a([C.p],q2),C.e,"Boost one of your minions using [Power]. You may also upgrade that minion to your Max die size, replacing its minion form.",q,H.a([S.u(C.j)],q3)),i2,A.e(i2,H.a([],q2),C.y,"When one of your bonuses, penalties, or other creation of your powers is destroyed, deal a target damage equal to the roll of your [Power] die.",q,H.a([S.u(C.j)],q3)),"Warp Space",A.e("Warp Space",H.a([C.k],q2),C.e,"Attack using [Power]. You may move the target of that Attack anywhere else nearby. If the target goes next, you decide who takes the next turn after that.",q,H.a([S.u(C.j)],q3)),"Weird Form",A.e("Weird Form",H.a([C.k,C.A],q2),C.y,"When an opponent would Attack you in close combat while in this form, you may Attack or Hinder them first by rolling your single [Power] die.",q,H.a([S.u(C.j)],q3)),"Wild Strength",A.e("Wild Strength",H.a([C.p],q2),C.y,"When you defeat a minion, roll that minion's die and Boost yourself using that roll to create a bonus for your next action.",q,C.i),"Wither",A.e("Wither",H.a([C.k,C.A],q2),C.e,"Attack using [Power]. Hinder that target using your Max die.",q,H.a([S.u(C.j)],q3)),i3,A.e(i3,H.a([C.A,C.a6],q2),C.e,"Hinder yourself using Vitality. Use your Min die. Recover health equal to your Max+Mid dice.",i4,C.i),i5,A.e(i5,H.a([C.o,C.p],q2),C.e,"Overcome using [Athletic Power] in a situation that requires you to be more than humanly capable, like an extreme feat of strength or speed. Use your Max+Min dice. Boost all nearby allies with your Mid die.","Paragon Feat",H.a([S.u(C.eG)],q3)),i6,A.e(i6,H.a([],q2),C.L,"You have no limit on the amount of Reactions you can take. Each time you use a Reaction after the first one each turn, take 1 irreducible damage or a take a minor twist.","Push Your Limits",C.i),i7,A.e(i7,H.a([C.k],q2),C.y,"When you are Attacked and dealt damage, you may Attack the source of that damage by rolling your single [Athletic Power] die, plus the amount of damage you take.","Reactive Strike",H.a([S.u(C.eG)],q3)),i8,A.e(i8,H.a([C.k],q2),C.e,"Attack using [Obtained Element/Energy] and at least one bonus. Use your Max+Mid+Min dice. Destroy all of your bonuses, adding each of them to this Attack first, even if they are exclusive.",i9,H.a([S.u(C.bb)],q3)),j0,A.e(j0,H.a([C.k],q2),C.e,"Attack up to three targets, one which must be you, using [Obtained Element/Energy]. Assign your Min, Mid, and Max dice as you choose among those targets.","Eruption",H.a([S.u(C.bb)],q3)),j1,A.e(j1,H.a([C.a6,C.p],q2),C.L,"If you would take damage from [Element/Energy], ignore that damage and Recover that amount instead. Use the value of the damage to Boost yourself.","Improved Immunity",H.a([S.u(C.br)],q3)),j2,A.e(j2,H.a([C.k],q2),C.e,"Attack using [Obtained Element/Energy]. Use your Max+Mid dice.",j3,H.a([S.u(C.bb)],q3)),j4,A.e(j4,H.a([],q2),C.e,j5,j6,C.i),j7,A.e(j7,H.a([],q2),C.e,"Use [Obtained Element/Energy] to create a number of d6 minions equal to your Mid die. Choose the one same basic action that they each perform. They all act at the start of your turn.",j8,H.a([S.u(C.bb)],q3)),j9,A.e(j9,H.a([C.k],q2),C.e,"Attack using Signature Weaponry and at least one bonus. Use your Max+Mid+Min dice. Destroy all of your bonuses, adding each of them to this Attack first, even if they are exclusive.",i9,C.i),k0,A.e(k0,H.a([C.k,C.A],q2),C.e,"Attack using Signature Vehicle. Use your Max die. Hinder each nearby opponent with your Mid die. After using this ability, you and up to 2 allies may end up anywhere in the scene, even outside of the action.","Quick Exit",C.i),k1,A.e(k1,H.a([C.k],q2),C.e,"Attack up to three nearby targets using Signature Vehicle. Use your Max+Mid dice against each of them. You cannot use your Signature Vehicle power for the rest of this scene and until it is recovered/repaired.","Sacrificial Ram",C.i),k2,A.e(k2,H.a([C.p,C.k],q2),C.e,"Boost yourself using [Hallmark Power]. Use your Max die. That bonus is persistent and exclusive. Attack using your Mid die plus that bonus.",k3,H.a([S.u(C.fw)],q3)),k4,A.e(k4,H.a([C.p],q2),C.e,"Select a target. Boost using [Information Quality]. Use your Max+Mid+Min dice. That bonus must be used against that target before the end of your next turn, or it is wasted.","Critical Eye",H.a([S.u(C.cq)],q3)),k5,A.e(k5,H.a([C.A],q2),C.e,"Remove a bonus on a target. Hinder that target using [Information Quality]. use your Max die, and that penalty is persistent and exclusive.","Discern Weakness",H.a([S.u(C.cq)],q3)),k6,A.e(k6,H.a([],q2),C.L,"When taking any action using [Information Quality], you may reroll your Min die before determining the effects.",k7,H.a([S.u(C.cq)],q3)),k8,A.e(k8,H.a([C.o],q2),C.e,"Overcome using [Information Quality]. Use your Max+Min dice.","Specialized Info",H.a([S.u(C.cq)],q3)),k9,A.e(k9,H.a([],q2),C.y,l0,l1,C.i),l2,A.e(l2,H.a([C.p],q2),C.e,"Boost another hero using [Intellectual Power]. If that hero has already acted for the turn, use your Max die, and that hero loses Health equal to your Min die. That hero acts next in the turn order.",l3,H.a([S.u(C.cS)],q3)),l4,A.e(l4,H.a([],q2),C.L,"When taking any action using [Intellectual Power], you may reroll your Min die before determining the effects.",k7,H.a([S.u(C.cS)],q3)),l5,A.e(l5,H.a([C.k],q2),C.e,"Attack using [Intellectual Power]. Use your Max+Min dice. Ignore all penalties on this attack, ignore any Defend actions, and it cannot be affected by Reactions.","Unerring Strike",H.a([S.u(C.cS)],q3)),l6,A.e(l6,H.a([C.A,C.k],q2),C.e,"Hinder any number of targets in the scene using [Materials Power]. Use your Max+Min dice. If you roll doubles, also attack each target using your Mid die.","Field of Hazards",H.a([S.u(C.cr)],q3)),l7,A.e(l7,H.a([C.I],q2),C.e,"Defend using [Materials Power] against all Attacks against you until your next turn using your Max+Mid dice.",l8,H.a([S.u(C.cr)],q3)),l9,A.e(l9,H.a([],q2),C.y,"When you are Attacked and dealt damage, you may ignore that damage completely. If you do, treat the value of the damage as a Hinder action against you instead.","Like the Wind",C.i),m0,A.e(m0,H.a([C.k],q2),C.e,"Attack using [Materials Power]. Use your Max+Mid dice.",j3,H.a([S.u(C.cr)],q3)),m1,A.e(m1,H.a([],q2),C.e,"Use [Materials Power] to create a number of d6 minions equal to your Mid die. Choose the one same basic action that they each perform. They all act at the start of your turn.",j8,H.a([S.u(C.cr)],q3)),m2,A.e(m2,H.a([C.k],q2),C.y,"After an opponent Attacks or Hinders you or a nearby ally, Attack the opponent by rolling your single [Quality] die.","Aware Response",H.a([S.u(C.bL)],q3)),m3,A.e(m3,H.a([C.o,C.A],q2),C.e,"Overcome using [Mental Quality]. Use your Max+Min dice. Hinder all nearby opponents with your Mid die.","Canny Awareness",H.a([S.u(C.bL)],q3)),m4,A.e(m4,H.a([C.p,C.I,C.A],q2),C.e,"Boost using [Mental Quality] and use your Max die. Defend against all Attacks against you using your Mid die until your next turn. Note your Min die result: as a Reaction, until your next turn, you may Hinder an attacker using that result.","Considered Planning",H.a([S.u(C.bL)],q3)),m5,A.e(m5,H.a([C.k],q2),C.e,"Attack using [Mental Quality]. Use your Max+Mid+Min dice. Take a major twist.",m6,H.a([S.u(C.bL)],q3)),"Mental Harmony",A.e("Mental Harmony",H.a([],q2),C.L,"As long as you have at least one bonus created from [Mental Quality], treat [Power] as one size higher (max d12)","Harmony",H.a([S.u(C.bL),S.u(C.j)],q3)),m7,A.e(m7,H.a([],q2),C.e,j5,j6,C.i),m8,A.e(m8,H.a([],q2),C.y,l0,l1,C.i),m9,A.e(m9,H.a([],q2),C.y,"When an Attack deals damage to a nearby hero in the Red zone, you may take d6 irreducible damage to redirect that Attack to a target of your choice, other than the source of the Attack.","Heroic Interruption",C.i),n0,A.e(n0,H.a([C.I],q2),C.y,"When multiple nearby heroes are Attacked, you may take all the damage instead. If you do, roll your [Mobility Power] die + Rex zone die and Defend against the Attack by the total.","Intercession",H.a([S.u(C.cR)],q3)),n1,A.e(n1,H.a([C.k,C.A],q2),C.e,"Attack using [Mobility Power]. Use your Max die. Then, Hinder that target using your Mid+Min dice.","Take Down",H.a([S.u(C.cR)],q3)),n2,A.e(n2,H.a([C.p],q2),C.e,"Boost yourself using [Mobility Power]. Use your Max+Min dice. Then you may end up anywhere else in the scene, avoiding any dangers between your starting and ending locations.","Untouchable Movement",H.a([S.u(C.cR)],q3)),n3,A.e(n3,H.a([C.A],q2),C.e,"Hinder any number of close targets using [Physical Quality]. Use your Max die. End your turn elsewhere in the scene.","Book It",H.a([S.u(C.cQ)],q3)),n4,A.e(n4,H.a([C.k,C.A],q2),C.L,"Whenever you Attack a target with an action, you may also Hinder that target with your Min die.","Endurance Fighting",C.i),n5,A.e(n5,H.a([C.k],q2),C.e,"Attack using [Physical Quality]. Use your Max die. Remove any number of penalties from the target. Add your Min die to the Attack for each time you remove a penalty.","Finishing Blow",H.a([S.u(C.cQ)],q3)),n6,A.e(n6,H.a([C.I],q2),C.y,"When an opponent Attacks, you may become the target of that Attack and Defend by rolling your single [Physical Quality] die.","Reactive Defense",H.a([S.u(C.cQ)],q3)),n7,A.e(n7,H.a([C.A,C.k],q2),C.e,"Hinder using [Psychic Power]. Use your Max+Mid dice. If you roll doubles, also Attack the target using your Mid+Min dice and take damage equal to your Min die.","Dangerous Hinder",H.a([S.u(C.bs)],q3)),n8,A.e(n8,H.a([],q2),C.e,"Select a minion. That minion is now entirely under your control and acts at the start of your turn. If you are incapacitated, you lose control of this minion. You may also choose to release control of this minion at any time. At the end of the scene, this minion is defeated.","Dire Control",C.i),n9,A.e(n9,H.a([C.k],q2),C.e,"Attack using [Psychic Power]. Use your Max+Mid+Min dice. Take a major twist.",m6,H.a([S.u(C.bs)],q3)),o0,A.e(o0,H.a([C.p],q2),C.e,"Boost another hero using [Psychic  Power]. If that hero has already acted for the turn, use your Max die, and that hero loses Health equal to your Min die. That hero acts next in the turn order.",l3,H.a([S.u(C.bs)],q3)),o1,A.e(o1,H.a([C.I],q2),C.e,"Defend using [Psychic  Power] against all Attacks against you until your next turn using your Max+Mid dice.",l8,H.a([S.u(C.bs)],q3)),o2,A.e(o2,H.a([],q2),C.L,"At the start of your turn, change any penalty into a bonus.","Impossible Knowledge",C.i),o3,A.e(o3,H.a([],q2),C.e,"Use [Psychic Power] to create a number of d6 minions equal to your Mid die. Choose the one same basic action that they each perform. They all act at the start of your turn.",j8,H.a([S.u(C.bs)],q3)),o4,A.e(o4,H.a([],q2),C.L,"At the start of your turn, swap two of your power dice. They stay swapped until changed again or the scene ends.","Change Self",C.i),o5,A.e(o5,H.a([C.I,C.p],q2),C.y,"When you are Attacked, roll your single [Self Control Power] die as a Defend against that Attack. Also Boost yourself with that same roll.","Empowerment",H.a([S.u(C.aW)],q3)),o6,A.e(o6,H.a([C.I],q2),C.e,"Defend using [Self Control Power] against all Attacks against you until your next turn using your Max+Mid dice.",l8,H.a([S.u(C.aW)],q3)),o7,A.e(o7,H.a([C.A,C.a6],q2),C.e,"Hinder yourself using [Self Control Power]. Use your Min die. Recover health equal to your Max+Mid dice.",i4,H.a([S.u(C.aW)],q3)),o8,A.e(o8,H.a([C.k,C.I],q2),C.y,"When you would be dealt damage, you may roll your single [Self Control Power] die as a Defend against that damage and as an Attack against a nearby target other than the source of that damage.","Defensive Deflection",H.a([S.u(C.aW)],q3)),o9,A.e(o9,H.a([C.p,C.A,C.I,C.k,C.o],q2),C.e,"Choose three basic actions. Use [Self Control Power] in your pool and take one action with your Max die, a different action with your Mid die, and a third action with your Min die.","Mutable Form",H.a([S.u(C.aW)],q3)),p0,A.e(p0,H.a([C.k],q2),C.e,"Attack using [Self Control Power]. Use your Max+Mid dice.",j3,H.a([S.u(C.aW)],q3)),p1,A.e(p1,H.a([],q2),C.L,"Once per issue, if you would go to 0 Health, roll [Self Control Power] + [Physical or Mental Quality] + Red zone die. Your Health becomes that number.","Resurrection",H.a([S.u(C.aW),S.u(C.ft)],q3)),p2,A.e(p2,H.a([],q2),C.e,"Use [Self Control Power] to create a number of d6 minions equal to your Mid die. Choose the one same basic action that they each perform. They all act at the start of your turn.",j8,H.a([S.u(C.aW)],q3)),p3,A.e(p3,H.a([C.I],q2),C.y,"When an opponent Attacks, you may become the target of that Attack and Defend by rolling your single Red zone die.","Heroic Sacrifice",C.i),p4,A.e(p4,H.a([],q2),C.L,"When you use an ability action, you may also perform any one basic action using your Mid die on the same roll.","Inspiring Totem",C.i),p5,A.e(p5,H.a([C.p],q2),C.e,"Make a basic action using [Social Quality]. Use your Max die. All other heroes who take the same basic action on their turn against the same target receive a Boost from your Mid+Min dice.","Lead by Example",H.a([S.u(C.eH)],q3)),p6,A.e(p6,H.a([C.A,C.p],q2),C.e,"Hinder using [Social Quality]. Use your Max+Min dice. Boost yourself or an ally with your Mid die.","Ultimatum",H.a([S.u(C.eH)],q3)),p7,A.e(p7,H.a([C.k],q2),C.e,"Attack multiple nearby targets using [Technological Power]. Use your Max+Mid dice. Take irreducible damage equal to your Min die.","Combustion",H.a([S.u(C.c8)],q3)),p8,A.e(p8,H.a([C.k],q2),C.e,"Attack using [Technological Power]. Use your Max+Mid+Min dice. Take a major twist.",m6,H.a([S.u(C.c8)],q3)),p9,A.e(p9,H.a([C.A],q2),C.e,"Hinder yourself by rolling your single [Technological Power] die. You are immune to damage until the start of your next turn. You cannot use this ability again this scene.","Full Defensive",H.a([S.u(C.c8)],q3)),q0,A.e(q0,H.a([C.p,C.k],q2),C.e,"Boost yourself using [Technological Power]. Use your Max die. That bonus is persistent and exclusive. Attack using your Mid die plus that bonus.",k3,H.a([S.u(C.c8)],q3)),q1,A.e(q1,H.a([C.k],q2),C.e,"Attack multiple targets using [Technological Power], using your Max+Min dice. If you roll doubles, take a minor twist or damage equal to your Mid die.","Unload",H.a([S.u(C.c8)],q3))],t.N,t.A)})
+return P.at(["Absorb Essence",A.e("Absorb Essence",H.a([C.p],q2),C.y,"When you defeat a minion, roll that minion's die and Boost yourself using that roll.",q,C.i),"Adaptive",A.e("Adaptive",H.a([C.p,C.a6],q2),C.e,"Boost yourself using [Power], then either remove a penalty on yourself or Recover using your Min die.",q,H.a([S.u(C.j)],q3)),p,A.e(p,H.a([C.p,C.I],q2),C.e,"Boost yourself using [Power] and Defend with your Min die.",q,H.a([S.u(C.j)],q3)),o,A.e(o,H.a([C.k],q2),C.e,"Attack up to three targets using [Power or Quality]. Apply your Min die to each of them.",q,H.a([S.u(C.a_)],q3)),n,A.e(n,H.a([C.p],q2),C.e,m,q,H.a([S.u(C.a_)],q3)),"Agile Form",A.e("Agile Form",H.a([C.k,C.I],q2),C.e,"Attack using [Power]. Defend against all attacks until your next turn with your Min die.",q,H.a([S.u(C.j)],q3)),"Alien Boost",A.e("Alien Boost",H.a([C.p,C.A],q2),C.e,l,q,H.a([S.u(C.j)],q3)),k,A.e(k,H.a([],q2),C.y,"When a nearby enemy rolls their dice pool for the turn, you may lose 1 Health to reroll their entire pool",q,C.i),j,A.e(j,H.a([C.p,C.k],q2),C.e,"Boost yourself using [Power]. That bonus is persistent and exclusive. Then, Attack using your Min die. You may use the bonus you just created on that Attack.",q,H.a([S.u(C.j)],q3)),i,A.e(i,H.a([C.k,C.I],q2),C.e,"Attack using [Power or Quality]. Defend yourself using your Min die.",q,H.a([S.u(C.a_)],q3)),h,A.e(h,H.a([C.I],q2),C.y,"If you haven't yet acted in an action scene, you may Defend against an Attack by rolling your single [Power] die.",q,H.a([S.u(C.j)],q3)),"Analysis",A.e("Analysis",H.a([C.A,C.o],q2),C.e,"Hinder or use one of your principles to Overcome using [Power]. Use your Max+Min dice.",q,H.a([S.u(C.j)],q3)),g,A.e(g,H.a([],q2),C.y,"After rolling your dice pool, you may take 1 irreducible damage to reroll your dice pool.",q,C.i),f,A.e(f,H.a([C.A],q2),C.e,"Hinder using [Power]. Use your Max die, or use your Mid die and make it persistent and exclusive.",q,H.a([S.u(C.j)],q3)),e,A.e(e,H.a([C.p,C.I],q2),C.y,"When you are attacked, first roll your single [Power] die. Defend yourself with that roll. Then, Boost yourself using that roll.",q,H.a([S.u(C.j)],q3)),"Area Alteration",A.e("Area Alteration",H.a([C.p,C.A],q2),C.e,"[Boost or Hinder] any number of targets using [Power]. Use your Max die.",q,H.a([S.u(C.j)],q3)),"Area Assault",A.e("Area Assault",H.a([C.k],q2),C.e,d,q,H.a([S.u(C.j)],q3)),"Area Healing",A.e("Area Healing",H.a([C.p,C.a6],q2),C.e,"Boost an ally using [Power]. You and nearby heroes in the Yellow and Red zones Recover Health equal to your Min die.",q,H.a([S.u(C.j)],q3)),"Armored",A.e("Armored",H.a([],q2),C.L,c,q,C.i),b,A.e(b,H.a([C.o],q2),C.e,"Overcome using Remote Viewing and use your Max+Min dice. You do not have to be physically present in the area you are Overcoming.",q,C.i),"Attune",A.e("Attune",H.a([C.p],q2),C.e,"Boost yourself using [Power]. That bonus is persistent and exclusive. Damage dealt using that bonus is also [Element/Energy]",q,H.a([S.u(C.j),S.u(C.br)],q3)),"Attunement",A.e("Attunement",H.a([C.a6],q2),C.L,a,q,H.a([S.u(C.br)],q3)),"Aura of Pain",A.e("Aura of Pain",H.a([C.k],q2),C.e,"Attack multiple targets using [Power]. The, take irreducible damage equal to the number of targets hit.",q,H.a([S.u(C.j)],q3)),"Backlash",A.e("Backlash",H.a([C.k],q2),C.e,"Attack using [Power]. Use your Max die. Take damage equal to your Min die.",q,H.a([S.u(C.j)],q3)),"Banish",A.e("Banish",H.a([C.A,C.k],q2),C.e,"Hinder using [Power]. Use your Max die. If you roll doubles, also Attack using your Mid die.",q,H.a([S.u(C.j)],q3)),"Barrel Roll",A.e("Barrel Roll",H.a([C.I],q2),C.y,"When you are Attacked while Flying, you may Defend yourself by rolling your single [Power or Quality] die.",q,H.a([S.u(C.a_)],q3)),"Blinding Strike",A.e("Blinding Strike",H.a([C.k,C.A],q2),C.e,"Attack multiple targets using [Quality]. Hinder each target equal to your Min die.",q,H.a([S.u(C.ao)],q3)),"Bizarre Strike",A.e("Bizarre Strike",H.a([C.k,C.A],q2),C.e,"Attack using [Power]. Use your Max die. Hinder that target with your Mid die. Hinder yourself with your Min die.",q,H.a([S.u(C.j)],q3)),"Bombardment",A.e("Bombardment",H.a([C.I,C.k],q2),C.e,"Defend yourself using [Power]. You may Attack one target with your Max die.",q,H.a([S.u(C.j)],q3)),"Brainstorm",A.e("Brainstorm",H.a([C.k,C.p],q2),C.e,"Attack using [Power]. Hit one target using your Min die, another target with your mid die, and Boost using your Max die.",q,H.a([S.u(C.j)],q3)),"Break the 4th",A.e("Break the 4th",H.a([],q2),C.y,"You may uncheck a checked off collection on your hero sheet.",q,C.i),a0,A.e(a0,H.a([],q2),C.e,"Gain a d8 minion. It takes its turn before yours, but goes away at the end of the scene. You may only have one such minion at a time.",q,C.i),"Called Shot",A.e("Called Shot",H.a([C.k,C.p],q2),C.e,"Attack using [Quality]. Boost another hero using your Max die.",q,H.a([S.u(C.ao)],q3)),"Change Forms",A.e("Change Forms",H.a([C.p,C.A,C.I,C.k,C.o],q2),C.e,"Take a basic action using [Self Control Power], then switch to any available form.",q,H.a([S.u(C.aW)],q3)),a1,A.e(a1,H.a([C.p],q2),C.y,"When you change personal zones, you may Boost by rolling your single [Power] die.",q,H.a([S.u(C.j)],q3)),"Charged Up",A.e("Charged Up",H.a([],q2),C.L,a2,q,C.i),"Clever Form",A.e("Clever Form",H.a([C.p,C.o],q2),C.e,"Boost or Overcome using [Power]. Use your Max die.",q,H.a([S.u(C.j)],q3)),"Command Power",A.e("Command Power",H.a([],q2),C.y,"When you take damage from [Element/Energy], you may deal that much damage to another target.",q,H.a([S.u(C.br)],q3)),a3,A.e(a3,H.a([],q2),C.e,"Create two minions using [Power], one with your Max die and one with your Mid die. Choose which one basic action each of them can perform. They act on the start of your turn.",q,H.a([S.u(C.j)],q3)),"Cords of Magic",A.e("Cords of Magic",H.a([C.A],q2),C.e,"Destroy all bonuses and penalties on a target. Then Hinder that target using [Power], using your Max die.",q,H.a([S.u(C.j)],q3)),a4,A.e(a4,H.a([C.a6],q2),C.L,a5,q,H.a([S.u(C.bb)],q3)),"Costly Strength",A.e("Costly Strength",H.a([C.p,C.A],q2),C.e,l,q,H.a([S.u(C.j)],q3)),"Created Form",A.e("Created Form",H.a([],q2),C.L,"Reduce physical damage to yourself by 1 while you are in the Green zone, 2 while in the Yellow zone, and 3 while in the Red zone.",q,C.i),a6,A.e(a6,H.a([C.a6],q2),C.L,"When you would take damage from [Element/Energy], you may Recover that amount of Health instead",q,H.a([S.u(C.br)],q3)),"Cursed Resolve",A.e("Cursed Resolve",H.a([C.p,C.a6],q2),C.e,"Boost yourself using [Power]. Then, either remove a penalty on yourself or Recover using your Min die.",q,H.a([S.u(C.j)],q3)),a7,A.e(a7,H.a([],q2),C.L,"Reduce [Physical or Energy] damage you take by 1 while you are in the Green zone, 2 while in the Yellow zone, and 3 while in the Red zone.",q,H.a([S.u(C.hO)],q3)),a8,A.e(a8,H.a([],q2),C.L,"Reduce physical or energy damage you take by 1 while you are in the Green zone, 2 while in the Yellow zone, and 3 while in the Red zone.",q,C.i),"Damage Spike",A.e("Damage Spike",H.a([C.k],q2),C.e,"Attack using [Power]. Use your Max+Min dice. Take damage equal to your Mid die.",q,H.a([S.u(C.j)],q3)),a9,A.e(a9,H.a([C.k,C.A],q2),C.e,"Attack multiple targets using [Power]. User your Mid die. Hinder all targets damaged by this ability with your Min die. Hinder yourself with your Max die.",q,H.a([S.u(C.j)],q3)),"Dangerous Lash",A.e("Dangerous Lash",H.a([C.k],q2),C.e,"Attack multiple targets using [Power], applying your Min die to each. If you roll doubles, also attack an ally using your Mid die.",q,H.a([S.u(C.j)],q3)),"Danger Sense",A.e("Danger Sense",H.a([C.I],q2),C.y,"When damaged by an environment target or surprise Attack, Defend by rolling your single [Power] die.",q,H.a([S.u(C.j)],q3)),"Danger Zone",A.e("Danger Zone",H.a([C.k],q2),C.e,"Attack multiple targets using [power]. User your Min die against each.",q,H.a([S.u(C.j)],q3)),"Danger!",A.e("Danger!",H.a([C.k],q2),C.e,"Attack multiple targets using [Power]. If you roll doubles, one nearby ally is also hit with the Attack.",q,H.a([S.u(C.j)],q3)),"Debilitator",A.e("Debilitator",H.a([C.A,C.k],q2),C.e,"Hinder all nearby opponents using [Power]. If you roll doubles, take damage equal to your Max die, and then you may also attack all nearby opponents with your Min die.",q,H.a([S.u(C.j)],q3)),b0,A.e(b0,H.a([C.I,C.k],q2),C.e,"Defend using [Power or Quality]. Attack using your Min die.",q,H.a([S.u(C.a_)],q3)),"Deflect",A.e("Deflect",H.a([],q2),C.y,"When you would be dealt damage, you may deal damage to a nearby target equal to the amount reduced by your Armored ability.",q,C.i),"Destroyer",A.e("Destroyer",H.a([C.k],q2),C.L,"Whenever you take a basic Attack action, either use your Max+Min dice to Attack one target, or Attack two different targets, one using your Max die and one using your Mid die.",q,C.i),b1,A.e(b1,H.a([],q2),C.e,"If you have access to your device, change from your civilian form to your heroic form, or vice versa. After your transformation, take a basic action using your Min die. If you have any penalties that separate you from your device or otherwise inhibit you having full access to your device, you cannot use this ability.",q,C.i),b2,A.e(b2,H.a([],q2),C.L,"Whenever your status changes due to a change in your current Health, you may remove a penalty on yourself.",q,C.i),"Disabling Blast",A.e("Disabling Blast",H.a([C.k,C.A],q2),C.e,"Attack using [Power]. Hinder using your Min die.",q,H.a([S.u(C.j)],q3)),b3,A.e(b3,H.a([C.k,C.A],q2),C.e,"Attack using [Power]. Either Hinder your target with your min die or move them somewhere else in the scene.",q,H.a([S.u(C.j)],q3)),"Dive & Drop",A.e("Dive & Drop",H.a([C.k],q2),C.e,"Attack a minion using [Power]. Use whatever that minion rolls for its save as an Attack against another target of your choice.",q,H.a([S.u(C.j)],q3)),"Diversion",A.e("Diversion",H.a([C.I],q2),C.y,"When you would take damage, Defend against that damage by rolling your single [Power or Quality] die.",q,H.a([S.u(C.a_)],q3)),"Divided Psyche",A.e("Divided Psyche",H.a([],q2),C.L,"While you are in your civilian form, use two qualities instead of a power and a quality. While in your heroic form, use two powers instead of a power and a quality. (Use your status in both cases.) You cannot use abilities related to a power or quality you don't have access to.",q,C.i),b4,A.e(b4,H.a([],q2),C.L,a2,q,C.i),"Draw Power",A.e("Draw Power",H.a([C.p],q2),C.e,b5,q,H.a([S.u(C.j)],q3)),"Dread Pallor",A.e("Dread Pallor",H.a([C.A],q2),C.e,"Hinder multiple targets using [Power]. User your Mid die for one and your Min die for the rest.",q,H.a([S.u(C.j)],q3)),"Dual Offense",A.e("Dual Offense",H.a([C.k],q2),C.e,"Attack using [Power]. Attack a second target with your Min die.",q,H.a([S.u(C.j)],q3)),"Dual Strike",A.e("Dual Strike",H.a([C.k],q2),C.e,"Attack one target using [Power or Quality]. Attack a second target using your Min die.",q,H.a([S.u(C.a_)],q3)),"Dual Wielder",A.e("Dual Wielder",H.a([C.k],q2),C.e,"Attack two different targets using [Power or Quality], one target using your Mid die and the other your Min die.",q,H.a([S.u(C.a_)],q3)),"Embolden",A.e("Embolden",H.a([C.k,C.p],q2),C.e,"Attack using [Power], and Boost all nearby heroes taking [Basic Action] or [Basic Action] using your Min die until your next turn.",q,H.a([S.u(C.j),S.u(C.fv),S.u(C.fv)],q3)),b6,A.e(b6,H.a([],q2),C.y,"When hit with an Attack, change to any form before resolving the Attack. Take a minor twist.",q,C.i),b7,A.e(b7,H.a([],q2),C.y,"When you are hit with an Attack, you may change to any mode. If you do, take extra damage to the Min die or take a minor twist.",q,C.i),b8,A.e(b8,H.a([C.p,C.A,C.I,C.k,C.a6],q2),C.e,"Boost, Hinder, Defend, or Attack using [Power]. You and all nearby heroes in the Yellow or Red zone Recover Health equal to your Min die.",q,H.a([S.u(C.j)],q3)),"Encourage",A.e("Encourage",H.a([C.k,C.p],q2),C.e,"Attack using [Power]. Boost all nearby heroes taking Attack or Overcome actions using your Min die until your next turn.",q,H.a([S.u(C.j)],q3)),b9,A.e(b9,H.a([C.a6],q2),C.L,"If you would take damage from [Obtained Element/Energy], reduce that damage to 0 and Recover that amount of Health instead.",q,H.a([S.u(C.bb)],q3)),"Energy Burst",A.e("Energy Burst",H.a([C.k],q2),C.e,d,q,H.a([S.u(C.j)],q3)),c0,A.e(c0,H.a([C.I,C.p],q2),C.e,"Defend using [Power]. Use your Max die. Boost using your Min die.",q,H.a([S.u(C.j)],q3)),c1,A.e(c1,H.a([C.p],q2),C.y,"When you take damage from [Element/Energy], treat the amount of damage you take as a Boost action for yourself.",q,H.a([S.u(C.br)],q3)),"Energy Immunity",A.e("Energy Immunity",H.a([C.a6],q2),C.L,a5,q,H.a([S.u(C.bb)],q3)),"Energy Jaunt",A.e("Energy Jaunt",H.a([C.k],q2),C.e,"Attack multiple targets using [Power], applying your Min die against each.",q,H.a([S.u(C.j)],q3)),c2,A.e(c2,H.a([],q2),C.L,"Whenever you take damage from [Obtained Element/Energy], you may also inflict that much damage on another target.",q,H.a([S.u(C.bb)],q3)),"Equip",A.e("Equip",H.a([C.p],q2),C.e,"Boost using [Power]. Make one bonus for one ally using your Mid die and another for another ally using your Min die.",q,H.a([S.u(C.j)],q3)),"Expanded Mind",A.e("Expanded Mind",H.a([C.p,C.k],q2),C.e,"Boost yourself using [Power]. User your Max die. That bonus is persistent and exclusive. Then Attack using your Min die.",q,H.a([S.u(C.j)],q3)),c3,A.e(c3,H.a([],q2),C.y,"Apply a bonus after rolling your action, instead of before.",q,C.i),"Exploding Ammo",A.e("Exploding Ammo",H.a([C.k,C.o],q2),C.e,"Attack or Overcome using [Quality] on an environmental target, using your Max+Min dice. If you roll doubles, take a minor twist.",q,H.a([S.u(C.ao)],q3)),c4,A.e(c4,H.a([C.k],q2),C.e,"Attack using [Power]. If you Attacked or Hindered that target in your previous turn, use your Max die in this Attack.",q,H.a([S.u(C.j)],q3)),c5,A.e(c5,H.a([C.k],q2),C.e,"Attack up to three different targets using [Power]. Apply your Max die to one, your Mid die to another, your Min die to the third. If you roll doubles, take a minor twist or take irreducible damage equal to that die.",q,H.a([S.u(C.j)],q3)),c6,A.e(c6,H.a([C.k],q2),C.e,"Attack up to two targets using [Power]. Also take an amount of damage equal to your Mid die.",q,H.a([S.u(C.j)],q3)),c7,A.e(c7,H.a([C.I],q2),C.y,"When you would take damage that would change your zone, Defend against that damage by rolling your single [Quality] die.",q,H.a([S.u(C.ao)],q3)),"Extremes",A.e("Extremes",H.a([],q2),C.L,"Whenever you roll a die's max value, treat that value as 1 higher. Whenever you roll a 1 on a die, treat that die as if it had rolled a 0.",q,C.i),"Fast Fingers",A.e("Fast Fingers",H.a([C.p,C.A,C.k],q2),C.e,"Boost or Hinder using [Power]. User your Max die. If you roll doubles, you may also Attack using your Mid die.",q,H.a([S.u(C.j)],q3)),"Field of Energy",A.e("Field of Energy",H.a([C.k],q2),C.e,"Attack multiple targets near each other using [Power].",q,H.a([S.u(C.j)],q3)),"Flexible Stance",A.e("Flexible Stance",H.a([],q2),C.e,"Take any two basic actions using [Power or Quality], each using your Min die.",q,H.a([S.u(C.a_)],q3)),"Flowing Fight",A.e("Flowing Fight",H.a([C.k],q2),C.e,c8,q,H.a([S.u(C.j)],q3)),"Flurry of Fists",A.e("Flurry of Fists",H.a([C.k],q2),C.e,"Attack using [Quality]. User your Max die. If you roll doubles, use Max+Min instead.",q,H.a([S.u(C.ao)],q3)),c9,A.e(c9,H.a([C.A,C.k],q2),C.e,"Hinder using [Power]. Attack using your Min die. If you are in the Red zone, you may apply the penalty to any number of nearby targets.",q,H.a([S.u(C.j)],q3)),"Form Recovery",A.e("Form Recovery",H.a([C.k,C.a6],q2),C.e,"Attack using [Self Control Power] and Recover Health equal to your Min die. Return to your base form.",q,H.a([S.u(C.aW)],q3)),d0,A.e(d0,H.a([C.k],q2),C.e,"Attack using [Power or Quality]. The target of the Attack must take an Attack action against you as its next turn, if possible",q,H.a([S.u(C.a_)],q3)),"Galvanize",A.e("Galvanize",H.a([C.p],q2),C.e,m,q,H.a([S.u(C.a_)],q3)),"Gimmick",A.e("Gimmick",H.a([C.k,C.p,C.A],q2),C.e,"Boost or Hinder using [Power]. Use your Max die. If you roll doubles, you may also Attack using your Mid die.",q,H.a([S.u(C.j)],q3)),"Grasping Vines",A.e("Grasping Vines",H.a([C.A],q2),C.e,"Hinder using [Power]. Use your Max die. You may split that penalty across multiple nearby targets.",q,H.a([S.u(C.j)],q3)),"Growth",A.e("Growth",H.a([C.p],q2),C.e,"Boost yourself using [Quality]. That bonus is persistent and exclusive.",q,H.a([S.u(C.ao)],q3)),d1,A.e(d1,H.a([C.k],q2),C.y,"When a new target enters close range, Attack that target by rolling your single [Quality] die.",q,H.a([S.u(C.ao)],q3)),"Halt",A.e("Halt",H.a([C.I],q2),C.y,"When you are Attacked at close range, Defend yourself by rolling your single [Power] die.",q,H.a([S.u(C.j)],q3)),d2,A.e(d2,H.a([C.k,C.a6],q2),C.e,"Attack using [Power]. Use your Min die. Take damage equal to your Mid die, and one nearby ally Recovers Health equal to your Max die.",q,H.a([S.u(C.j)],q3)),"Heedless Blast",A.e("Heedless Blast",H.a([C.k],q2),C.e,"Attack multiple targets using [Power]. Use your Mid die against each target. Take irreducible damage equal to your Mid die.",q,H.a([S.u(C.j)],q3)),d3,A.e(d3,H.a([],q2),C.y,"One nearby ally may reroll their dice pool. You lose Health equal to the Min die of the new roll.",q,C.i),d4,A.e(d4,H.a([C.p],q2),C.e,"Boost using [Power]. use your Max die, or use your Mid die and make it persistent and exclusive.",q,H.a([S.u(C.j)],q3)),"Hit & Run",A.e("Hit & Run",H.a([C.k,C.I],q2),C.e,"Attack using [Power]. Defend against all Attacks against you using your Min die until your next turn.",q,H.a([S.u(C.j)],q3)),"Hunter/Killer",A.e("Hunter/Killer",H.a([C.A,C.k],q2),C.e,"Move to any target in this scene and Hinder that target using [Power]. Then, Attack that target using your Max+Min dice.",q,H.a([S.u(C.j)],q3)),d5,A.e(d5,H.a([C.I],q2),C.y,"When you are Attacked, Defend by rolling your single Illusions die.",q,C.i),d6,A.e(d6,H.a([C.k,C.p],q2),C.e,"Attack using [Power]. Use your Max die. If you choose another hero to go next, Boost that hero using your Mid die.",q,H.a([S.u(C.j)],q3)),"Imitation",A.e("Imitation",H.a([],q2),C.e,"Use a Green action ability of a nearby ally (using the same size power/quality die they would use.)",q,C.i),"Immunity",A.e("Immunity",H.a([],q2),C.L,"You do not take damage from [Element/Energy]",q,H.a([S.u(C.br)],q3)),"Improvement",A.e("Improvement",H.a([C.p],q2),C.e,"Boost yourself using [Power]. Create one bonus using your Max die and one bonus using your Mid die. These bonuses are persistent and exclusive.",q,H.a([S.u(C.j)],q3)),d7,A.e(d7,H.a([C.p],q2),C.e,"Boost yourself using [Power], assigning your Min, Mid, and Max dice to 3 different bonuses, one of which must be given to an enemy.",q,H.a([S.u(C.j)],q3)),"Inflict",A.e("Inflict",H.a([C.k,C.A],q2),C.e,"Attack using [Power]. Hinder that same target using your Min die.",q,H.a([S.u(C.j)],q3)),"Intentionality",A.e("Intentionality",H.a([],q2),C.L,a2,q,C.i),d8,A.e(d8,H.a([C.k],q2),C.e,"Attack multiple targets using [Power]. take damage equal to your Max die.",q,H.a([S.u(C.j)],q3)),"Living Arsenal",A.e("Living Arsenal",H.a([C.k],q2),C.e,"Attack using [Power] with a bonus equal to the number of bonuses you currently have.",q,H.a([S.u(C.j)],q3)),"Living Bomb",A.e("Living Bomb",H.a([C.k],q2),C.e,"Destroy one d6 or d8 minion. Roll that minion's die as an Attack against another target.",q,C.i),"Living Bulwark",A.e("Living Bulwark",H.a([C.k,C.I],q2),C.e,"Attack using [Power]. Defend another target with your Min die.",q,H.a([S.u(C.j)],q3)),"Load",A.e("Load",H.a([C.p],q2),C.e,"Boost using [Power or Quality] to create one bonus Using your Max die and another using your Mid die.",q,H.a([S.u(C.a_)],q3)),"Magical Shield",A.e("Magical Shield",H.a([C.I],q2),C.y,"When another hero in the Yellow or Red zone would take damage, you may Defend them by rolling your single [Power] die.",q,H.a([S.u(C.j)],q3)),"Make Minion",A.e("Make Minion",H.a([],q2),C.e,"Create a minion using [Power]. Reference the minion chart to see what size of minion it is. Choose whether it can Attack, Defend, Boost, Hinder, or Overcome. it acts on the start of your turn. You can only use this ability in a situation conducive to how you create minions.",q,H.a([S.u(C.j)],q3)),"Mass Effect",A.e("Mass Effect",H.a([C.p,C.A],q2),C.e,"Boost or Hinder using [Power] and apply that mod to multiple close targets.",q,H.a([S.u(C.j)],q3)),d9,A.e(d9,H.a([C.p,C.A],q2),C.e,"Boost or Hinder using [Power], and apply that mod to multiple close targets.",q,H.a([S.u(C.j)],q3)),"Merge",A.e("Merge",H.a([],q2),C.e,"If you have access to a willing compatible person to enable your transform, change from your civilian form to your heroic form, or vice versa. After your transformation, take a basic action using your Min die. If you have any penalties that separate you from that person, you cannot use this ability.",q,C.i),"Metal Skin",A.e("Metal Skin",H.a([],q2),C.L,"Reduce the amount of physical damage taken by 1 while you are in the Green zone, 2 while in the Yellow zone, and 3 while in the Red zone.",q,C.i),e0,A.e(e0,H.a([],q2),C.y,"Reduce any damage you take by the number of minions you have. Whenever damage is reduced this way, reduce the size of one of your minions.",q,C.i),e1,A.e(e1,H.a([C.k,C.A],q2),C.e,"Attack a minion using Suggestion. If that minion would be taken out, you control its next action, and then it is removed. Otherwise, Hinder it using your Min die.",q,C.i),"Minuscule Form",A.e("Minuscule Form",H.a([C.I],q2),C.e,"Defend using [Power]. Use your Max die. Remove all penalties on you.",q,H.a([S.u(C.j)],q3)),"Misdirection",A.e("Misdirection",H.a([C.I],q2),C.y,"When a nearby hero in the Yellow or Red zone would take damage, Defend against that damage by rolling your single [Power] die, then redirect any remaining damage to a nearby minion of your choice.",q,H.a([S.u(C.j)],q3)),"Mobile Assist",A.e("Mobile Assist",H.a([C.p,C.k],q2),C.e,"Boost another hero using [Power]. Attack using your Min die.",q,H.a([S.u(C.j)],q3)),"Mobile Dodge",A.e("Mobile Dodge",H.a([C.k],q2),C.y,"When you are hit with an Attack, you may take 1 irreducible damage to have the attacker reroll their dice pool.",q,C.i),e2,A.e(e2,H.a([C.p,C.A],q2),C.e,"Boost or Hinder using [Power], and apply that mod to multiple nearby targets.",q,H.a([S.u(C.j)],q3)),"Momentary Power",A.e("Momentary Power",H.a([C.p,C.A],q2),C.e,"Boost yourself using [Power]. Use your Max die. Hinder a nearby opponent with your Min die.",q,H.a([S.u(C.j)],q3)),e3,A.e(e3,H.a([C.k],q2),C.e,"Attack using [Power] against multiple targets using your Min die against each.",q,H.a([S.u(C.j)],q3)),"Multitask",A.e("Multitask",H.a([C.p,C.A,C.I,C.k,C.o],q2),C.e,"Take any two different basic actions using [Power or Quality], each using your Min die.",q,H.a([S.u(C.a_)],q3)),e4,A.e(e4,H.a([C.I],q2),C.y,"When another hero in the Yellow or Red zone would take damage, you may redirect it to yourself and Defend against it by rolling your single [Power] die.",q,H.a([S.u(C.j)],q3)),"Natural Weapon",A.e("Natural Weapon",H.a([C.k],q2),C.e,e5,q,H.a([S.u(C.j)],q3)),e6,A.e(e6,H.a([C.A],q2),C.e,"Hinder using [Power]. That penalty is persistent and exclusive.",q,H.a([S.u(C.j)],q3)),"Never Happened",A.e("Never Happened",H.a([],q2),C.y,"When a nearby enemy would create a bonus or penalty, you may remove it immediately.",q,C.i),e7,A.e(e7,H.a([C.k,C.A],q2),C.e,"Attack multiple targets using [Quality]. User your Min die. Hinder each target equal to your Mid die.",q,H.a([S.u(C.ao)],q3)),"Not Quite Right",A.e("Not Quite Right",H.a([],q2),C.y,"After a dice pool is rolled, adjust one die up or down one value on the die.",q,C.i),e8,A.e(e8,H.a([C.k],q2),C.e,"Attack using [Power or Quality]. Use your Max die.",q,H.a([S.u(C.a_)],q3)),"Onboard Upgrade",A.e("Onboard Upgrade",H.a([C.p],q2),C.e,"Boost yourself using Power Suit. Use your Min+Mid dice. That bonus is persistent and exclusive.",q,C.i),"Organi-Hack",A.e("Organi-Hack",H.a([C.k,C.A],q2),C.e,"Attack a target using [Power]. Hinder that target with your Min die.",q,H.a([S.u(C.j)],q3)),e9,A.e(e9,H.a([C.o,C.k,C.p],q2),C.e,"Attack or Overcome using [Power or Quality]. Boost yourself using your Min die.",q,H.a([S.u(C.a_)],q3)),"Overpower",A.e("Overpower",H.a([],q2),C.L,"Whenever you are Boosted, increase that bonus by +1. Then, if that bonus is +5 or higher, take damage equal to that bonus and remove it.",q,C.i),f0,A.e(f0,H.a([C.k,C.a6],q2),C.e,"Attack using [Power]. Then, if the target of the Attack survived, also Attack that target with your Max die. Otherwise, Recover an amount of Health equal to your Min die.",q,H.a([S.u(C.j)],q3)),f1,A.e(f1,H.a([C.p],q2),C.e,"Boost yourself using [Power]. User your Max die. That bonus is persistent and exclusive.",q,H.a([S.u(C.j)],q3)),"Possess Object",A.e("Possess Object",H.a([C.o],q2),C.e,"Overcome using [Archetype Quality]. On a success, merge with an item and then use your min die to take a basic action.",q,H.a([S.u(C.fu)],q3)),"Possess Person",A.e("Possess Person",H.a([C.k],q2),C.e,"Attack using [Archetype Power]. If you incapacitate the target and change forms, you may use your Min die as a bonus to your next action. Alternatively, you may possess a willing target for no bonus.",q,H.a([S.u(C.fs)],q3)),f2,A.e(f2,H.a([C.A],q2),C.y,"After an enemy rolls dice to take an action for their turn but before using the result, Hinder that enemy's roll using your single Postcognition die.",q,C.i),f3,A.e(f3,H.a([C.p,C.k],q2),C.e,"Boost yourself using [Power]. Use your Max die. That bonus is persistent and exclusive. Then Attack with your Min die.",q,H.a([S.u(C.j)],q3)),"Power Strike",A.e("Power Strike",H.a([C.k],q2),C.e,"Attack using [Power or Quality] and use your Max die.",q,H.a([S.u(C.a_)],q3)),"Power Up",A.e("Power Up",H.a([C.p],q2),C.e,"Boost another hero or one of your minions using [Power]. Either use your Max die, or use your Mid die and make that bonus persistent.",q,H.a([S.u(C.j)],q3)),"Powerful Blast",A.e("Powerful Blast",H.a([C.k],q2),C.e,"Attack using [Power] and use your Max die.",q,H.a([S.u(C.j)],q3)),"Precise Hit",A.e("Precise Hit",H.a([C.k],q2),C.e,"Attack using [Power]. Ignore all penalties on this Attack, ignore any Defend actions, and it cannot be affected by Reactions.",q,H.a([S.u(C.j)],q3)),"Precise Shot",A.e("Precise Shot",H.a([C.k],q2),C.e,f4,q,H.a([S.u(C.a_)],q3)),"Precise Strike",A.e("Precise Strike",H.a([C.k],q2),C.e,f4,q,H.a([S.u(C.a_)],q3)),f5,A.e(f5,H.a([C.p],q2),C.y,"After an ally rolls dice to take an action for their turn but before using the result, Boost that ally's roll using your single Precognition die.",q,C.i),"Predator's Eye",A.e("Predator's Eye",H.a([C.k,C.p],q2),C.e,"Attack using [Power]. User your Max+Min dice. Then gain a Boost using your Mid die. The target of the Attack gains a bonus of the same size.",q,H.a([S.u(C.j)],q3)),f6,A.e(f6,H.a([C.p,C.k],q2),C.e,"Boost using [Power]. Use your Max die. If you roll doubles, you may also Attack using your Mid die.",q,H.a([S.u(C.j)],q3)),f7,A.e(f7,H.a([C.p],q2),C.e,"Boost yourself using [Mental Quality]. Either use your Max die, or use your Mid die and make it persistent.",q,H.a([S.u(C.bL)],q3)),"Psychic Assault",A.e("Psychic Assault",H.a([C.k,C.A],q2),C.e,"Attack using [Psychic Power]. Hinder the target using your Min die.",q,H.a([S.u(C.bs)],q3)),f8,A.e(f8,H.a([C.p],q2),C.e,"Boost using [Psychic Power]. Apply that bonus to all hero Attack and Overcome actions until the start of your next turn.",q,H.a([S.u(C.bs)],q3)),"Psychic Insight",A.e("Psychic Insight",H.a([],q2),C.y,"After rolling during your turn, you make take 1 irreducible damage to reroll your entire dice pool.",q,C.i),"Punishment",A.e("Punishment",H.a([],q2),C.L,"Whenever you Attack an enemy that has inflicted a penalty on you, treat that penalty as if it were a bonus for the purpose of that Attack.",q,C.i),"Quick Switch",A.e("Quick Switch",H.a([],q2),C.e,"Destroy one bonus on you. Change modes, then take an action in the new mode.",q,C.i),f9,A.e(f9,H.a([C.k],q2),C.y,"When a new target enters the scene close to you, you may Attack it by rolling your single [Power] die.",q,H.a([S.u(C.j)],q3)),g0,A.e(g0,H.a([C.p,C.a6],q2),C.e,g1,q,H.a([S.u(C.j)],q3)),"Rally",A.e("Rally",H.a([C.k,C.a6],q2),C.e,"Attack using [Quality]. Other nearby heroes in the Yellow or Red zone Recover equal to your Min die.",q,H.a([S.u(C.ao)],q3)),g2,A.e(g2,H.a([],q2),C.e,"Create a minion using [Power]. Use your Min die. Choose which basic action it can perform. It acts now and at the start of your turns.",q,H.a([S.u(C.j)],q3)),g3,A.e(g3,H.a([C.I],q2),C.y,"When a nearby ally would take damage, Defend that ally by rolling your single status die, and move them elsewhere in the same scene.",q,C.i),"Reactive Field",A.e("Reactive Field",H.a([],q2),C.y,"When you are attacked by a nearby enemy, the attacker also takes an equal amount of damage.",q,C.i),"Reality Scorned",A.e("Reality Scorned",H.a([C.k],q2),C.e,"Attack using [Power]. If your target survived, Hinder them using your Max die.",q,H.a([S.u(C.j)],q3)),g4,A.e(g4,H.a([],q2),C.y,g5,q,C.i),"Recharge",A.e("Recharge",H.a([C.p,C.a6],q2),C.e,g1,q,H.a([S.u(C.j)],q3)),"Reflexive Burst",A.e("Reflexive Burst",H.a([C.k],q2),C.y,"When your personal zone changes, Attack all close enemy targets by rolling your single [Power] die.",q,H.a([S.u(C.j)],q3)),"Regeneration",A.e("Regeneration",H.a([C.I,C.a6],q2),C.e,"Defend using [Power]. use your Max die. Recover Health equal to your Min die.",q,H.a([S.u(C.j)],q3)),g6,A.e(g6,H.a([C.p,C.a6],q2),C.e,"Boost using [Power]. Recover Health equal to your Min die.",q,H.a([S.u(C.j)],q3)),"Relic Drain",A.e("Relic Drain",H.a([C.A,C.a6],q2),C.e,"Hinder using [Power]. Also Recover Health equal to your Min die.",q,H.a([S.u(C.j)],q3)),"Repair",A.e("Repair",H.a([C.k,C.a6],q2),C.e,"Attack using [Power]. Recover Health equal to your Min die.",q,H.a([S.u(C.j)],q3)),"Resilience",A.e("Resilience",H.a([],q2),C.L,"At the start of your turn, remove any -1 penalties on you.",q,C.i),"Resolve",A.e("Resolve",H.a([C.p,C.a6],q2),C.e,"Boost yourself using [Power], then remove a penalty on yourself or Recover using your Min die.",q,H.a([S.u(C.j)],q3)),"Respond In Kind",A.e("Respond In Kind",H.a([],q2),C.y,"When you are hit with an Attack at close range, the attacker also takes damage equal to their effect die.",q,C.i),g7,A.e(g7,H.a([],q2),C.y,"You may apply a bonus to a roll after rolling instead of before.",q,C.i),"Ricochet",A.e("Ricochet",H.a([C.k],q2),C.e,"Attack using [Quality]. Use your Max die. If you roll doubles, use Max+Min instead.",q,H.a([S.u(C.ao)],q3)),"Run Down",A.e("Run Down",H.a([C.k],q2),C.e,"Attack multiple targets using [Power]. Use your Min die against each.",q,H.a([S.u(C.j)],q3)),"Sabotage",A.e("Sabotage",H.a([C.k,C.A],q2),C.e,"Attack using [Power or Quality]. Remove on physical bonus or penalty, Hinder a target using your Min die, or maneuver to a new location in your environment.",q,H.a([S.u(C.a_)],q3)),"Sacrifice",A.e("Sacrifice",H.a([],q2),C.y,"When you are Attacked, redirect the Attack to one of your nearby minions",q,C.i),"Scout",A.e("Scout",H.a([C.o,C.I],q2),C.e,"Overcome using [Power]. Defend yourself with your Max die. Then, you may end up anywhere in the current scene.",q,H.a([S.u(C.j)],q3)),g8,A.e(g8,H.a([C.p],q2),C.e,b5,q,H.a([S.u(C.j)],q3)),"Sever Link",A.e("Sever Link",H.a([C.o,C.p],q2),C.e,"Overcome an environmental challenge using [Power]. Use your Max die. Either remove any penalty in the scene or Boost equal to your Mid die.",q,H.a([S.u(C.j)],q3)),"Shadowy Figure",A.e("Shadowy Figure",H.a([C.k,C.I],q2),C.e,"Attack using [Power or Quality]. Defend using your Min die against all Attacks until your next turn.",q,H.a([S.u(C.a_)],q3)),"Shield",A.e("Shield",H.a([C.I,C.A],q2),C.y,"When you are attacked, you may Defend against the Attack by rolling your single [Power] die. If you reduce the damage to 0 or less, you may also Hinder the source of the damage with the result of the die you rolled.",q,H.a([S.u(C.j)],q3)),"Skirmish",A.e("Skirmish",H.a([C.k],q2),C.e,g9,q,H.a([S.u(C.j)],q3)),"Snap Decision",A.e("Snap Decision",H.a([C.p,C.k],q2),C.e,"Boost yourself using [Power]. Use your Max+Min dice. Then Attack using your Mid die with that bonus.",q,H.a([S.u(C.j)],q3)),"Sniper Aim",A.e("Sniper Aim",H.a([C.p],q2),C.e,"Boost yourself using [Power or Quality]. Use your Max+Min dice. This bonus can only be used against one chosen target, and is persistent & exclusive against that target until it leaves the scene.",q,H.a([S.u(C.a_)],q3)),h0,A.e(h0,H.a([C.k],q2),C.e,c8,q,H.a([S.u(C.j)],q3)),"Sonic Boom",A.e("Sonic Boom",H.a([C.A],q2),C.e,"Hinder multiple targets using [Power]. Apply your Min die to each of them.",q,H.a([S.u(C.j)],q3)),"Speedy Analysis",A.e("Speedy Analysis",H.a([C.p],q2),C.e,"Boost multiple targets using [Power]. Use your Max die.",q,H.a([S.u(C.j)],q3)),"Speedy Form",A.e("Speedy Form",H.a([C.A],q2),C.e,"Hinder multiple targets using [Power].",q,H.a([S.u(C.j)],q3)),"Spin & Shoot",A.e("Spin & Shoot",H.a([C.k,C.I],q2),C.e,"Attack using [Power or Quality]. Defend using your Min die.",q,H.a([S.u(C.a_)],q3)),"Split Form",A.e("Split Form",H.a([],q2),C.L,"Choose two powers and two qualities that you always have access to in either form. You must divide up the remainder of your powers and qualities between your civilian and heroic forms so they are only usable within those forms. You cannot use abilities related to a power or quality you don't have access to. In the next step, when you create a roleplaying quality, you will have access to that in either form.",q,C.i),"Stalwart",A.e("Stalwart",H.a([C.k],q2),C.e,g9,q,H.a([S.u(C.j)],q3)),h1,A.e(h1,H.a([C.p,C.A],q2),C.e,"Boost all nearby allies using [Power] using your Max+Mid dice. Hinder yourself with your Min die.",q,H.a([S.u(C.j)],q3)),h2,A.e(h2,H.a([C.a6],q2),C.y,"When you eliminate a minion with an Attack using [Power or Quality], Recover Health equal to your Min die.",q,H.a([S.u(C.a_)],q3)),"Strike & Swoop",A.e("Strike & Swoop",H.a([C.k,C.I],q2),C.e,"Attack using [Power or Quality]. Defend against all Attacks against you using your Min die until your next turn.",q,H.a([S.u(C.a_)],q3)),"Strong Form",A.e("Strong Form",H.a([C.k],q2),C.e,e5,q,H.a([S.u(C.j)],q3)),"Subdue",A.e("Subdue",H.a([C.k,C.A],q2),C.e,"Attack using [Power]. Hinder the same target using your Min die.",q,H.a([S.u(C.j)],q3)),h3,A.e(h3,H.a([C.k],q2),C.e,"Attack multiple targets using [Power]. User your Mad die against one target, and your Mid die against each other target. If you roll doubles, take irreducible damage equal to your Mid die.",q,H.a([S.u(C.j)],q3)),h4,A.e(h4,H.a([],q2),C.y,"After rolling your dice pool for the turn, you may take 1 irreducible damage to reroll your entire poll.",q,C.i),"Surprise Shift",A.e("Surprise Shift",H.a([C.k],q2),C.e,"Attack using [Self Control Power] and use your Max die. Then change to any available form.",q,H.a([S.u(C.aW)],q3)),"Swarm",A.e("Swarm",H.a([C.k],q2),C.e,"Attack multiple targets using Animal Control and use your Min die.",q,C.i),"Swarm Combat",A.e("Swarm Combat",H.a([C.k],q2),C.e,"Attack using [Power]. Use your Max die plus a bonus equal to the number of minions you have.",q,H.a([S.u(C.j)],q3)),"Switch",A.e("Switch",H.a([C.p],q2),C.e,"Boost yourself using [Power or Quality]. Then change modes.",q,H.a([S.u(C.a_)],q3)),h5,A.e(h5,H.a([C.p],q2),C.y,"When Attacked, treat the amount of damage you take as a Boost action for yourself.",q,C.i),"Techno-Absorb",A.e("Techno-Absorb",H.a([C.a6],q2),C.L,a,q,H.a([S.u(C.br)],q3)),h6,A.e(h6,H.a([C.k],q2),C.e,"Attack using Telekinesis. Either Attack one target and use your Max die, or two targets and use your Mid die against one and your Min die against another.",q,C.i),h7,A.e(h7,H.a([C.k,C.A],q2),C.e,"Attack using Telepathy and use your Max die. Hinder the target with a persistent penalty using your Min die.",q,C.i),"Throw Minion",A.e(h8,H.a([C.k],q2),C.e,"Attack a minion using [Power]. The result of the minion's save Attacks another target of your choice.",q,H.a([S.u(C.j)],q3)),"Throw Minion 2",A.e("Throw Minion 2",H.a([C.k],q2),C.e,"Attack a minion using [Power or Quality]. Whatever that minion rolls as defense Attacks another target of your choice.",h8,H.a([S.u(C.a_)],q3)),"Tough Form",A.e("Tough Form",H.a([],q2),C.L,c,q,C.i),"Towering Form",A.e("Towering Form",H.a([C.k],q2),C.e,"Attack multiple targets using [Power].",q,H.a([S.u(C.j)],q3)),"Transform",A.e("Transform",H.a([],q2),C.e,"Change from your civilian form to your heroic form, or vice versa.",q,C.i),"Tricky Form",A.e("Tricky Form",H.a([C.p,C.A],q2),C.e,"Boost or Hinder using [Power]. Use your Max die.",q,H.a([S.u(C.j)],q3)),"Turn the Tables",A.e("Turn the Tables",H.a([],q2),C.e,"Change any bonus into a penalty of equal size or vice versa",q,C.i),"Twist Reality",A.e("Twist Reality",H.a([],q2),C.y,g5,q,C.i),h9,A.e(h9,H.a([],q2),C.e,"The first time you take damage or change zones in a scene, you must transform from your civilian form to your heroic form. You can also transform by taking an action and taking damage equal to a roll of your current status die. After an action scene, you change back to your civilian form.",q,C.i),"Unflagging",A.e("Unflagging",H.a([],q2),C.L,"At the start of your turn, remove a penalty on yourself.",q,C.i),"Unknown Results",A.e("Unknown Results",H.a([C.p,C.A,C.I,C.k,C.o],q2),C.e,"Take any basic action using [Power]. Then roll a d6. On 1, Boost with your Min die. On 2, Hinder with your Min die. On 3, Defend with your Min die. On 4, lose Health equal to your Min die. On 5, your basic action uses your Max die. On 6, your basic action uses your Min die.",q,H.a([S.u(C.j)],q3)),i0,A.e(i0,H.a([],q2),C.y,"After rolling during your turn, you may take 1 irreducible damage to reroll your entire dice pool",q,C.i),i1,A.e(i1,H.a([C.k],q2),C.e,f4,q,H.a([S.u(C.a_)],q3)),"Untouchable",A.e("Untouchable",H.a([C.k],q2),C.y,"When you would be dealt damage roll a d4 while in the Green zone, d6 while in the Yellow, or d8 while in the Red. Reduce the damage you take by the value rolled. Attack another target with that roll.",q,C.i),"Upgrade Minion",A.e("Upgrade Minion",H.a([C.p],q2),C.e,"Boost one of your minions using [Power]. You may also upgrade that minion to your Max die size, replacing its minion form.",q,H.a([S.u(C.j)],q3)),i2,A.e(i2,H.a([],q2),C.y,"When one of your bonuses, penalties, or other creation of your powers is destroyed, deal a target damage equal to the roll of your [Power] die.",q,H.a([S.u(C.j)],q3)),"Warp Space",A.e("Warp Space",H.a([C.k],q2),C.e,"Attack using [Power]. You may move the target of that Attack anywhere else nearby. If the target goes next, you decide who takes the next turn after that.",q,H.a([S.u(C.j)],q3)),"Weird Form",A.e("Weird Form",H.a([C.k,C.A],q2),C.y,"When an opponent would Attack you in close combat while in this form, you may Attack or Hinder them first by rolling your single [Power] die.",q,H.a([S.u(C.j)],q3)),"Wild Strength",A.e("Wild Strength",H.a([C.p],q2),C.y,"When you defeat a minion, roll that minion's die and Boost yourself using that roll to create a bonus for your next action.",q,C.i),"Wither",A.e("Wither",H.a([C.k,C.A],q2),C.e,"Attack using [Power]. Hinder that target using your Max die.",q,H.a([S.u(C.j)],q3)),i3,A.e(i3,H.a([C.A,C.a6],q2),C.e,"Hinder yourself using Vitality. Use your Min die. Recover health equal to your Max+Mid dice.",i4,C.i),i5,A.e(i5,H.a([C.o,C.p],q2),C.e,"Overcome using [Athletic Power] in a situation that requires you to be more than humanly capable, like an extreme feat of strength or speed. Use your Max+Min dice. Boost all nearby allies with your Mid die.","Paragon Feat",H.a([S.u(C.eG)],q3)),i6,A.e(i6,H.a([],q2),C.L,"You have no limit on the amount of Reactions you can take. Each time you use a Reaction after the first one each turn, take 1 irreducible damage or a take a minor twist.","Push Your Limits",C.i),i7,A.e(i7,H.a([C.k],q2),C.y,"When you are Attacked and dealt damage, you may Attack the source of that damage by rolling your single [Athletic Power] die, plus the amount of damage you take.","Reactive Strike",H.a([S.u(C.eG)],q3)),i8,A.e(i8,H.a([C.k],q2),C.e,"Attack using [Obtained Element/Energy] and at least one bonus. Use your Max+Mid+Min dice. Destroy all of your bonuses, adding each of them to this Attack first, even if they are exclusive.",i9,H.a([S.u(C.bb)],q3)),j0,A.e(j0,H.a([C.k],q2),C.e,"Attack up to three targets, one which must be you, using [Obtained Element/Energy]. Assign your Min, Mid, and Max dice as you choose among those targets.","Eruption",H.a([S.u(C.bb)],q3)),j1,A.e(j1,H.a([C.a6,C.p],q2),C.L,"If you would take damage from [Element/Energy], ignore that damage and Recover that amount instead. Use the value of the damage to Boost yourself.","Improved Immunity",H.a([S.u(C.br)],q3)),j2,A.e(j2,H.a([C.k],q2),C.e,"Attack using [Obtained Element/Energy]. Use your Max+Mid dice.",j3,H.a([S.u(C.bb)],q3)),j4,A.e(j4,H.a([],q2),C.e,j5,j6,C.i),j7,A.e(j7,H.a([],q2),C.e,"Use [Obtained Element/Energy] to create a number of d6 minions equal to your Mid die. Choose the one same basic action that they each perform. They all act at the start of your turn.",j8,H.a([S.u(C.bb)],q3)),j9,A.e(j9,H.a([C.k],q2),C.e,"Attack using Signature Weaponry and at least one bonus. Use your Max+Mid+Min dice. Destroy all of your bonuses, adding each of them to this Attack first, even if they are exclusive.",i9,C.i),k0,A.e(k0,H.a([C.k,C.A],q2),C.e,"Attack using Signature Vehicle. Use your Max die. Hinder each nearby opponent with your Mid die. After using this ability, you and up to 2 allies may end up anywhere in the scene, even outside of the action.","Quick Exit",C.i),k1,A.e(k1,H.a([C.k],q2),C.e,"Attack up to three nearby targets using Signature Vehicle. Use your Max+Mid dice against each of them. You cannot use your Signature Vehicle power for the rest of this scene and until it is recovered/repaired.","Sacrificial Ram",C.i),k2,A.e(k2,H.a([C.p,C.k],q2),C.e,"Boost yourself using [Hallmark Power]. Use your Max die. That bonus is persistent and exclusive. Attack using your Mid die plus that bonus.",k3,H.a([S.u(C.fw)],q3)),k4,A.e(k4,H.a([C.p],q2),C.e,"Select a target. Boost using [Information Quality]. Use your Max+Mid+Min dice. That bonus must be used against that target before the end of your next turn, or it is wasted.","Critical Eye",H.a([S.u(C.cq)],q3)),k5,A.e(k5,H.a([C.A],q2),C.e,"Remove a bonus on a target. Hinder that target using [Information Quality]. use your Max die, and that penalty is persistent and exclusive.","Discern Weakness",H.a([S.u(C.cq)],q3)),k6,A.e(k6,H.a([],q2),C.L,"When taking any action using [Information Quality], you may reroll your Min die before determining the effects.",k7,H.a([S.u(C.cq)],q3)),k8,A.e(k8,H.a([C.o],q2),C.e,"Overcome using [Information Quality]. Use your Max+Min dice.","Specialized Info",H.a([S.u(C.cq)],q3)),k9,A.e(k9,H.a([],q2),C.y,l0,l1,C.i),l2,A.e(l2,H.a([C.p],q2),C.e,"Boost another hero using [Intellectual Power]. If that hero has already acted for the turn, use your Max die, and that hero loses Health equal to your Min die. That hero acts next in the turn order.",l3,H.a([S.u(C.cS)],q3)),l4,A.e(l4,H.a([],q2),C.L,"When taking any action using [Intellectual Power], you may reroll your Min die before determining the effects.",k7,H.a([S.u(C.cS)],q3)),l5,A.e(l5,H.a([C.k],q2),C.e,"Attack using [Intellectual Power]. Use your Max+Min dice. Ignore all penalties on this attack, ignore any Defend actions, and it cannot be affected by Reactions.","Unerring Strike",H.a([S.u(C.cS)],q3)),l6,A.e(l6,H.a([C.A,C.k],q2),C.e,"Hinder any number of targets in the scene using [Materials Power]. Use your Max+Min dice. If you roll doubles, also attack each target using your Mid die.","Field of Hazards",H.a([S.u(C.cr)],q3)),l7,A.e(l7,H.a([C.I],q2),C.e,"Defend using [Materials Power] against all Attacks against you until your next turn using your Max+Mid dice.",l8,H.a([S.u(C.cr)],q3)),l9,A.e(l9,H.a([],q2),C.y,"When you are Attacked and dealt damage, you may ignore that damage completely. If you do, treat the value of the damage as a Hinder action against you instead.","Like the Wind",C.i),m0,A.e(m0,H.a([C.k],q2),C.e,"Attack using [Materials Power]. Use your Max+Mid dice.",j3,H.a([S.u(C.cr)],q3)),m1,A.e(m1,H.a([],q2),C.e,"Use [Materials Power] to create a number of d6 minions equal to your Mid die. Choose the one same basic action that they each perform. They all act at the start of your turn.",j8,H.a([S.u(C.cr)],q3)),m2,A.e(m2,H.a([C.k],q2),C.y,"After an opponent Attacks or Hinders you or a nearby ally, Attack the opponent by rolling your single [Quality] die.","Aware Response",H.a([S.u(C.bL)],q3)),m3,A.e(m3,H.a([C.o,C.A],q2),C.e,"Overcome using [Mental Quality]. Use your Max+Min dice. Hinder all nearby opponents with your Mid die.","Canny Awareness",H.a([S.u(C.bL)],q3)),m4,A.e(m4,H.a([C.p,C.I,C.A],q2),C.e,"Boost using [Mental Quality] and use your Max die. Defend against all Attacks against you using your Mid die until your next turn. Note your Min die result: as a Reaction, until your next turn, you may Hinder an attacker using that result.","Considered Planning",H.a([S.u(C.bL)],q3)),m5,A.e(m5,H.a([C.k],q2),C.e,"Attack using [Mental Quality]. Use your Max+Mid+Min dice. Take a major twist.",m6,H.a([S.u(C.bL)],q3)),"Mental Harmony",A.e("Mental Harmony",H.a([],q2),C.L,"As long as you have at least one bonus created from [Mental Quality], treat [Power] as one size higher (max d12)","Harmony",H.a([S.u(C.bL),S.u(C.j)],q3)),m7,A.e(m7,H.a([],q2),C.e,j5,j6,C.i),m8,A.e(m8,H.a([],q2),C.y,l0,l1,C.i),m9,A.e(m9,H.a([],q2),C.y,"When an Attack deals damage to a nearby hero in the Red zone, you may take d6 irreducible damage to redirect that Attack to a target of your choice, other than the source of the Attack.","Heroic Interruption",C.i),n0,A.e(n0,H.a([C.I],q2),C.y,"When multiple nearby heroes are Attacked, you may take all the damage instead. If you do, roll your [Mobility Power] die + Rex zone die and Defend against the Attack by the total.","Intercession",H.a([S.u(C.cR)],q3)),n1,A.e(n1,H.a([C.k,C.A],q2),C.e,"Attack using [Mobility Power]. Use your Max die. Then, Hinder that target using your Mid+Min dice.","Take Down",H.a([S.u(C.cR)],q3)),n2,A.e(n2,H.a([C.p],q2),C.e,"Boost yourself using [Mobility Power]. Use your Max+Min dice. Then you may end up anywhere else in the scene, avoiding any dangers between your starting and ending locations.","Untouchable Movement",H.a([S.u(C.cR)],q3)),n3,A.e(n3,H.a([C.A],q2),C.e,"Hinder any number of close targets using [Physical Quality]. Use your Max die. End your turn elsewhere in the scene.","Book It",H.a([S.u(C.cQ)],q3)),n4,A.e(n4,H.a([C.k,C.A],q2),C.L,"Whenever you Attack a target with an action, you may also Hinder that target with your Min die.","Endurance Fighting",C.i),n5,A.e(n5,H.a([C.k],q2),C.e,"Attack using [Physical Quality]. Use your Max die. Remove any number of penalties from the target. Add your Min die to the Attack for each time you remove a penalty.","Finishing Blow",H.a([S.u(C.cQ)],q3)),n6,A.e(n6,H.a([C.I],q2),C.y,"When an opponent Attacks, you may become the target of that Attack and Defend by rolling your single [Physical Quality] die.","Reactive Defense",H.a([S.u(C.cQ)],q3)),n7,A.e(n7,H.a([C.A,C.k],q2),C.e,"Hinder using [Psychic Power]. Use your Max+Mid dice. If you roll doubles, also Attack the target using your Mid+Min dice and take damage equal to your Min die.","Dangerous Hinder",H.a([S.u(C.bs)],q3)),n8,A.e(n8,H.a([],q2),C.e,"Select a minion. That minion is now entirely under your control and acts at the start of your turn. If you are incapacitated, you lose control of this minion. You may also choose to release control of this minion at any time. At the end of the scene, this minion is defeated.","Dire Control",C.i),n9,A.e(n9,H.a([C.k],q2),C.e,"Attack using [Psychic Power]. Use your Max+Mid+Min dice. Take a major twist.",m6,H.a([S.u(C.bs)],q3)),o0,A.e(o0,H.a([C.p],q2),C.e,"Boost another hero using [Psychic Power]. If that hero has already acted for the turn, use your Max die, and that hero loses Health equal to your Min die. That hero acts next in the turn order.",l3,H.a([S.u(C.bs)],q3)),o1,A.e(o1,H.a([C.I],q2),C.e,"Defend using [Psychic Power] against all Attacks against you until your next turn using your Max+Mid dice.",l8,H.a([S.u(C.bs)],q3)),o2,A.e(o2,H.a([],q2),C.L,"At the start of your turn, change any penalty into a bonus.","Impossible Knowledge",C.i),o3,A.e(o3,H.a([],q2),C.e,"Use [Psychic Power] to create a number of d6 minions equal to your Mid die. Choose the one same basic action that they each perform. They all act at the start of your turn.",j8,H.a([S.u(C.bs)],q3)),o4,A.e(o4,H.a([],q2),C.L,"At the start of your turn, swap two of your power dice. They stay swapped until changed again or the scene ends.","Change Self",C.i),o5,A.e(o5,H.a([C.I,C.p],q2),C.y,"When you are Attacked, roll your single [Self Control Power] die as a Defend against that Attack. Also Boost yourself with that same roll.","Empowerment",H.a([S.u(C.aW)],q3)),o6,A.e(o6,H.a([C.I],q2),C.e,"Defend using [Self Control Power] against all Attacks against you until your next turn using your Max+Mid dice.",l8,H.a([S.u(C.aW)],q3)),o7,A.e(o7,H.a([C.A,C.a6],q2),C.e,"Hinder yourself using [Self Control Power]. Use your Min die. Recover health equal to your Max+Mid dice.",i4,H.a([S.u(C.aW)],q3)),o8,A.e(o8,H.a([C.k,C.I],q2),C.y,"When you would be dealt damage, you may roll your single [Self Control Power] die as a Defend against that damage and as an Attack against a nearby target other than the source of that damage.","Defensive Deflection",H.a([S.u(C.aW)],q3)),o9,A.e(o9,H.a([C.p,C.A,C.I,C.k,C.o],q2),C.e,"Choose three basic actions. Use [Self Control Power] in your pool and take one action with your Max die, a different action with your Mid die, and a third action with your Min die.","Mutable Form",H.a([S.u(C.aW)],q3)),p0,A.e(p0,H.a([C.k],q2),C.e,"Attack using [Self Control Power]. Use your Max+Mid dice.",j3,H.a([S.u(C.aW)],q3)),p1,A.e(p1,H.a([],q2),C.L,"Once per issue, if you would go to 0 Health, roll [Self Control Power] + [Physical or Mental Quality] + Red zone die. Your Health becomes that number.","Resurrection",H.a([S.u(C.aW),S.u(C.ft)],q3)),p2,A.e(p2,H.a([],q2),C.e,"Use [Self Control Power] to create a number of d6 minions equal to your Mid die. Choose the one same basic action that they each perform. They all act at the start of your turn.",j8,H.a([S.u(C.aW)],q3)),p3,A.e(p3,H.a([C.I],q2),C.y,"When an opponent Attacks, you may become the target of that Attack and Defend by rolling your single Red zone die.","Heroic Sacrifice",C.i),p4,A.e(p4,H.a([],q2),C.L,"When you use an ability action, you may also perform any one basic action using your Mid die on the same roll.","Inspiring Totem",C.i),p5,A.e(p5,H.a([C.p],q2),C.e,"Make a basic action using [Social Quality]. Use your Max die. All other heroes who take the same basic action on their turn against the same target receive a Boost from your Mid+Min dice.","Lead by Example",H.a([S.u(C.eH)],q3)),p6,A.e(p6,H.a([C.A,C.p],q2),C.e,"Hinder using [Social Quality]. Use your Max+Min dice. Boost yourself or an ally with your Mid die.","Ultimatum",H.a([S.u(C.eH)],q3)),p7,A.e(p7,H.a([C.k],q2),C.e,"Attack multiple nearby targets using [Technological Power]. Use your Max+Mid dice. Take irreducible damage equal to your Min die.","Combustion",H.a([S.u(C.c8)],q3)),p8,A.e(p8,H.a([C.k],q2),C.e,"Attack using [Technological Power]. Use your Max+Mid+Min dice. Take a major twist.",m6,H.a([S.u(C.c8)],q3)),p9,A.e(p9,H.a([C.A],q2),C.e,"Hinder yourself by rolling your single [Technological Power] die. You are immune to damage until the start of your next turn. You cannot use this ability again this scene.","Full Defensive",H.a([S.u(C.c8)],q3)),q0,A.e(q0,H.a([C.p,C.k],q2),C.e,"Boost yourself using [Technological Power]. Use your Max die. That bonus is persistent and exclusive. Attack using your Mid die plus that bonus.",k3,H.a([S.u(C.c8)],q3)),q1,A.e(q1,H.a([C.k],q2),C.e,"Attack multiple targets using [Technological Power], using your Max+Min dice. If you roll doubles, take a minor twist or damage equal to your Mid die.","Unload",H.a([S.u(C.c8)],q3))],t.N,t.A)})
 r($,"aMu","SS",function(){var q=P.bC(C.q5,!0,t.K2)
 C.b.dG(q,new B.TZ())
 return q})
